@@ -1,0 +1,272 @@
+/* 从模糊变清晰 */
+@keyframes tofocus {
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-moz-keyframes tofocus {/* Firefox */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-webkit-keyframes tofocus {/* Safari 和 Chrome */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-o-keyframes tofocus {/* Opera */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+/* 从清晰变模糊 */
+@keyframes toblur{
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-moz-keyframes toblur {/* Firefox */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-webkit-keyframes toblur {/* Safari 和 Chrome */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+
+@-o-keyframes toblur {/* Opera */
+    from {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(0px); /* Chrome, Opera */
+           -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+                filter: blur(0px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=0, MakeShadow=false); /* IE6~IE9 */
+    }
+    to {
+        filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+        -webkit-filter: blur(10px); /* Chrome, Opera */
+           -moz-filter: blur(10px);
+            -ms-filter: blur(10px);
+                filter: blur(10px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+}
+/* 左右晃动效果 */
+@keyframes shake{
+    0%, 100% {
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);     /* IE 9 */
+        -moz-transform: translateX(0px);    /* Firefox */
+        -webkit-transform: translateX(0px); /* Safari 和 Chrome */
+        -o-transform: translateX(0px);      /* Opera */
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+        -ms-transform: translateX(-5px);     /* IE 9 */
+        -moz-transform: translateX(-5px);    /* Firefox */
+        -webkit-transform: translateX(-5px); /* Safari 和 Chrome */
+        -o-transform: translateX(-5px);      /* Opera */
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+        -ms-transform: translateX(5px);     /* IE 9 */
+        -moz-transform: translateX(5px);    /* Firefox */
+        -webkit-transform: translateX(5px); /* Safari 和 Chrome */
+        -o-transform: translateX(5px);      /* Opera */
+    }
+}
+
+@-moz-keyframes shake {/* Firefox */
+    0%, 100% {
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);     /* IE 9 */
+        -moz-transform: translateX(0px);    /* Firefox */
+        -webkit-transform: translateX(0px); /* Safari 和 Chrome */
+        -o-transform: translateX(0px);      /* Opera */
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+        -ms-transform: translateX(-5px);     /* IE 9 */
+        -moz-transform: translateX(-5px);    /* Firefox */
+        -webkit-transform: translateX(-5px); /* Safari 和 Chrome */
+        -o-transform: translateX(-5px);      /* Opera */
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+        -ms-transform: translateX(5px);     /* IE 9 */
+        -moz-transform: translateX(5px);    /* Firefox */
+        -webkit-transform: translateX(5px); /* Safari 和 Chrome */
+        -o-transform: translateX(5px);      /* Opera */
+    }
+}
+
+@-webkit-keyframes shake {/* Safari 和 Chrome */
+    0%, 100% {
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);     /* IE 9 */
+        -moz-transform: translateX(0px);    /* Firefox */
+        -webkit-transform: translateX(0px); /* Safari 和 Chrome */
+        -o-transform: translateX(0px);      /* Opera */
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+        -ms-transform: translateX(-5px);     /* IE 9 */
+        -moz-transform: translateX(-5px);    /* Firefox */
+        -webkit-transform: translateX(-5px); /* Safari 和 Chrome */
+        -o-transform: translateX(-5px);      /* Opera */
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+        -ms-transform: translateX(5px);     /* IE 9 */
+        -moz-transform: translateX(5px);    /* Firefox */
+        -webkit-transform: translateX(5px); /* Safari 和 Chrome */
+        -o-transform: translateX(5px);      /* Opera */
+    }
+}
+
+@-o-keyframes shake {/* Opera */
+    0%, 100% {
+        transform: translateX(0px);
+        -ms-transform: translateX(0px);     /* IE 9 */
+        -moz-transform: translateX(0px);    /* Firefox */
+        -webkit-transform: translateX(0px); /* Safari 和 Chrome */
+        -o-transform: translateX(0px);      /* Opera */
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+        -ms-transform: translateX(-5px);     /* IE 9 */
+        -moz-transform: translateX(-5px);    /* Firefox */
+        -webkit-transform: translateX(-5px); /* Safari 和 Chrome */
+        -o-transform: translateX(-5px);      /* Opera */
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+        -ms-transform: translateX(5px);     /* IE 9 */
+        -moz-transform: translateX(5px);    /* Firefox */
+        -webkit-transform: translateX(5px); /* Safari 和 Chrome */
+        -o-transform: translateX(5px);      /* Opera */
+    }
+}
+
+
+
+
+
+
+.toblur {
+    animation: toblur 2s;
+    -moz-animation: toblur 2s; /* Firefox */
+    -webkit-animation: toblur 2s;  /* Safari 和 Chrome */
+    -o-animation: toblur 2s;   /* Opera */
+}
+.tofocus {
+    animation: tofocus 2s;
+    -moz-animation: tofocus 2s; /* Firefox */
+    -webkit-animation: tofocus 2s;  /* Safari 和 Chrome */
+    -o-animation: tofocus 2s;   /* Opera */
+}
+.shake {
+    animation: shake 1s infinite linear;
+    -moz-animation: shake 1s infinite linear; /* Firefox */
+    -webkit-animation: shake 1s infinite linear;  /* Safari 和 Chrome */
+    -o-animation: shake 1s infinite linear;   /* Opera */
+}

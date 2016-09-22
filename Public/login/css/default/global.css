@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    /*border-top: 2px solid #46ca11;*/
+    /* background-color: #f1f1f1; */
+    background-color: #f5f5f5;
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+}
+.container {
+    background-color: #FFF;
+    -webkit-box-shadow: 10px 10px 25px #CCC;
+    -moz-box-shadow: 10px 10px 25px #CCC;
+    box-shadow: 10px 10px 25px #CCC;
+}
+.breadcrumb {
+
+}
