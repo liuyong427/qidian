@@ -31,7 +31,7 @@ class LoginController extends Controller {
 	}
 	
 	public function loginIn(){
-		$this->redirect('Index/index');
+		$this->redirect('Admin/Index/index');
 	}
 	
 	public function loginOut(){

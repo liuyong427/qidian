@@ -2,11 +2,9 @@
 namespace Admin\Controller;
 use Think\Controller;
 class BaseController extends Controller {
-    public function __initialize(){
+    public function _initialize(){
 		if(!isset($_SESSION['account']) || empty($_SSESSION['account'])){
-			R('Login/index');
-			exit;
+			$this->redirect('Login/index');
 		}
-		echo 111;
 	}
 }

@@ -8,14 +8,14 @@ function switchSysBar(){
      if (1 == window.status){
 		  window.status = 0;
 		  //alert(switchPoint);
-
-          switchPoint.style.backgroundImage = 'url(images/common/left.gif)';
-          frmTitle.style.display="none"
+          
+          switchPoint.style.backgroundImage = 'url(../images/common/left.gif)';
+          frmTitle.style.display="none";
      }
      else{
 		  window.status = 1;
-          switchPoint.style.backgroundImage = 'url(images/common/right.gif)'; 
-          frmTitle.style.display=""
+          switchPoint.style.backgroundImage = 'url(../images/common/right.gif)'; 
+          frmTitle.style.display="";
      }
 }
 

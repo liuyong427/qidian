@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,7 +8,15 @@
 <meta name="generator" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<include file="files"/>
+<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
+<script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http:/css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -30,7 +38,7 @@ $(function() {
 <div class="menu_list">
 <dl>
 <dt><span>用户管理</span></dt>
-<dd><a href="__ROOT__/Admin/Users" target="main" title="用户列表">用户列表</a>
+<dd><a href="/Admin/Users" target="main" title="用户列表">用户列表</a>
 <a href="" title="二级分类">二级分类</a>
 <a href="" title="二级分类" class="active">二级分类</a>
 <a href="" title="二级分类">二级分类</a></dd>

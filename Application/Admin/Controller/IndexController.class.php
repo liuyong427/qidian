@@ -1,9 +1,17 @@
 <?php
 namespace Admin\Controller;
-use Admin\Controller\BaseController;
-class IndexController extends BaseController {
+use Think\Controller;
+class IndexController extends Controller {
     public function index(){
-        echo 222;
-        //$this->display();		
+        $this->display();		
+	}
+	public function left(){
+		$this->display();
+	}
+	public function index1(){
+		$this->display();
+	}
+	public function head(){
+		$this->display();
 	}
 }
