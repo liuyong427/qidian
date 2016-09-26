@@ -38,7 +38,7 @@ $(function() {
 <div class="menu_list">
 <dl>
 <dt><span>用户管理</span></dt>
-<dd><a href="/Admin/Users" target="main" title="用户列表">用户列表</a>
+<dd><a href="/admin.php/Users" target="main" title="用户列表">用户列表</a>
 <a href="" title="二级分类">二级分类</a>
 <a href="" title="二级分类" class="active">二级分类</a>
 <a href="" title="二级分类">二级分类</a></dd>

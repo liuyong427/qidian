@@ -17,7 +17,7 @@
                     <div class="avatar">
                         <img alt="" class="avatar img-circle hide1" src="/Public/login/img/avatar/avatar.png">
                     </div>
-                    <form action="/Admin/Login/login" method="POST">
+                    <form action="/admin.php/Login/login" method="POST">
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="fa fa-user"></span></span>

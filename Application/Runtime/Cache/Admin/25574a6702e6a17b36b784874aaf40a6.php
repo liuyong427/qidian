@@ -33,7 +33,7 @@ document.onclick = hidmenu;
 </script>
 <div class="user"><a href="javascript:showmenu(UserList)">admin</a>
 <div id="UserList"><a href="">修改</a>
-<a href="/index.php/Admin/Login/LoginOut" target="top">退出</a></div>
+<a href="/admin.php/Login/LoginOut" target="top">退出</a></div>
 </div>
 </div>
 <!-- /Head -->

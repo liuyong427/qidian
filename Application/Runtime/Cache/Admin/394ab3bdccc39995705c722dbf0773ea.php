@@ -3,10 +3,10 @@
 <head>
 </head>
 <frameset cols="260,*" cols="*" frameborder="no" border="0" framespacing="0">
-  <frame src="/Admin/Base/left" name="topFrame" scrolling="no">
+  <frame src="/admin.php/Base/left" name="topFrame" scrolling="no">
   <frameset rows="180,*" name="btFrame" frameborder="no" border="0" framespacing="0">
-    <frame src="/Admin/Base/head" noresize name="menu" scrolling="yes">
-    <frame src="/Admin/Info/index1" noresize name="main" scrolling="yes">
+    <frame src="/admin.php/Base/head" noresize name="menu" scrolling="yes">
+    <frame src="/admin.php/Info/index1" noresize name="main" scrolling="yes">
   </frameset>
 </frameset>
 <noframes>
