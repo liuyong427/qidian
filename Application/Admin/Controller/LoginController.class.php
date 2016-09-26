@@ -26,12 +26,12 @@ class LoginController extends Controller {
 		$_SESSION['account'] = $list['account'];
 		$_SESSION['userid'] = $list['id'];
 		$rs['STATUS'] = 0;
-		$rs['MSG'] = __ROOT__.'/Admin/Login/loginIn';
+		$rs['MSG'] = __ROOT__.'/admin.php/Login/loginIn';
 		$this->ajaxReturn($rs);
 	}
 	
 	public function loginIn(){
-		$this->redirect('Admin/Index/index');
+		$this->redirect('Info/index');
 	}
 	
 	public function loginOut(){

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,7 +8,15 @@
 <meta name="generator" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<include file="Base/files"/>
+<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
+<link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
+<script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script>
+
+<!--[if lt IE 9]>
+<script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http:/css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -76,25 +84,127 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <table cellpadding="0" cellspacing="0">
 <tr>
 <th>序号</th>
-<th>账号</th>
-<th>姓名</th>
-<th>上次登陆时间</th>
-<th>IP</th>
+<th>部门</th>
+<th>年度</th>
+<th>提交人</th>
+<th>预算收入（元）</th>
+<th>预算成本（元）</th>
+<th>预算费用（元）</th>
+<th>状态</th>
 <th>操作</th>
 </tr>
-<volist name="list" id="vo">
 <tr>
-<td>{$i}</td>
-<td>{$vo.account}</td>
-<td>{$vo.name}</td>
-<td>{$vo.last_login}</td>
-<td>{$vo.ip}</td>
+<td>1</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
 <td><a href="#">查看</a> | <a href="#">操作</a></td>
 </tr>
-</volist>
+<tr>
+<td>2</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cB">审核未通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>财务部</td>
+<td>2015</td>
+<td>王友强</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td>120890000.00</td>
+<td class="f_cA">审核通过</td>
+<td><a href="#">查看</a> | <a href="#">操作</a></td>
+</tr>
 </table>
 <p class="msg">共找到47条年度预算记录，当前显示从第1条至第10条</p>
-<p class="msg">{$page}</p>
 </div>
 </div>
 <!-- /MainForm -->
