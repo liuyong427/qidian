@@ -89,7 +89,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td>{$vo.name}</td>
 <td>{$vo.last_login}</td>
 <td>{$vo.ip}</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
+<td><a href="__MODULE__/Users/edit/id/{$vo.id}">编辑</a> | <a href="#">操作</a></td>
 </tr>
 </volist>
 </table>

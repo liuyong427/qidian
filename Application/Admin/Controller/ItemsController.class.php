@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class UsersController extends Controller {
+class ItemsController extends Controller {
     public function index(){
 		
 		$User = M('users');

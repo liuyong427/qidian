@@ -96,7 +96,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><?php echo ($vo["name"]); ?></td>
 <td><?php echo ($vo["last_login"]); ?></td>
 <td><?php echo ($vo["ip"]); ?></td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
+<td><a href="/admin.php/Users/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="#">操作</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 <p class="msg">共找到47条年度预算记录，当前显示从第1条至第10条</p>
