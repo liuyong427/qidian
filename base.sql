@@ -10,3 +10,13 @@ name varchar(30) not null default '',
 last_login DATETIME,
 ip varchar(20) not null default ''
 );
+
+
+#id，name，pid
+
+create table qd_items(
+id int(11) primary key auto_increment,
+name varchar(30) not null default '',
+pid int(11) not null default 0
+);
+
