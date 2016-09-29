@@ -11,7 +11,9 @@
 <link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
 <link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
 <script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
-<script src="/Public/admin/js/side.js" type="text/javascript"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script> 
+<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
+<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,94 +39,65 @@ dt.click(function(){dd.is(":hidden")?_show():_hide();});
 dd.find("a").click(function(){dt.html($(this).html());_hide();});
 $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});})})
 </script>
+<div id="navinfo">管理员信息</div>
 <div class="form_boxC">
-<table cellpadding="0" cellspacing="0">
+<table cellpadding="0" cellspacing="0" style="margin:0 auto;">
+<form id="from1" method="post" action="#">
 <tr>
-<th width="130">部门 <span class="f_cB">*</span></th>
-<td><!-- selectbox -->
+<th width="130">账号</th>
+<td>
 <div class="selectbox" style="width:400px;">
-<dl class="select">
-<dt>人单合一经营体</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
+<?php echo ($list["account"]); ?>
 </div>
-<!-- /selectbox --></td>
+</td>
 </tr>
 <tr>
-<th>发票类型</th>
-<td><input name="" type="radio" value=""> 普通发票&nbsp;&nbsp;&nbsp;
-<input name="" type="radio" value=""> 部门间调节发票</td>
+<th>姓名</th>
+<td><input type="text" class="form-control" name="name" placeholder="姓名" value="<?php echo ($list["name"]); ?>"></td>
 </tr>
 <tr>
-<th>收入类型</th>
-<td><!-- selectbox -->
-<div class="selectbox" style="width:400px;">
-<dl class="select">
-<dt>请选择...</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
+<td>
+<input type="hidden" name="id" value="<?php echo ($list["id"]); ?>">
+<div class="btn_box floatL ">
+<input name="" type="button"  class="btn btn-info" value="确定" onclick="send()">
+<input name="" type="reset" value="取消	" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'">
 </div>
-<!-- /selectbox --></td>
-</tr>
-<tr>
-<th>项目</th>
-<td><!-- selectbox -->
-<div class="selectbox" style="width:400px;">
-<dl class="select">
-<dt>请选择...</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox --></td>
-</tr>
-<tr>
-<th>合同</th>
-<td><!-- selectbox -->
-<div class="selectbox" style="width:400px;">
-<dl class="select">
-<dt>请选择...</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox --></td>
-</tr>
-<tr>
-<th>客户名称</th>
-<td><div class="txtbox floatL"><input name="" type="text" size="50"></div></td>
-</tr>
-<tr>
-<th>开票金额（元）</th>
-<td><div class="txtbox floatL"><input name="" type="text" size="15"></div></td>
-</tr>
-<tr>
-<th>内部结算单号</th>
-<td><div class="txtbox floatL"><input name="" type="text" size="30"></div></td>
+
+</td>
+
 </tr>
 </table>
+</form>
 </div>
 
+</div>
 </div>
 <!-- /MainForm -->
-
+<!-- /footer -->
+<div style="border:1px solid #eee">
+<footer>
+<address>电子邮箱：sales@haiersoft.com  技术支持：人单合一平台项目组<br>青岛海尔软件有限公司版权所有  Copyright &copy; 2015 Haiersoft Corporation, All Rights.</address>
+</footer>
+</div>
+<!-- /footer -->
 </body>
 </html>
+<script>
+function send(){
+var data=$('#from1').serialize();
+$.ajax({
+  type: "POST",
+  url: "/admin.php/Users/add",
+  data: data,
+  success:function(msg){
+     if(msg['status']==-1){
+	    alert(msg['data']);
+	 }else{
+	    alert(msg['data']);
+		window.location.href="/admin.php/Users/index";
+	 }
+  }
+});
+}
+
+</script>

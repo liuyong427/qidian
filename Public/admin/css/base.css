@@ -47,8 +47,8 @@ address{ background-color:#FFF; padding:20px 0px; text-align:center; font-style:
 #Header{background-color:#FFF;}
 #Header h1{padding:10px 0px 0px 30px;display:block;float:left;}
 #Header h1 img{display:block;}
-#Head{border-bottom:#CCC solid 1px;height:50px;}
-#Head .user{width:65px;float:right;padding:17px 10px 16px 60px;background:url(../images/common/ico_uer.gif) no-repeat 1.5em 1em;border-left:#CCC solid 1px;position:relative;z-index:999;}
+#Head{border-bottom:#CCC solid 1px;height:50px;border:1px solid red;}
+#Head .user{width:65px;float:right;padding:17px 10px 16px 60px;background:url(../images/common/ico_uer.gif) no-repeat 1.5em 1em;border-left:#CCC solid 1px;position:relative;z-index:999;border:1px solid green;}
 #Head .user a{display:block;padding-right:22px;background:url(../images/common/ico_arrow01.gif) no-repeat right center;color:#333;text-decoration:none;}
 #Head #UserList{position:absolute;visibility:hidden;z-index:888;background-color:#f1f1f1;width:65px;}
 #Head #UserList a{display:block;padding:4px 5px 3px 15px;background-image:none;}
@@ -157,3 +157,7 @@ address{ background-color:#FFF; padding:20px 0px; text-align:center; font-style:
 #Popup #BtmBtn{ padding:15px 20px;border-top:#e3e3e3 solid 1px;}
 #SubPopup{ padding:20px;}
 #maskTitle{ background-color:#e5e5e5 !important; background-image:none !important;}
+
+
+#navinfo{padding:10px 20px;background:#add8e6;font-size:16px;margin-bottom:20px;}
+.text-middle{text-align:center;}

@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class UsersController extends Controller {
+class UsersController extends BaseController {
     public function index(){
 		
 		$User = M('users');
@@ -33,15 +33,15 @@ class UsersController extends Controller {
 			unset($data['id']);
 			$where['id'] = $_POST['id'];
 			if(M('users')->where($where)->save($data)){
-				$this->success('Users/index',1);
+				$this->ajaxReturn(1,'修改成功','');
 			}else{
-				//$this->error('Users')
+				$this->ajaxReturn(-1,'修改失败','');
 			}
 		}else{
 			if(M('users')->add($data)){
-				$msg = '添加成功';
+				$this->ajaxReturn(1,'添加成功','');
 			}else{
-				$msg = '添加失败';
+				$this->ajaxReturn(1,'添加成功','');
 			}
 		}
 	}

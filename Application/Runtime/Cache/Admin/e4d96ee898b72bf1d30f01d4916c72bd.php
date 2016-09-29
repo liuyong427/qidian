@@ -11,7 +11,9 @@
 <link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
 <link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
 <script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
-<script src="/Public/admin/js/side.js" type="text/javascript"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script> 
+<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
+<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -11,7 +11,9 @@
 <link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
 <link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
 <script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
-<script src="/Public/admin/js/side.js" type="text/javascript"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script> 
+<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
+<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -55,29 +57,6 @@ $(function() {
 <a href="" title="二级分类">二级分类</a>
 <a href="" title="二级分类">二级分类</a></dd>
 
-<dt><span>一级分类名称</span></dt>
-<dd><a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
-
-<dt><span>一级分类名称</span></dt>
-<dd><a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
-
-<dt><span>一级分类名称</span></dt>
-<dd><a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
-
-<dt><span>一级分类名称</span></dt>
-<dd><a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
 </dl>
 </div>
 <!-- /menu_list -->
