@@ -25,6 +25,11 @@ class LoginController extends Controller {
 		}
 		$_SESSION['account'] = $list['account'];
 		$_SESSION['userid'] = $list['id'];
+		
+		$info['last_login'] = date('Y-m-d H:i:s',time());
+		$info['ip'] = $_SERVER["REMOTE_ADDR"];;
+		M('users')->where('id='.$list['id'])->save($info);
+		
 		$rs['STATUS'] = 0;
 		$rs['MSG'] = __ROOT__.'/admin.php/Login/loginIn';
 		$this->ajaxReturn($rs);

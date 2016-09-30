@@ -40,16 +40,16 @@ $(function() {
 <div class="menu_list">
 <dl>
 <dt><span>用户管理</span></dt>
-<dd><a href="/admin.php/Users" target="main" title="用户列表">用户列表</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类" class="active">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
+<dd>
+<a href="/admin.php/Users" target="main" title="用户列表">用户列表</a>
+<a href="/admin.php/Users/edit" target="main" title="用户添加">用户添加</a>
+</dd>
 
-<dt><span>一级分类名称</span></dt>
-<dd><a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a>
-<a href="" title="二级分类">二级分类</a></dd>
+<dt><span>栏目管理</span></dt>
+<dd>
+<a href="/admin.php/Items" target="main" title="栏目列表">栏目列表</a>
+<a href="/admin.php/Items/edit" target="main" title="栏目添加">栏目添加</a>
+</dd>
 
 <dt><span>一级分类名称</span></dt>
 <dd><a href="" title="二级分类">二级分类</a>

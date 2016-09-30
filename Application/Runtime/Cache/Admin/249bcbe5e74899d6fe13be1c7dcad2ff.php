@@ -46,9 +46,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <tr>
 <th width="130">账号</th>
 <td>
-<div class="selectbox" style="width:400px;">
-<?php echo ($list["account"]); ?>
-</div>
+<input type="text" class="form-control" name="account" placeholder="账号" value="<?php echo ($list["account"]); ?>" <?php if($list["id"] != null): ?>disabled<?php endif; ?>>
 </td>
 </tr>
 <tr>
@@ -60,7 +58,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <input type="hidden" name="id" value="<?php echo ($list["id"]); ?>">
 <div class="btn_box floatL ">
 <input name="" type="button"  class="btn btn-info" value="确定" onclick="send()">
-<input name="" type="reset" value="取消	" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'">
+<input name="" type="reset" value="取消">
 </div>
 
 </td>
@@ -91,9 +89,9 @@ $.ajax({
   data: data,
   success:function(msg){
      if(msg['status']==-1){
-	    alert(msg['data']);
+	    alert(msg['info']);
 	 }else{
-	    alert(msg['data']);
+	    alert(msg['info']);
 		window.location.href="/admin.php/Users/index";
 	 }
   }

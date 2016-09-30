@@ -24,10 +24,8 @@
 <body>
 
 
-<!-- wrap_right -->
-
-<!-- Contents -->
-<div id="Contents">
+<!-- MainForm -->
+<div id="MainForm">
 <script type="text/javascript">
 $(function(){
 $(".select").each(function(){
@@ -41,75 +39,41 @@ dt.click(function(){dd.is(":hidden")?_show():_hide();});
 dd.find("a").click(function(){dt.html($(this).html());_hide();});
 $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});})})
 </script>
-<!-- TopMain -->
-<div id="TopMain">
-<!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">年度：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox -->
-
-<!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">部门：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox -->
-
-<!-- btn_box -->
-<div class="btn_box floatL"><input name="" type="button" value="查询" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"></div>
-<!-- /btn_box -->
-
-<span><a class="btn btn-info mleft50" href="/admin.php/Users/edit" role="button">添加</a></span>
-</div>
-<!-- /TopMain -->
-
-<!-- MainForm -->
-<div id="MainForm">
-<div class="form_boxA">
-<h2>管理人员</h2>
-<table cellpadding="0" cellspacing="0">
+<div id="navinfo">栏目信息</div>
+<div class="form_boxC">
+<table cellpadding="0" cellspacing="0" style="margin:0 auto;">
+<form id="from1" method="post" action="#">
 <tr>
-<th>序号</th>
-<th>账号</th>
-<th>姓名</th>
-<th>上次登陆时间</th>
-<th>IP</th>
-<th>操作</th>
+<th width="130">上级栏目</th>
+<td>
+  <select class="form-control" name="pid" <?php if($list["id"] != null): ?>disabled<?php endif; ?>>
+      <option value="0">顶级栏目</option>
+      <?php if(is_array($lmlist)): $i = 0; $__LIST__ = $lmlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if(($vo["id"]) == $list["pid"]): ?>selected<?php endif; ?>>&nbsp;&nbsp;<?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+    </select>
+</td>
 </tr>
-<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-<td><?php echo ($i); ?></td>
-<td><?php echo ($vo["account"]); ?></td>
-<td><?php echo ($vo["name"]); ?></td>
-<td><?php echo ($vo["last_login"]); ?></td>
-<td><?php echo ($vo["ip"]); ?></td>
-<td><a href="/admin.php/Users/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Users/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
-</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-</table>
+<tr>
+<th>栏目名称</th>
+<td><input type="text" class="form-control" name="name" placeholder="栏目名称" value="<?php echo ($list["name"]); ?>"></td>
+</tr>
+<tr>
+<td>
+<input type="hidden" name="id" value="<?php echo ($list["id"]); ?>">
+<div class="btn_box floatL ">
+<input name="" type="button"  class="btn btn-info" value="确定" onclick="send()">
+<input name="" type="reset" value="取消">
+</div>
 
-<div class="page"><?php echo ($page); ?></div>
+</td>
+
+</tr>
+</table>
+</form>
+</div>
+
 </div>
 </div>
 <!-- /MainForm -->
-</div>
-
 <!-- /footer -->
 <div style="border:1px solid #eee">
 <footer>
@@ -119,3 +83,22 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- /footer -->
 </body>
 </html>
+<script>
+function send(){
+var data=$('#from1').serialize();
+$.ajax({
+  type: "POST",
+  url: "/admin.php/Items/add",
+  data: data,
+  success:function(msg){
+     if(msg['status']==-1){
+	    alert(msg['info']);
+	 }else{
+	    alert(msg['info']);
+		window.location.href="/admin.php/Items/index";
+	 }
+  }
+});
+}
+
+</script>

@@ -84,30 +84,28 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- MainForm -->
 <div id="MainForm">
 <div class="form_boxA">
-<h2>管理人员</h2>
+<h2>栏目列表</h2>
 <table cellpadding="0" cellspacing="0">
 <tr>
 <th>序号</th>
-<th>账号</th>
-<th>姓名</th>
-<th>上次登陆时间</th>
-<th>IP</th>
+<th>栏目名称</th>
 <th>操作</th>
 </tr>
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
-<td><?php echo ($vo["account"]); ?></td>
 <td><?php echo ($vo["name"]); ?></td>
-<td><?php echo ($vo["last_login"]); ?></td>
-<td><?php echo ($vo["ip"]); ?></td>
-<td><a href="/admin.php/Users/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Users/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+
+<td><a href="/admin.php/Items/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Items/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 
-<div class="page"><?php echo ($page); ?></div>
+<p class="page"><?php echo ($page); ?></p>
 </div>
 </div>
 <!-- /MainForm -->
+
+
+
 </div>
 
 <!-- /footer -->
