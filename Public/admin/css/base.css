@@ -5,7 +5,7 @@ h2{}
 h3{}
 h4{}
 .clr{clear:both;}
-.floatL{float:left;}
+.floatL{float:left;margin-left:10px;}
 .floatR{float:right;}
 .alignL{text-align:left;}
 .alignR{text-align:right;}

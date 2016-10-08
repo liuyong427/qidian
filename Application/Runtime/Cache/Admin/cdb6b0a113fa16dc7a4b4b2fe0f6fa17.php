@@ -43,39 +43,15 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </script>
 <!-- TopMain -->
 <div id="TopMain">
-<!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">年度：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox -->
+<form method="post" action="/admin.php/Users/index">
 
-<!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">部门：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox -->
+
+<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="account" placeholder="账号"></div>
 
 <!-- btn_box -->
-<div class="btn_box floatL"><input name="" type="button" value="查询" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"></div>
+<div class="btn_box floatL"><input type="submit" value="查询" ></div>
 <!-- /btn_box -->
+</form>
 
 <span><a class="btn btn-info mleft50" href="/admin.php/Users/edit" role="button">添加</a></span>
 </div>
@@ -89,12 +65,13 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <tr>
 <th>序号</th>
 <th>栏目名称</th>
+<th>上级栏目</th>
 <th>操作</th>
 </tr>
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
 <td><?php echo ($vo["name"]); ?></td>
-
+<td><?php echo ($vo["pname"]); ?></td>
 <td><a href="/admin.php/Items/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Items/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
