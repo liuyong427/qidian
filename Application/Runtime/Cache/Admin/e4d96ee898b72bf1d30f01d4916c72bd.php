@@ -14,6 +14,9 @@
 <script src="/Public/admin/js/side.js" type="text/javascript"></script> 
 <link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
 <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/Public/kindeditor/lang/zh-CN.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,37 +47,9 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- TopMain -->
 <div id="TopMain">
 <!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">年度：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
-<!-- /selectbox -->
-
-<!-- selectbox -->
-<div class="selectbox floatL mag_r20">
-<span class="sttl">部门：</span>
-<dl class="select" style="width:200px;">
-<dt>全部</dt>
-<dd><ul>
-<li><a href="#">选项选项A</a></li>
-<li><a href="#">选项选项B</a></li>
-<li><a href="#">选项选项C</a></li>
-<li><a href="#">选项选项D</a></li>
-<li><a href="#">选项选项E</a></li>
-</ul></dd></dl>
-</div>
 <!-- /selectbox -->
 
 <!-- btn_box -->
-<div class="btn_box floatL"><input name="" type="button" value="查询" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"></div>
 <!-- /btn_box -->
 </div>
 <!-- /TopMain -->
@@ -213,17 +188,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 
 
 <!-- PageNum -->
-<ul id="PageNum">
-<li><a href="">首页</a></li>
-<li><a href="">上一页</a></li>
-<li><a href="">1</a></li>
-<li><a href="">2</a></li>
-<li><a href="">3</a></li>
-<li><a href="">4</a></li>
-<li><a href="">5</a></li>
-<li><a href="">6</a></li>
-<li><a href="">下一页</a></li>
-<li><a href="">尾页</a></li>
+
 </ul>
 <!-- /PageNum -->
 </div>

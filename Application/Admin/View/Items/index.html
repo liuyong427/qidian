@@ -33,17 +33,18 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </script>
 <!-- TopMain -->
 <div id="TopMain">
-<form method="post" action="__MODULE__/Users/index">
+<form method="post" action="__MODULE__/Items/index">
 
 
-<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="account" placeholder="账号"></div>
+<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="name" placeholder="栏目名称"></div>
+
 
 <!-- btn_box -->
 <div class="btn_box floatL"><input type="submit" value="查询" ></div>
 <!-- /btn_box -->
 </form>
 
-<span><a class="btn btn-info mleft50" href="__MODULE__/Users/edit" role="button">添加</a></span>
+<span><a class="btn btn-info mleft50" href="__MODULE__/Items/edit" role="button">添加</a></span>
 </div>
 <!-- /TopMain -->
 
@@ -68,7 +69,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </volist>
 </table>
 
-<p class="page">{$page}</p>
+<div class="page">{$page}</div>
 </div>
 </div>
 <!-- /MainForm -->

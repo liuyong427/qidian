@@ -14,6 +14,9 @@
 <script src="/Public/admin/js/side.js" type="text/javascript"></script> 
 <link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
 <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/Public/kindeditor/lang/zh-CN.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,17 +46,18 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </script>
 <!-- TopMain -->
 <div id="TopMain">
-<form method="post" action="/admin.php/Users/index">
+<form method="post" action="/admin.php/Items/index">
 
 
-<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="account" placeholder="账号"></div>
+<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="name" placeholder="栏目名称"></div>
+
 
 <!-- btn_box -->
 <div class="btn_box floatL"><input type="submit" value="查询" ></div>
 <!-- /btn_box -->
 </form>
 
-<span><a class="btn btn-info mleft50" href="/admin.php/Users/edit" role="button">添加</a></span>
+<span><a class="btn btn-info mleft50" href="/admin.php/Items/edit" role="button">添加</a></span>
 </div>
 <!-- /TopMain -->
 
@@ -76,7 +80,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 
-<p class="page"><?php echo ($page); ?></p>
+<div class="page"><?php echo ($page); ?></div>
 </div>
 </div>
 <!-- /MainForm -->

@@ -14,6 +14,9 @@
 <script src="/Public/admin/js/side.js" type="text/javascript"></script> 
 <link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
 <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/Public/kindeditor/lang/zh-CN.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -8,7 +8,7 @@ class ItemsController extends BaseController {
 		}
 		if($_POST){
 			unset($_SESSION['search']);
-		    $where['id'] = $_SESSION['id'];
+		    $where['name'] = array('like',"%".I('post.name')."%");
 		}
 		if($_SESSION['search']){
 			$where = $_SESSION['search'];
@@ -27,7 +27,8 @@ class ItemsController extends BaseController {
 		$Page->setConfig('last','最后一页');
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-		$list = $User->limit($Page->firstRow.','.$Page->listRows)->select();
+		//$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		$list = $this->tree();
         foreach($list as $k=>$v){
 			if($v['pid'] == 0){
 				$list[$k]['pname'] = '';
@@ -78,22 +79,26 @@ class ItemsController extends BaseController {
 	
 	public function del(){
 		$id = I('get.id');
-		echo $id;exit;
 		if(!$id){
 			$this->error('删除失败');
+		}
+		$num = M('items')->where('pid='.$id)->count();
+		if($num>0){
+			$this->error('存在下级栏目，不能被删除');
 		}
 		M('items')->where('id='.$id)->delete();
 		$this->redirect('Items/index');
 	}
 	
-	public function tree($list,$pid =0,$num=0){
+	public function tree($pid =0,$num=0){
 		$data=array();
 		$list = M('items')->where('pid='.$pid)->select();
 		//print_R($list);
+
 		foreach($list as $v){
-			
+			$v['name'] = str_repeat('&nbsp;&nbsp;',$num).$v['name'];
 			$data[]=$v;
-			//$data=array_merge($data,$this->tree($v['pid']));
+			$data=array_merge($data,$this->tree($v['id'],$num+4));
 		}
 		return $data;
 	}
