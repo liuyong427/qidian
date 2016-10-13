@@ -48,7 +48,7 @@ class ItemsController extends BaseController {
 			$list = M('items')->where('id='.$id)->find();
 			$this->assign('list',$list);
 		}
-		$lmlist = M('Items')->where('pid=0')->select();
+		$lmlist = $this->tree();
 		$this->assign('lmlist',$lmlist);
 		$this->display();
 	}

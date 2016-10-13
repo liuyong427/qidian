@@ -76,7 +76,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <th>栏目</th>
 <td>
 	<select class="form-control" name="item_id">
-	  <option>请选择</option>
+	  <option value="">请选择</option>
 	  <?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 	</select>
 </td>

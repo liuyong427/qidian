@@ -53,7 +53,16 @@ class NewsController extends BaseController {
 	    $this->assign('items',$items);
 		$this->display();
 	}
-	
+	public function edit1(){
+		$id = $_GET['id']? intval($_GET['id']):'';
+		if($id){
+			$list = M('news')->where('id='.$id)->find();
+			$this->assign('list',$list);
+		}
+		$items = R('Items/tree');
+	    $this->assign('items',$items);
+		$this->display();
+	}
 	public function add(){
 		$data = $_POST;
 		$image = new \Think\Image();
@@ -75,6 +84,8 @@ class NewsController extends BaseController {
 				$rdata['info'] = '修改失败';
 			}
 		}else{
+			$data['userid'] = $_SESSION['userid'];
+			$data['add_time'] = date('Y-m-d H:i:s',time());
 			if(M('news')->add($data)){
 				$rdata['status'] =1;
 				$rdata['info'] = '添加成功';
