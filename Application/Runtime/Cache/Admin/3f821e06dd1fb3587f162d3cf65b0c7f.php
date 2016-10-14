@@ -56,7 +56,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <table cellpadding="0" cellspacing="0" style="margin:0 auto;width:1000px;">
 <form id="from1" method="post" action="#" enctype="multipart/form-data" >
 <tr>
-<th width="130">标题</th>
+<th width="130px">标题</th>
 <td>
 <input type="text"  class="form-control" name="title" placeholder="标题" value="<?php echo ($list["title"]); ?>">
 </td>
@@ -83,39 +83,13 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><input type="text" name="small_img" id="url" value="<?php echo ($list["small_img"]); ?>" /> <input type="button" id="image" value="选择图片" /></td>
 </tr>
 <tr>
-<th style="">内容</th>
-<td>
-    <div id="content" class="w900 border-style1 bg">
-        <div class="section">
-            <p class="link">
-                <!--<span>更多演示: </span>-->
-                <!--<a href="onlinedemo.html">完整版</a>&nbsp;-->
-                <!--<a href="onlinedemo-charts.html">表格数据生成图表</a>&nbsp;-->
-                <!--<a href="onlinedemo-sortable.html">表格排序</a>&nbsp;-->
-                <!--<a href="onlinedemo-section.html">生成目录大纲</a>&nbsp;-->
-                <!--[<a href="./examples">更多演示</a>]-->
-                <a class="uploadhelp" href="javascript:void(0)" style="display:none;">[word导入介绍]</a>
-                <a href="./examples">[更多演示]</a>
-            </p>
+<th>内容</th>
+<td style="width:870px;">
 
-            <h3 class="demotitle">UEditor - 完整示例</h3>
-
-            <p class="note">
-                <span class="remind">注：线上演示版上传功能只作为功能演示，1.4.3以上版本将不再承诺支持ie6/ie7。</span>
-                <span id="uploadbtn" class="uploadbtn" style="display:none;">导入word文档</span>
-                <span class="uploadcount" style="display:none;"></span>
-                <span style="color:#1AA304;float:right;"><a href="http://word.baidu.com" style="color:red;">百度doc</a> 测试版已上线，欢迎试用和反馈!</span>
-                <span class="clearfix"></span>
-            </p>
-
-            <div class="details">
-                <div>
-                    <script type="text/plain" id="editor"></script>
-                    <div class="con-split"></div>
-                </div>
-            </div>
-        </div>
-
+           <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
 
 </td>
 </tr>
@@ -154,8 +128,9 @@ var title= $("input[name='title']").val();
 var keyword= $("input[name='keyword']").val();
 var description= $("textarea[name='description']").val();
 var small_img= $("input[name='small_img']").val();
-var content= editor.html();
-
+//var content= editor.html();
+var ue = UE.getContent();
+var content= ue.getContent();alert(content);return;
 $.ajax({
   type: "POST",
   url: "/admin.php/News/add",
@@ -171,4 +146,8 @@ $.ajax({
 });
 }
 
+</script>
+ <!-- 实例化编辑器 -->
+<script type="text/javascript">
+var ue = UE.getEditor('container');
 </script>

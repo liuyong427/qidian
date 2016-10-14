@@ -43,7 +43,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <table cellpadding="0" cellspacing="0" style="margin:0 auto;width:1000px;">
 <form id="from1" method="post" action="#" enctype="multipart/form-data" >
 <tr>
-<th width="130">标题</th>
+<th width="130px">标题</th>
 <td>
 <input type="text"  class="form-control" name="title" placeholder="标题" value="{$list.title}">
 </td>
@@ -72,14 +72,14 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><input type="text" name="small_img" id="url" value="{$list.small_img}" /> <input type="button" id="image" value="选择图片" /></td>
 </tr>
 <tr>
-<th style="">内容</th>
-<td>
-  <div class="details">
-                <div>
-                    <script type="text/plain" id="editor"></script>
-                    <div class="con-split"></div>
-                </div>
-   </div>
+<th>内容</th>
+<td style="width:870px;">
+
+           <!-- 加载编辑器的容器 -->
+    <script id="container" name="content" type="text/plain">
+        这里写你的初始化内容
+    </script>
+
 </td>
 </tr>
 <tr>
@@ -111,8 +111,9 @@ var title= $("input[name='title']").val();
 var keyword= $("input[name='keyword']").val();
 var description= $("textarea[name='description']").val();
 var small_img= $("input[name='small_img']").val();
-var content= editor.html();
-
+//var content= editor.html();
+var ue = UE.getContent();
+var content= ue.getContent();alert(content);return;
 $.ajax({
   type: "POST",
   url: "__MODULE__/News/add",
@@ -128,4 +129,8 @@ $.ajax({
 });
 }
 
+</script>
+ <!-- 实例化编辑器 -->
+<script type="text/javascript">
+var ue = UE.getEditor('container');
 </script>
