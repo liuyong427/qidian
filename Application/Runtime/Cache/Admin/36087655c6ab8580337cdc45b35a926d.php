@@ -7,16 +7,14 @@
 <meta name="description" content="" />
 <meta name="generator" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css" media="screen,print" />
-<link href="/Public/admin/css/print.css" rel="stylesheet" type="text/css"  media="print" />
+<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css"/>
 <script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
 <script src="/Public/admin/js/side.js" type="text/javascript"></script> 
 <link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
 <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
 <script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
-<script charset="utf-8" src="/Public/kindeditor/lang/zh-CN.js"></script>
+<script charset="utf-8" src="/Public/kindeditor/lang/zh_CN.js"></script>
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -84,7 +82,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><img src="<?php echo ($vo["small_img"]); ?>" /></td>
 <td><?php echo ($vo["item_name"]); ?></td>
 <td><?php echo ($vo["description"]); ?></td>
-<td><a href="/admin.php/News/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+<td><a href="/admin.php/News/edit1/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 
