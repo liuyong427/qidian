@@ -38,7 +38,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="title" placeholder="标题"></div>
 <div class=" floatL">
 	<select class="form-control" name="item_id">
-	  <option>请选择</option>
+	  <option value="">请选择</option>
 	  <volist name="items" id="vo">
 	  <option value="{$vo.id}">{$vo.name}</option>
 	  </volist>

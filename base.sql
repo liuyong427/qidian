@@ -33,3 +33,13 @@ add_time datetime,
 userid int(11),
 key item_id(item_id)
 );
+
+create table qd_emails(
+id int(11) primary key auto_increment,
+name varchar(100) not null default '',
+phone varchar(15) not null default '',
+email varchar(100) not null default '',
+content varchar(2000) not null default '',
+add_time datetime,
+status int(1)
+);

@@ -660,7 +660,7 @@
           <div class="divide50"></div>
           <div class="form-container">
             <div class="response alert alert-success"></div>
-            <form class="forms" action="contact/form-handler.php" method="post">
+            <form class="forms" action="/Index/Apply/add" method="post">
               <fieldset>
                 <ol class="row">
                   <li class="form-row text-input-row name-field col-sm-6">
