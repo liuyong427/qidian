@@ -1,7 +1,7 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class EmailController extends BaseController {
+class EmailsController extends BaseController {
     public function index(){
 		if(empty($_GET)){
 			unset($_SESSION['search']);
@@ -20,7 +20,7 @@ class EmailController extends BaseController {
 		}else{
 			$_SESSION['search'] = $where;
 		} 
-		$User = M('users');
+		$User = M('emails');
 		//$User = M('User'); // 实例化User对象
 		$count = $User->count();// 查询满足要求的总记录数
 		$Page = new \Think\Page($count,20);// 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -40,7 +40,7 @@ class EmailController extends BaseController {
 	public function edit(){
 		$id = $_GET['id']? intval($_GET['id']):'';
 		if($id){
-			$list = M('users')->where('id='.$id)->find();
+			$list = M('emails')->where('id='.$id)->find();
 			$this->assign('list',$list);
 		}
 		$this->display();
@@ -51,7 +51,7 @@ class EmailController extends BaseController {
 		if($_POST['id']){
 			unset($data['id']);
 			$where['id'] = $_POST['id'];
-			if(M('users')->where($where)->save($data)){
+			if(M('emails')->where($where)->save($data)){
 				$rdata['status'] =1;
 				$rdata['info'] = '修改成功';
 			}else{
@@ -59,7 +59,7 @@ class EmailController extends BaseController {
 				$rdata['info'] = '修改失败';
 			}
 		}else{
-			if(M('users')->add($data)){
+			if(M('emails')->add($data)){
 				$rdata['status'] =1;
 				$rdata['info'] = '添加成功';
 			}else{
@@ -75,7 +75,7 @@ class EmailController extends BaseController {
 		if(!$id){
 			$this->error('删除失败');
 		}
-		M('users')->where('id='.$id)->delete();
-		$this->redirect('Users/index');
+		M('emails')->where('id='.$id)->delete();
+		$this->redirect('Emails/index');
 	}
 }

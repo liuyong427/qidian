@@ -55,7 +55,9 @@ $(function() {
 <dt><span>文章管理</span></dt>
 <dd><a href="/admin.php/News" target="main" title="文章列表">文章列表</a>
 <a href="/admin.php/News/edit" target="main" title="添加文章">添加文章</a>
-<a href="/admin.php/News/edit1" target="main" title="添加文章">添加文章1</a>
+
+<dt><span>客户邮件</span></dt>
+<dd><a href="/admin.php/Emails" target="main" title="邮件列表">邮件列表</a>
 
 </dl>
 </div>

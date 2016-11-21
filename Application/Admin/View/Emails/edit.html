@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="generator" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<include file="Base/files"/>
+</head>
+
+<body>
+
+
+<!-- MainForm -->
+<div id="MainForm">
+<div id="navinfo">邮件信息</div>
+<div class="form_boxC">
+<table cellpadding="0" cellspacing="0" style="margin:0 auto;width:500px;">
+<form id="from1" method="post" action="#">
+<tr>
+<th width="130">姓名</th>
+<td>
+<input type="text" class="form-control" name="name" placeholder="姓名" value="{$list.name}">
+</td>
+</tr>
+<tr>
+<tr>
+<th>电话</th>
+<td><input type="text" class="form-control" name="phone" placeholder="电话" value="{$list.phone}"></td>
+</tr>
+<tr>
+<th>邮箱</th>
+<td><input type="text" class="form-control" name="email" placeholder="邮箱" value="{$list.email}"></td>
+</tr>
+<tr>
+<th>状态</th>
+<td>
+  <select name="status">
+     <option value="0"	 <if condition="$vo.status eq 0">selected</if> >未审核</option>
+	 <option value="1" <if condition="$vo.status eq 1">selected</if> >已审核</option>
+  </select>
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td><textarea class="form-control" name="content" rows="6">{$list.content}</textarea></td>
+</tr>
+<tr>
+<td>
+<input type="hidden" name="id" value="{$list.id}">
+<div class="btn_box floatL ">
+<input name="" type="button"  class="btn btn-info" value="确定" onclick="send()">
+<input name="" type="reset" value="取消">
+</div>
+
+</td>
+
+</tr>
+</table>
+</form>
+</div>
+
+</div>
+</div>
+<!-- /MainForm -->
+<include file="Base/footer" />
+</body>
+</html>
+<script>
+function send(){
+var data=$('#from1').serialize();
+$.ajax({
+  type: "POST",
+  url: "__MODULE__/Emails/add",
+  data: data,
+  success:function(msg){
+     if(msg['status']==-1){
+	    alert(msg['info']);
+	 }else{
+	    alert(msg['info']);
+		window.location.href="__MODULE__/Emails/index";
+	 }
+  }
+});
+}
+
+</script>

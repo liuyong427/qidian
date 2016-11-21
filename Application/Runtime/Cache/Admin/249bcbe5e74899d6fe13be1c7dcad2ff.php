@@ -75,7 +75,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- /footer -->
 <div style="border:1px solid #eee">
 <footer>
-<address>电子邮箱：sales@haiersoft.com  技术支持：人单合一平台项目组<br>青岛海尔软件有限公司版权所有  Copyright &copy; 2015 Haiersoft Corporation, All Rights.</address>
+<address>成都启点科技</address>
 </footer>
 </div>
 <!-- /footer -->

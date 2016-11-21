@@ -68,11 +68,19 @@ class NewsController extends BaseController {
 		$image = new \Think\Image();
 		$img = $data['small_img'];
 		if($img){
-			//echo __ROOT__.$img;
+			$dirname = './upload/small_img';
+			if(!is_dir($dirname)){
+				mkdir($dirname,0777,true);
+			}
+			$small_img = $dirname.'/'.basename($img);
 			$image->open('./'.$img);
-		    $image->thumb(150, 150)->save('./'.$img);
+		    $image->thumb(150, 150)->save('./'.$small_img);
 		}
-		$data['small_img'] = $img;
+		if($img !=$small_img){
+			unlink($img);
+		}
+
+		$data['small_img'] = $small_img;
 		if($_POST['id']){
 			unset($data['id']);
 			$where['id'] = $_POST['id'];

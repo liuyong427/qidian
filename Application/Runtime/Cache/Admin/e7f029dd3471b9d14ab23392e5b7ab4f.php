@@ -44,43 +44,51 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </script>
 <!-- TopMain -->
 <div id="TopMain">
-<form method="post" action="/admin.php/Users/index">
+<form method="post" action="/admin.php/News/index">
 
 
-<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="account" placeholder="账号"></div>
-<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="name" placeholder="姓名"></div>
+<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="title" placeholder="标题"></div>
+<div class=" floatL">
+	<select class="form-control" name="item_id">
+	  <option value="">请选择</option>
+	  <?php if(is_array($items)): $i = 0; $__LIST__ = $items;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	</select>
+</div>
 
 <!-- btn_box -->
 <div class="btn_box floatL"><input type="submit" value="查询" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"></div>
 <!-- /btn_box -->
 </form>
-<span><a class="btn btn-info mleft50" href="/admin.php/Users/edit" role="button">添加</a></span>
+<span><a class="btn btn-info mleft50" href="/admin.php/News/edit" role="button">添加</a></span>
 </div>
 <!-- /TopMain -->
 
 <!-- MainForm -->
 <div id="MainForm">
 <div class="form_boxA">
-<h2>管理人员</h2>
+<h2>文章列表</h2>
 <table cellpadding="0" cellspacing="0">
 <tr>
 <th>序号</th>
-<th>账号</th>
 <th>姓名</th>
-<th>上次登陆时间</th>
-<th>IP</th>
+<th>电话</th>
+<th>邮箱</th>
+<th>内容</th>
+<th>时间</th>
+<th>状态</th>
 <th>操作</th>
 </tr>
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
-<td><?php echo ($vo["account"]); ?></td>
 <td><?php echo ($vo["name"]); ?></td>
-<td><?php echo ($vo["last_login"]); ?></td>
-<td><?php echo ($vo["ip"]); ?></td>
-<td><a href="/admin.php/Users/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Users/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+<td><?php echo ($vo["phone"]); ?></td>
+<td><?php echo ($vo["email"]); ?></td>
+<td><?php echo ($vo["content"]); ?></td>
+<td><?php echo ($vo["add_time"]); ?></td>
+<td><?php if($vo["status"] == 0): ?><span class="f_cB">未审核</span><?php else: ?><span class="f_cA">已审核</span><?php endif; ?></td>
+<td><a href="/admin.php/Emails/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/Emails/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
-
 <div class="page"><?php echo ($page); ?></div>
 </div>
 </div>

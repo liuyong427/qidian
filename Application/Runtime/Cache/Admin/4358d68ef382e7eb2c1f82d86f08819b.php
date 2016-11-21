@@ -27,35 +27,37 @@
 
 <!-- MainForm -->
 <div id="MainForm">
-<script type="text/javascript">
-$(function(){
-$(".select").each(function(){
-var s=$(this);
-var z=parseInt(s.css("z-index"));
-var dt=$(this).children("dt");
-var dd=$(this).children("dd");
-var _show=function(){dd.slideDown(200);dt.addClass("cur");s.css("z-index",z+1);};
-var _hide=function(){dd.slideUp(200);dt.removeClass("cur");s.css("z-index",z);};
-dt.click(function(){dd.is(":hidden")?_show():_hide();});
-dd.find("a").click(function(){dt.html($(this).html());_hide();});
-$("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hide():"";});})})
-</script>
-<div id="navinfo">栏目信息</div>
+<div id="navinfo">邮件信息</div>
 <div class="form_boxC">
-<table cellpadding="0" cellspacing="0" style="margin:0 auto;">
+<table cellpadding="0" cellspacing="0" style="margin:0 auto;width:500px;">
 <form id="from1" method="post" action="#">
 <tr>
-<th width="130">上级栏目</th>
+<th width="130">姓名</th>
 <td>
-  <select class="form-control" name="pid" <?php if($list["id"] != null): ?>disabled<?php endif; ?>>
-      <option value="0">顶级栏目</option>
-      <?php if(is_array($lmlist)): $i = 0; $__LIST__ = $lmlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if(($vo["id"]) == $list["pid"]): ?>selected<?php endif; ?>>&nbsp;&nbsp;<?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-    </select>
+<input type="text" class="form-control" name="name" placeholder="姓名" value="<?php echo ($list["name"]); ?>">
 </td>
 </tr>
 <tr>
-<th>栏目名称</th>
-<td><input type="text" class="form-control" name="name" placeholder="栏目名称" value="<?php echo ($list["name"]); ?>"></td>
+<tr>
+<th>电话</th>
+<td><input type="text" class="form-control" name="phone" placeholder="电话" value="<?php echo ($list["phone"]); ?>"></td>
+</tr>
+<tr>
+<th>邮箱</th>
+<td><input type="text" class="form-control" name="email" placeholder="邮箱" value="<?php echo ($list["email"]); ?>"></td>
+</tr>
+<tr>
+<th>状态</th>
+<td>
+  <select name="status">
+     <option value="0"	 <?php if($vo["status"] == 0): ?>selected<?php endif; ?> >未审核</option>
+	 <option value="1" <?php if($vo["status"] == 1): ?>selected<?php endif; ?> >已审核</option>
+  </select>
+</td>
+</tr>
+<tr>
+<th>内容</th>
+<td><textarea class="form-control" name="content" rows="6"><?php echo ($list["content"]); ?></textarea></td>
 </tr>
 <tr>
 <td>
@@ -89,14 +91,14 @@ function send(){
 var data=$('#from1').serialize();
 $.ajax({
   type: "POST",
-  url: "/admin.php/Items/add",
+  url: "/admin.php/Emails/add",
   data: data,
   success:function(msg){
      if(msg['status']==-1){
 	    alert(msg['info']);
 	 }else{
 	    alert(msg['info']);
-		window.location.href="/admin.php/Items/index";
+		window.location.href="/admin.php/Emails/index";
 	 }
   }
 });

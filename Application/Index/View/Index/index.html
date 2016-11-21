@@ -215,27 +215,8 @@
                 </div>
                 <img src="__PUBLIC__/images/art/p12.jpg" alt="" /> </a></figure>
             </li>
-            <li class="item thumb photo">
-              <figure><a href="#" data-contenturl="portfolio-post5.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Multiple Half Images</div>
-                </div>
-                <img src="__PUBLIC__/images/art/p13.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb graphic">
-              <figure><a href="#" data-contenturl="portfolio-post6.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Fullscreen Slider</div>
-                </div>
-                <img src="__PUBLIC__/images/art/p14.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb web">
-              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Fullwidth Video</div>
-                </div>
-                <img src="__PUBLIC__/images/art/p15.jpg" alt="" /> </a></figure>
-            </li>
+           
+           
           </ul>
           <!-- /.items --> 
         </div>
@@ -591,32 +572,28 @@
           </ul>
           <div class="divide50"></div>
           <div class="form-container">
-            <div class="response alert alert-success"></div>
+		  <div class="h_res"><div class="response alert alert-success"></div></div>
             <form class="forms" action="__MODULE__/Apply/add" method="post">
               <fieldset>
                 <ol class="row">
-                  <li class="form-row text-input-row name-field col-sm-6">
-                    <input type="text" name="name" class="text-input defaultText required" title="姓名(必须)"/>
+                  <li class="form-row text-input-row name-field col-sm-4">
+                    <input type="text" name="name" class="text-input defaultText required name" title="姓名(必须)"/>
                   </li>
-                  <li class="form-row text-input-row email-field col-sm-6">
+				  <li class="form-row text-input-row email-field col-sm-4">
+                    <input type="text" name="phone" class="text-input defaultText required phone" title="电话(必须)"/>
+                  </li>
+                  <li class="form-row text-input-row email-field col-sm-4">
                     <input type="text" name="email" class="text-input defaultText required email" title="邮箱(必须)"/>
                   </li>
                   <li class="form-row text-area-row col-sm-12">
-                    <textarea name="message" class="text-area required" title="你的信息"></textarea>
-                  </li>
-                  <li class="form-row hidden-row">
-                    <input type="hidden" name="hidden" value="" />
-                  </li>
-                  <li class="nocomment">
-                    <label for="nocomment">Leave This Field Empty</label>
-                    <input id="nocomment" value="" name="nocomment" />
+                    <textarea name="content" class="text-area required content" title="你的信息"></textarea>
                   </li>
                   <li class="button-row">
-                    <input type="submit" value="提交信息" name="submit" class="btn btn-submit bm0" />
+                    <input type="button" value="提交信息" class="btn btn-submit submit" />
                   </li>
                 </ol>
-                <input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+               <!--<input type="hidden" name="v_error" id="v-error" value="Required" />
+                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />-->
               </fieldset>
             </form>
           </div>
@@ -627,7 +604,53 @@
     </div>
      
   </div>
+
   <!-- /#contact -->
   <include file="footer" />
 </body>
 </html>
+  <script>
+
+$('.submit').click(function(){ 
+    var name = $('.name').val();
+	var phone = $('.phone').val();
+	var email = $('.email').val();
+	var content = $('.content').html();
+	var flag = false;
+	$('.required').each(function(){
+	    if($(this).val() == $(this).attr('title') || $(this).html() == $(this).attr('title')){
+		    show($(this).attr('title'));
+  			flag = true;
+			return false;
+		}
+	});
+	if(flag == true){
+	   return  false;
+	}
+	$.ajax({
+		type:"POST",
+		url:"__ROOT__/Apply/add",
+		data:{name:name,phone:phone,email,email,content:content},
+		success:function(data){
+		    if(data['status'] == 1){
+			   show(data['msg'],true);
+			   $('.required').each(function(){
+			      $(this).html($(this).attr('title'));
+				   $(this).val($(this).attr('title'));
+			   });
+			}else{
+			    show(data['msg'],false);
+			}
+		}
+	});
+});
+
+function show(info,flag=false){
+
+   var color = flag == false? 'red':'green';
+   var place = $('.alert-success');
+   place.html(info);
+   place.css('color',color).show();
+   place.fadeOut(3000);
+}
+</script>

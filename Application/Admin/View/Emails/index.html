@@ -60,24 +60,27 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <table cellpadding="0" cellspacing="0">
 <tr>
 <th>序号</th>
-<th>标题</th>
-<th>缩略图</th>
-<th>栏目</th>
-<th>描述</th>
+<th>姓名</th>
+<th>电话</th>
+<th>邮箱</th>
+<th>内容</th>
+<th>时间</th>
+<th>状态</th>
 <th>操作</th>
 </tr>
 <volist name="list" id="vo">
 <tr>
 <td>{$i}</td>
-<td>{$vo.title}</td>
-<td><if condition="$vo.small_img neq null"><img src=".{$vo.small_img}" /></if></td>
-<td>{$vo.item_name}</td>
-<td>{$vo.description}</td>
-<td><a href="__MODULE__/News/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/News/del/id/{$vo.id}">删除</a></td>
+<td>{$vo.name}</td>
+<td>{$vo.phone}</td>
+<td>{$vo.email}</td>
+<td>{$vo.content}</td>
+<td>{$vo.add_time}</td>
+<td><if condition="$vo.status eq 0"><span class="f_cB">未审核</span><else/><span class="f_cA">已审核</span></if></td>
+<td><a href="__MODULE__/Emails/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/Emails/del/id/{$vo.id}">删除</a></td>
 </tr>
 </volist>
 </table>
-
 <div class="page">{$page}</div>
 </div>
 </div>

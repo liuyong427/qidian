@@ -79,10 +79,10 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
 <td><?php echo ($vo["title"]); ?></td>
-<td><img src="<?php echo ($vo["small_img"]); ?>" /></td>
+<td><?php if($vo["small_img"] != null): ?><img src=".<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
 <td><?php echo ($vo["item_name"]); ?></td>
 <td><?php echo ($vo["description"]); ?></td>
-<td><a href="/admin.php/News/edit1/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+<td><a href="/admin.php/News/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 
@@ -95,7 +95,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- /footer -->
 <div style="border:1px solid #eee">
 <footer>
-<address>电子邮箱：sales@haiersoft.com  技术支持：人单合一平台项目组<br>青岛海尔软件有限公司版权所有  Copyright &copy; 2015 Haiersoft Corporation, All Rights.</address>
+<address>成都启点科技</address>
 </footer>
 </div>
 <!-- /footer -->

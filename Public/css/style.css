@@ -2049,6 +2049,7 @@ figure a .text-overlay .info {
     padding: 0;
     width: 100%;
 }
+.form-container .h_res{height:60px;}
 .form-container .response {
     display: none
 }
@@ -2987,8 +2988,8 @@ figure.main,
 	    margin-left: -9px;
 	    margin-bottom: -9px;
 	}
-	.fix-portfolio .items li {
-	    width: 384px;
+	.fix-portfolio .items li {border:1px solid red;
+	    width: 284px;
 	    margin-left: 9px;
 	    margin-bottom: 9px;
 	}

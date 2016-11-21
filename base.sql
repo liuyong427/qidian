@@ -41,6 +41,6 @@ phone varchar(15) not null default '',
 email varchar(100) not null default '',
 content varchar(2000) not null default '',
 add_time datetime,
-status int(1)
+status int(1) not null default 0
 );
 
