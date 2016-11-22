@@ -31,7 +31,7 @@ class NewsController extends BaseController {
 		$Page->setConfig('last','最后一页');
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-		$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();echo M()->getLastSql();
+		$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
 		foreach($list as $k=>$v){
 			$item = M('items')->where('id='.$v['item_id'])->find();
 			$list[$k]['item_name'] = $item['name'];
@@ -53,24 +53,14 @@ class NewsController extends BaseController {
 	    $this->assign('items',$items);
 		$this->display();
 	}
-	public function edit1(){
-		$id = $_GET['id']? intval($_GET['id']):'';
-		if($id){
-			$list = M('news')->where('id='.$id)->find();
-			$this->assign('list',$list);
-		}
-		$items = R('Items/tree');
-	    $this->assign('items',$items);
-		$this->display();
-	}
 	public function add(){
 		$data = $_POST;
 		$image = new \Think\Image();
 		$img = $data['small_img'];
 		if($img){
-			$dirname = './upload/small_img';
-			if(!is_dir($dirname)){
-				mkdir($dirname,0777,true);
+			$dirname = '/upload/small_img';
+			if(!is_dir('./'.$dirname)){
+				mkdir('./'.$dirname,0777,true);
 			}
 			$small_img = $dirname.'/'.basename($img);
 			$image->open('./'.$img);

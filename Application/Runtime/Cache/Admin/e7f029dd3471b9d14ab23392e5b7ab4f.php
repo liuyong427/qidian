@@ -66,7 +66,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- MainForm -->
 <div id="MainForm">
 <div class="form_boxA">
-<h2>文章列表</h2>
+<h2>邮件列表</h2>
 <table cellpadding="0" cellspacing="0">
 <tr>
 <th>序号</th>

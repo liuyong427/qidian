@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <include file="Base/files"/>
 </head>
-
 <body>
 
 
@@ -70,7 +69,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <tr>
 <td>{$i}</td>
 <td>{$vo.title}</td>
-<td><if condition="$vo.small_img neq null"><img src=".{$vo.small_img}" /></if></td>
+<td><if condition="$vo.small_img neq null"><img src="{$vo.small_img}" /></if></td>
 <td>{$vo.item_name}</td>
 <td>{$vo.description}</td>
 <td><a href="__MODULE__/News/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/News/del/id/{$vo.id}">删除</a></td>

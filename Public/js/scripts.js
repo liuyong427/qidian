@@ -132,9 +132,15 @@ $(document).ready(function () {
 	        item.addClass("clicked-no-slide-anim");
             var cur = item.data('index');
             var hashy = window.pageYOffset;
-
-
-
+            var id = $(this).find('.info').attr('value');
+            $.ajax({
+				type:"POST",
+				url:"/News/cpnew",
+				data:{id:id},
+				success:function(data){alert(111)   
+					alert(data['title'])
+				}
+			});
             if (jQuery('.dark-wrapper.fixed').length == 0) {
                 // PREPARE THE CURRENT CONTENT OF BODY AND WRAP IT
                 jQuery('.body-wrapper').wrapInner('<div class="fullcontent-slider-getaway-wrapper"><div class="fullcontent-slider-getaway-slide"></div></div>');

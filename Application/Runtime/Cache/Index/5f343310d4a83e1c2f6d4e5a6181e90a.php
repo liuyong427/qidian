@@ -190,101 +190,18 @@
         <div class="grid-portfolio fix-portfolio">
           <ul class="filter">
             <li><a class="active" href="#" data-filter="*">全部</a></li>
-            <li><a href="#" data-filter=".web">功能模块</a></li>
-            <li><a href="#" data-filter=".graphic">产品优势</a></li>
-            <li><a href="#" data-filter=".photo">操作技巧</a></li>
-            <li><a href="#" data-filter=".motion">服务支持</a></li>
+			<?php if(is_array($cplist)): $i = 0; $__LIST__ = $cplist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#" data-filter=".cp<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
           </ul>
           
           <!-- /filter -->
-          
           <ul class="content-slider items">
-            <li class="item thumb web">
+		  <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="item thumb cp<?php echo ($vo["item_id"]); ?>">
               <figure><a href="#" data-contenturl="portfolio-post.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
                 <div class="text-overlay">
-                  <div class="info">Fullwidth Slider</div>
+                  <div class="info" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></div>
                 </div>
-                <img src="/Public/images/art/p1.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb graphic">
-              <figure><a href="#" data-contenturl="portfolio-post2.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Half Slider</div>
-                </div>
-                <img src="/Public/images/art/p2.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb web">
-              <figure><a href="#" data-contenturl="portfolio-post3.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Carousel Gallery</div>
-                </div>
-                <img src="/Public/images/art/p3.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb web">
-              <figure><a href="#" data-contenturl="portfolio-post4.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Multiple Images</div>
-                </div>
-                <img src="/Public/images/art/p4.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb photo">
-              <figure><a href="#" data-contenturl="portfolio-post5.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Multiple Half Images</div>
-                </div>
-                <img src="/Public/images/art/p5.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb motion">
-              <figure><a href="#" data-contenturl="portfolio-post6.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Fullscreen Slider</div>
-                </div>
-                <img src="/Public/images/art/p6.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb photo">
-              <figure><a href="#" data-contenturl="portfolio-post7.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Fullwidth Video</div>
-                </div>
-                <img src="/Public/images/art/p7.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb web">
-              <figure><a href="#" data-contenturl="portfolio-post8.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Half Video</div>
-                </div>
-                <img src="/Public/images/art/p8.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb graphic">
-              <figure><a href="#" data-contenturl="portfolio-post.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Fullwidth Slider</div>
-                </div>
-                <img src="/Public/images/art/p9.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb web">
-              <figure><a href="#" data-contenturl="portfolio-post2.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Half Slider</div>
-                </div>
-                <img src="/Public/images/art/p10.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb motion">
-              <figure><a href="#" data-contenturl="portfolio-post3.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Carousel Gallery</div>
-                </div>
-                <img src="/Public/images/art/p11.jpg" alt="" /> </a></figure>
-            </li>
-            <li class="item thumb motion">
-              <figure><a href="#" data-contenturl="portfolio-post4.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
-                <div class="text-overlay">
-                  <div class="info">Multiple Images</div>
-                </div>
-                <img src="/Public/images/art/p12.jpg" alt="" /> </a></figure>
-            </li>
-           
-           
+                <img src="<?php echo ($vo["small_img"]); ?>" style="max-width:100%;height:auto;overflow:hidden;" alt="" /> </a></figure>
+            </li><?php endforeach; endif; else: echo "" ;endif; ?> 
           </ul>
           <!-- /.items --> 
         </div>
@@ -428,48 +345,7 @@
             <!-- /.col-services --> 
           </div>
         </div>
-<!--
-        <hr />
-        <h2>Meet Our Team</h2>
-        <div class="row team text-center">
-          <div class="col-sm-4">
-            <figure><img src="/Public/images/art/team1.jpg" alt="" /></figure>
-            <h3>Connor Gibson</h3>
-            <span class="biz-title colored">Interface Designer</span>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, egety lacinia odio sem, vestibulum midor ligula porta felis euismod semper.</p>
-            <ul class="social">
-              <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-              <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <figure><img src="/Public/images/art/team2.jpg" alt="" /></figure>
-            <h3>Nikolas Brooten</h3>
-            <span class="biz-title colored">Web Developer</span>
-            <p>Integer posuere erat anka ante venenatis dapibus posuere velitor aliquet.  Consectetur adipiscing vestibulum ligula porta felis euismod semper.</p>
-            <ul class="social">
-              <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-              <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <figure><img src="/Public/images/art/team3.jpg" alt="" /></figure>
-            <h3>Barclay Widerski</h3>
-            <span class="biz-title colored">Photographer</span>
-            <p>Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam at venenatis vestibulum ullamcorper.</p>
-            <ul class="social">
-              <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-              <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-              <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-              <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-	-->
+
       </div>
     </div>
   </div>

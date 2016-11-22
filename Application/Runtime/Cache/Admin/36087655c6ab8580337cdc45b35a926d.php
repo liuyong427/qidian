@@ -21,7 +21,6 @@
 <script src="http:/css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 </head>
-
 <body>
 
 
@@ -79,7 +78,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
 <td><?php echo ($vo["title"]); ?></td>
-<td><?php if($vo["small_img"] != null): ?><img src=".<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
+<td><?php if($vo["small_img"] != null): ?><img src="<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
 <td><?php echo ($vo["item_name"]); ?></td>
 <td><?php echo ($vo["description"]); ?></td>
 <td><a href="/admin.php/News/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
