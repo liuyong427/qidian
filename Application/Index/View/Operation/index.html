@@ -41,7 +41,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 		    <div class="stit">知识分类</div>
 			<volist name="list" id="vo">
 		    <div class="one">
-			    <div class="ptit"><span class="icon">+</span>{$vo.name}</div>
+			    <div class="ptit"><span class="icon">+</span><span class="item">{$vo.name}</span></div>
 				<div class="otit">
 				<volist name="vo.news" id="vo1">
 					<div class="ctit" value="{$vo1.id}">{$vo1.title}</div>
@@ -62,6 +62,20 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 </body>
 </html>
 <script>
+function showItem(item){
+    if(item == ''){
+	   return false;
+	}
+   $('.ptit').each(function(){ 
+       if($(this).find('.item').html() == item){
+	       $(this).siblings('.otit').slideDown();
+		   $(this).find('.icon').html('-');
+	   }
+   });
+}
+
+showItem("{$item}");
+
 $('.ptit').click(function(){
    $(this).siblings('.otit').slideToggle('100');
    $(this).parent().siblings('.one').children('.otit').slideUp('100');

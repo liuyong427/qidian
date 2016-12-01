@@ -40,7 +40,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 	    <div class="left">
 		    <div class="stit">知识分类</div>
 			<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="one">
-			    <div class="ptit"><span class="icon">+</span><?php echo ($vo["name"]); ?></div>
+			    <div class="ptit"><span class="icon">+</span><span class="item"><?php echo ($vo["name"]); ?></span></div>
 				<div class="otit">
 				<?php if(is_array($vo["news"])): $i = 0; $__LIST__ = $vo["news"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><div class="ctit" value="<?php echo ($vo1["id"]); ?>"><?php echo ($vo1["title"]); ?></div><?php endforeach; endif; else: echo "" ;endif; ?>
 				</div>
@@ -58,6 +58,20 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 </body>
 </html>
 <script>
+function showItem(item){
+    if(item == ''){
+	   return false;
+	}
+   $('.ptit').each(function(){ 
+       if($(this).find('.item').html() == item){
+	       $(this).siblings('.otit').slideDown();
+		   $(this).find('.icon').html('-');
+	   }
+   });
+}
+
+showItem("<?php echo ($item); ?>");
+
 $('.ptit').click(function(){
    $(this).siblings('.otit').slideToggle('100');
    $(this).parent().siblings('.one').children('.otit').slideUp('100');
