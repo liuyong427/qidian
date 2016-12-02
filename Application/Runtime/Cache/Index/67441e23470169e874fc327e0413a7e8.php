@@ -32,7 +32,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 		<div class="search">
 		     <form id="sform" method="post" action="/Operation">
 				<input type="text" class="keyword" name="keyword"  placeholder="请输入搜索内容"/>
-				<button type="button" class="btn btn-info searchbtn">搜索</button>
+				<button type="button" class="btn btn-info searchbtn" onclick="search()">搜索</button>
 			</form>
 		</div>
 	</div>
@@ -70,8 +70,6 @@ function showItem(item){
    });
 }
 
-showItem("<?php echo ($item); ?>");
-
 $('.ptit').click(function(){
    $(this).siblings('.otit').slideToggle('100');
    $(this).parent().siblings('.one').children('.otit').slideUp('100');
@@ -86,11 +84,11 @@ $('.ctit').click(function(){
 	contentAjax(id);
 });
 
-$('.searchbtn').click(function(){
-   var show = false;
-   var keyword = $('.keyword').val();
+function search(keyword){
+   var show = false; 
+   var keyword = keyword?keyword:$('.keyword').val();
    if(keyword ==''){
-     $('.keyword').focus();
+     return;//$('.keyword').focus();
    }else{
       $('.ctit').each(function(){
 	    // alert($(this).html().indexOf(keyword));
@@ -110,7 +108,7 @@ $('.searchbtn').click(function(){
 	  });
      // $('#sform').submit();
    }
-});
+}
 
 function contentAjax(id){
 $.ajax({
@@ -128,4 +126,9 @@ $.ajax({
 	  }
 	});
 }
+
+
+/**页面加载调用**/
+showItem("<?php echo ($item); ?>");
+search("<?php echo ($title); ?>");
 </script>

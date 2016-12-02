@@ -133,12 +133,13 @@ $(document).ready(function () {
             var cur = item.data('index');
             var hashy = window.pageYOffset;
             var id = $(this).find('.info').attr('value');
+			var data ='';
             $.ajax({
 				type:"POST",
 				url:"/News/cpnew",
 				data:{id:id},
 				success:function(data){alert(111)   
-					alert(data['title'])
+					 data = data;
 				}
 			});
             if (jQuery('.dark-wrapper.fixed').length == 0) {
@@ -154,7 +155,7 @@ $(document).ready(function () {
                     '<div class="page-title">' +
                     '<div class="container inner">' +
                     '<div class="navigation">' +
-                    '<a href="#" id="gwi-thumbs" class="btn pull-left back">Back</a>' +
+                    '<a href="#" id="gwi-thumbs" class="btn pull-left back">Back</a>'+data['title'] +
                     '<a href="#" id="gwi-next" class="btn pull-right rm0 nav-next-item">Next</a>' +
                     '<a href="#" id="gwi-prev" class="btn pull-right rm5 nav-prev-item">Prev</a>' +
                     '</div>' +
@@ -827,3 +828,9 @@ window.location.href = url;
 return true;
 });
 });
+
+
+function showContent(){
+	var content = "";
+	
+}
