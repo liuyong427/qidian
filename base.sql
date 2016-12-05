@@ -29,6 +29,7 @@ keyword varchar(50) not null default '',
 description varchar(300) not null default '',
 small_img varchar(150) not null default '',
 content text not null default '',
+click_num int(11) not null defaut 0,
 add_time datetime,
 userid int(11),
 key item_id(item_id)

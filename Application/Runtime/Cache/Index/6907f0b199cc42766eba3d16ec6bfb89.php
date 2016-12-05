@@ -89,38 +89,14 @@
   <!--/.navbar -->
   <div class="offset"></div>
   <div class="light-wrapper">
-    <div class="container inner">
-      <div class="row">
-        <div class="col-sm-8 content">
-          <div class="blog-posts classic-blog">
-		  <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="post row">
-              <figure class="col-sm-4">
-                 <a href="/Index/News/content/id/<?php echo ($vo["id"]); ?>" ><img src="<?php echo ($vo["small_img"]); ?>" alt="" /></a></figure>
-              <div class="col-sm-8">
-                <h2 class="post-title"><a href="/Index/News/content/id/<?php echo ($vo["id"]); ?>" ><?php echo ($vo["title"]); ?></a></h2>
-                <div class="meta"><span class="date"><?php echo ($vo["add_time"]); ?></span></div>
-                <p><?php echo ($vo["description"]); ?></p>
-                <a href="/Index/News/content/id/<?php echo ($vo["id"]); ?>" class="more">点击阅读</a> </div>
-            </div>
-            <hr /><?php endforeach; endif; else: echo "" ;endif; ?>
-          </div>
-          <!-- /.blog-posts -->
-          
-          <div class="pagination">
-            <ul>
-              <li><a href="#">Prev</a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </div>
-          <!-- /.pagination --> 
-          
-        </div>
+    <div class="container inner1">
+	  <div class="i-tit">
+	  <div class="i-title"><?php echo ($list["title"]); ?></div>
+	  <div class=""><span class="date">发布时间：<?php echo ($list["add_time"]); ?></span><span class="i-clk">点击数：<?php echo ($list["click_num"]); ?></span></div>
+	  </div>
+	  <div class="i-cont"> <?php echo ($list["content"]); ?></div>
+     
       
-        
-      </div>
       <!-- /.row --> 
       
     </div>
@@ -131,7 +107,6 @@
 </div>
 <!-- .body-wrapper --> 
   <footer class="footer black-wrapper widget-footer">
-<footer class="footer black-wrapper widget-footer">
   
     <div class="sub-footer">
       <div class="container">

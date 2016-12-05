@@ -21,22 +21,19 @@
   <!--/.navbar -->
   <div class="offset"></div>
   <div class="light-wrapper">
-    <div class="container inner" style="border:1px solid red">
+    <div class="container inner">
       <div class="row">
         <div class="col-sm-8 content">
           <div class="blog-posts classic-blog">
 		  <volist name="list" id="vo">
             <div class="post row">
-              <figure class="col-sm-4"><a href="blog-post.html">
-                <div class="text-overlay">
-                  <div class="info">Read More</div>
-                </div>
-                <img src="{$vo.small_img}" alt="" /></a></figure>
+              <figure class="col-sm-4">
+                 <a href="__URL__/content/id/{$vo.id}" ><img src="{$vo.small_img}" alt="" /></a></figure>
               <div class="col-sm-8">
-                <h2 class="post-title"><a href="blog-post.html">{$vo.title}</a></h2>
+                <h2 class="post-title"><a href="__URL__/content/id/{$vo.id}" >{$vo.title}</a></h2>
                 <div class="meta"><span class="date">{$vo.add_time}</span></div>
                 <p>{$vo.description}</p>
-                <a href="#" class="more">点击阅读</a> </div>
+                <a href="__URL__/content/id/{$vo.id}" class="more">点击阅读</a> </div>
             </div>
             <hr />
             </volist>

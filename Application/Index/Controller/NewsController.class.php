@@ -23,4 +23,20 @@ class NewsController extends Controller {
 		}
 		$this->ajaxReturn($data);
 	}
+	
+	//详细
+	public function content(){
+		$id = I('get.id');
+		if(!$id){
+			R('Empty/_empty');
+			exit;
+		}
+		$list = M('news')->where('id='.$id)->find();
+		if(!$list){
+			R('Empty/_empty');
+			exit;
+		}
+		$this->assign('list',$list);
+		$this->display();
+	}
 }
