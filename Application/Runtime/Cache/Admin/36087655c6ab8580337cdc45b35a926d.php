@@ -72,6 +72,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <th>标题</th>
 <th>缩略图</th>
 <th>栏目</th>
+<th>点击数</th>
 <th>描述</th>
 <th>操作</th>
 </tr>
@@ -80,6 +81,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><?php echo ($vo["title"]); ?></td>
 <td><?php if($vo["small_img"] != null): ?><img src="<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
 <td><?php echo ($vo["item_name"]); ?></td>
+<td><?php echo ($vo["click_num"]); ?></td>
 <td><?php echo ($vo["description"]); ?></td>
 <td><a href="/admin.php/News/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/admin.php/News/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>

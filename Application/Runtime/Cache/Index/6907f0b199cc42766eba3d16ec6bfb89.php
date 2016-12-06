@@ -107,6 +107,7 @@
 </div>
 <!-- .body-wrapper --> 
   <footer class="footer black-wrapper widget-footer">
+<footer class="footer black-wrapper widget-footer">
   
     <div class="sub-footer">
       <div class="container">
