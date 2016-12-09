@@ -549,7 +549,6 @@
      
   </div>
 
- <div style='width:100%;height:100%;background:#aaa;z-index:9999;position:relative;top:0;left:0;display:block;'><div></div><div></div></div> 
   <!-- /#contact -->
   <footer class="footer black-wrapper widget-footer">
 <footer class="footer black-wrapper widget-footer">
@@ -597,10 +596,11 @@ $('.submit').click(function(){
     var name = $('.name').val();
 	var phone = $('.phone').val();
 	var email = $('.email').val();
-	var content = $('.content').html();
+	var content = $('.content').val();
 	var flag = false;
 	$('.required').each(function(){
-	    if($(this).val() == $(this).attr('title') || $(this).html() == $(this).attr('title')){
+	    if($(this).attr('title')=="你的信息"){alert($(this).val());alert($(this).attr('title'))}
+	    if($(this).val() == $(this).attr('title')){
 		    show($(this).attr('title'));
   			flag = true;
 			return false;

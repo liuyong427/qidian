@@ -15,4 +15,10 @@ return array(
 	'DB_PORT'               =>  '3306',        // 端口
 	'DB_CHARSET'            =>  '',      // 数据库编码
 	'DB_PREFIX'             =>  'qd_',    // 数据库表前缀
+	
+	
+	/*126邮件配置*/
+	'E_USER'                =>'zsitsms@126.com', //126账号
+	'E_PWD'                 =>'qidian69686996', //126密码
+	'E_RECEIVER'            =>'1026783720@qq.com',	//收信地址
 );

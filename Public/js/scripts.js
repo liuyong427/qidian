@@ -140,34 +140,10 @@ $(document).ready(function () {
 				data:{id:id},
 				success:function(data){//alert(111)   
 					 data = data;//alert(data['title']);
-					 title = data['title'];alert(title);
-					 
-					 
-					  jQuery('body').append('<div class="navcoverpage light-wrapper"></div>' +
-                    '<div class="navfake dark-wrapper">' +
 
-                    '<div class="page-title">' +
-                    '<div class="container inner">' +
-                    '<div class="navigation">' +
-                    '<a href="#" id="gwi-thumbs" class="btn pull-left back">Back</a>'+
-                    '<a href="#" id="gwi-next" class="btn pull-right rm0 nav-next-item">Next</a>' +
-                    '<a href="#" id="gwi-prev" class="btn pull-right rm5 nav-prev-item">Prev</a>' +
-                    '</div>' +
-                    '<div class="clear"></div>' +
-                    '</div>' +
-                    '</div>' +
-                    '</div>');
-					
-				jQuery('.navcoverpage').animate({
-                    left: '0px'
-                }, {
-                    duration: speed - 200,
-                    queue: false
-                });
-				}
-				
-			});return;
-            if (jQuery('.dark-wrapper.fixed').length == 0) {
+					 
+					 /**======start===**/			 
+					  if (jQuery('.dark-wrapper.fixed').length == 0) {
                 // PREPARE THE CURRENT CONTENT OF BODY AND WRAP IT
                 jQuery('.body-wrapper').wrapInner('<div class="fullcontent-slider-getaway-wrapper"><div class="fullcontent-slider-getaway-slide"></div></div>');
                 var origheight = jQuery('.fullcontent-slider-getaway-slide').height();
@@ -330,6 +306,12 @@ $(document).ready(function () {
                 });
 
             }
+			
+     /**======end===**/			
+				}
+              });  
+		
+          /**here**/ 
             return false;
         }); // END OF CLICK HANDLING ON PORTFOLIO ITEM
 
@@ -859,3 +841,8 @@ function showContent(){
 	var content = "";
 	
 }
+
+function getInfo(id){
+	          
+		
+}			  
