@@ -548,6 +548,12 @@
     </div>
      
   </div>
+  <input type="button" id="aa" value="点击">
+<div id="map" style="  height: 100%;  width: 100%;  position: absolute;  background: #00FF00;  z-index: 111110; overflow:hidden; word-break:break-all; display:none;">
+<textarea>
+
+</textarea>
+</div>
 
   <!-- /#contact -->
   <footer class="footer black-wrapper widget-footer">
@@ -590,7 +596,18 @@
 <script src="/Public/js/scripts.js"></script>
 </body>
 </html>
-  <script>
+<script>
+$("#aa").click(function(){
+$("#map").css({"top":$(document).scrollTop(),"overflow":"auto"});
+//$("#map").css("height",$(window).height());
+$('body').css('scroll','no');
+$("#map").show("3000").animate({ 
+"left":"0px" 
+});
+});
+</script>
+
+<script>
 
 $('.submit').click(function(){ 
     var name = $('.name').val();
@@ -599,7 +616,6 @@ $('.submit').click(function(){
 	var content = $('.content').val();
 	var flag = false;
 	$('.required').each(function(){
-	    if($(this).attr('title')=="你的信息"){alert($(this).val());alert($(this).attr('title'))}
 	    if($(this).val() == $(this).attr('title')){
 		    show($(this).attr('title'));
   			flag = true;

@@ -40,10 +40,4 @@ class NewsController extends Controller {
 		$this->display();
 	}
 	
-	
-	public function a(){
-		import("Org.Email.Smtp"); 
-		$smtp = new \Smtp();
-		echo $smtp->smtp_port;
-	}
 }

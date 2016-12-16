@@ -90,11 +90,10 @@
   <div class="offset"></div>
   <div class="light-wrapper">
     <div class="container inner2">
-	 <h2>对不起</h2>
-     <div>你查找的信息不存在......</div> 
+	  <?php echo ($htmlmsg); ?>
     </div>
     <!-- /.container --> 
-  </div>
+  </div>	
   <!-- /.light-wrapper -->
 
 </div>
