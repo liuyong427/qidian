@@ -22,6 +22,7 @@
 <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href="/Public/type/fontello.css" rel="stylesheet">
 <link href="/Public/type/budicons.css" rel="stylesheet">
+<link href="/Public/css/base.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="/Public/js/html5shiv.js"></script>
@@ -105,20 +106,11 @@
             <hr /><?php endforeach; endif; else: echo "" ;endif; ?>
           </div>
           <!-- /.blog-posts -->
-          
-          <div class="pagination">
-            <ul>
-              <li><a href="#">Prev</a></li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </div>
-          <!-- /.pagination --> 
+		  
+		  <div class="page1"><?php echo ($page); ?></div>
           
         </div>
-      
+        
         
       </div>
       <!-- /.row --> 

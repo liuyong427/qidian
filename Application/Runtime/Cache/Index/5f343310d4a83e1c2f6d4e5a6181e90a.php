@@ -21,6 +21,7 @@
 <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 <link href="/Public/type/fontello.css" rel="stylesheet">
 <link href="/Public/type/budicons.css" rel="stylesheet">
+<link href="/Public/css/base.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="/Public/js/html5shiv.js"></script>

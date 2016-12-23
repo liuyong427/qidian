@@ -1,0 +1,16 @@
+.page .prev,.page .next,.page .first,.page .end,.page .num{display:inline-block;border:1px solid #76b56d;;padding:6px 10px; margin-right:8px;background:#d1f3e7;}
+.page .current{display:inline-block;border:1px solid #eee;;padding:6px 10px; margin-right:8px;background:#838386;color:red;font-weight:bold;}
+.page a:hover{color:red;}
+
+.page1  .prev,.page1 .next,.page1 .first,.page1 .end,.page1 .num{
+	display:inline-block;
+    background: none;
+    color: #2e2e2e;
+    border: 1px solid rgba(0,0,0,0.35);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+   padding:6px 12px;margin-right:5px;
+   }	
+.page1 .current{display:inline-block;  text-transform: uppercase;font-size: 14px;font-weight: 600; padding:6px 12px;margin-right:5px; color: #549dc5;border: 1px solid #549dc5;}	
+.page1  a:hover{border:1px solid #549dc5;color:#549dc5;}	

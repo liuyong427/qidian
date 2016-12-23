@@ -23,8 +23,8 @@ class NewsController extends BaseController {
 		$User = M('news');
 		//$User = M('User'); // 实例化User对象
 		$count = $User->count();// 查询满足要求的总记录数
-		$Page = new \Think\Page($count,20);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-		$Page->setConfig('header','条记录');
+		$Page = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+		//$Page->setConfig('header','条记录');
 		$Page->setConfig('prev','上一页');
 		$Page->setConfig('next','下一页');
 		$Page->setConfig('first','第一页');

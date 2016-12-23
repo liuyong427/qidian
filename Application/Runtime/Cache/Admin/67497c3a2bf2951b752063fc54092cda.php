@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
 <script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
 <script charset="utf-8" src="/Public/kindeditor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="/Public/css/base.css" />
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
