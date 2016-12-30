@@ -35,7 +35,7 @@ class NewsController extends Controller {
 		}
 		$this->ajaxReturn($data);
 	}
-	
+		
 	//详细
 	public function content(){
 		$id = I('get.id');

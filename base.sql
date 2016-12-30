@@ -44,4 +44,3 @@ content varchar(2000) not null default '',
 add_time datetime,
 status int(1) not null default 0
 );
-

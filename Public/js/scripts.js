@@ -495,7 +495,7 @@ jQuery(document).ready(function () {
 /*-----------------------------------------------------------------------------------*/
 /*	CALL PORTFOLIO SCRIPTS
 /*-----------------------------------------------------------------------------------*/
-function callPortfolioScripts() {
+function  callPortfolioScripts() {
 
     		  jQuery('.player').fitVids();
     

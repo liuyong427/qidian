@@ -51,7 +51,7 @@
             <li><a href="/#contact">联系我们</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文献</a>
               <ul class="dropdown-menu">
-                <li class="dropdown-submenu"><a href="#">电销经验</a>
+                <li class="dropdown-submenu"><a href="/News/index/id/9">电销经验</a>
                   <!-- <ul class="dropdown-menu"> -->
                     <!-- <li><a href="blog.html">Medium Image Layout</a></li> -->
                     <!-- <li><a href="blog2.html">Grid Blog</a></li> -->
@@ -60,24 +60,8 @@
                     <!-- <li><a href="blog-post.html">Blog Post</a></li> -->
                   <!-- </ul> -->
                 </li>
-                <li class="dropdown-submenu"><a href="#">加盟伙伴</a>
-                  <!-- <ul class="dropdown-menu"> -->
-                    <!-- <li><a href="portfolio-post.html">Post with Wide Slider</a></li> -->
-                    <!-- <li><a href="portfolio-post2.html">Post with Half Slider</a></li> -->
-                    <!-- <li><a href="portfolio-post3.html">Post with Carousel Gallery</a></li> -->
-                    <!-- <li><a href="portfolio-post4.html">Post with Multiple Images</a></li> -->
-                    <!-- <li><a href="portfolio-post5.html">Post with Half Images</a></li> -->
-                    <!-- <li><a href="portfolio-post6.html">Post with Fullscreen Slider</a></li> -->
-                    <!-- <li><a href="portfolio-post7.html">Post with Fullwidth Video</a></li> -->
-                    <!-- <li><a href="portfolio-post8.html">Post with Half Video</a></li> -->
-                  <!-- </ul> -->
+                <li class="dropdown-submenu"><a href="/News/index/id/11">加盟伙伴</a>
                 </li>
-                <!-- <li><a href="elements.html">Elements</a></li> -->
-                <!-- <li><a href="headings.html">Headings</a></li> -->
-                <!-- <li><a href="footer.html">Footer with Widgets</a></li> -->
-                <!-- <li><a href="pricing.html">Pricing Table</a></li> -->
-                <!-- <li><a href="fontello.html">Font Icons - Fontello</a></li> -->
-               <!-- <li><a href="budicon.html">Font Icons - Budicon</a></li><li><a href="http://www.cssmoban.com">More</a></li> -->
               </ul>
             </li>
           </ul>

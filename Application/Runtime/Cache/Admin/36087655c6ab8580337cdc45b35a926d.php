@@ -80,7 +80,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 <td><?php echo ($i); ?></td>
 <td><?php echo ($vo["title"]); ?></td>
-<td><?php if($vo["small_img"] != null): ?><img src="<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
+<td><?php if($vo["small_img"] != null): ?><img style="width:150px;height:auto;" src="<?php echo ($vo["small_img"]); ?>" /><?php endif; ?></td>
 <td><?php echo ($vo["item_name"]); ?></td>
 <td><?php echo ($vo["click_num"]); ?></td>
 <td><?php echo ($vo["description"]); ?></td>

@@ -64,7 +64,7 @@ class NewsController extends BaseController {
 			}
 			$small_img = $dirname.'/'.basename($img);
 			$image->open('./'.$img);
-		    $image->thumb(150, 150)->save('./'.$small_img);
+		    $image->thumb(300, 300,\Think\Image::IMAGE_THUMB_SCALE)->save('./'.$small_img);
 		}
 		if($img !=$small_img){
 			unlink($img);
