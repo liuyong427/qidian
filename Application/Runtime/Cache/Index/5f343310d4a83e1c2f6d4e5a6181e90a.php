@@ -534,10 +534,18 @@
      
   </div>
   <input type="button" id="aa" value="点击">
-<div id="map" style="z-index: 111110;background:#fff; display:none;">
-<textarea>
-
-</textarea>
+<div id="map">
+<div class="mbtn">
+	<div class="mbtn-1">
+	<button type="button" class="btn btn-default btn-back" style="border-radius:4px;">返回</button>
+	<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">上一篇</button>
+	<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">下一篇</button>
+	</div>
+</div>
+<div class="mcon">
+    <div class="mc-1"></div>
+	<div class="mc-2"></div>
+</div>
 </div>
 
   <!-- /#contact -->
@@ -583,18 +591,26 @@
 </html>
 <script>
 $("#aa").click(function(){
-$("#map").css({
-              "top":0,
- 			  "position":"fixed",
-			  "height":"100px",
-			  "width":"100%"
-			  });
-//$("#map").css("height",$(window).height());
-$('body').css('overflow-y','hidden');
-$("#map").show("3000").animate({ 
-"left":"0px" ,
-"bottom":"0px"
+	var height= document.body.clientHeight;
+	$("#map").css({
+				  "top":0,
+				  "position":"fixed",
+				  "height":height+"px",
+				  "width":"100%"
+				  });
+	//$("#map").css("height",$(window).height());
+	$('body').css('overflow-y','hidden');
+	$('mbtn').css({
+		"height":height+"px"
+	});
+	$("#map").show("10000").animate({ 
+	"left":"0px" ,
+	"bottom":"0px"
+	});
 });
+$(".btn-back").click(function(){
+	$('body').css('overflow-y','show');
+    $("#map").hide("50000");
 });
 </script>
 

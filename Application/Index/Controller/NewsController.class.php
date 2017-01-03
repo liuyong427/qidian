@@ -3,7 +3,7 @@ namespace Index\Controller;
 use Think\Controller;
 class NewsController extends Controller {
 	public function index(){
-		$id = trim(I('post.id'),'');//item_id
+		$id = trim(I('get.id'),'');//item_id
 		$id = $id ? $id : 9;
 		$where['item_id'] =$id;
 		$User = M('news');
@@ -51,7 +51,7 @@ class NewsController extends Controller {
 		
 		$sql= "update ".C('DB_PREFIX')."news set click_num = click_num+1 where id =$id";
 		$data['click_num'] =$list['click_num']+1;
-		M('news')->where('id='.$id)->save($data);echo M()->getLastSql();
+		M('news')->where('id='.$id)->save($data);
 		$this->assign('list',$list);
 		$this->display();
 	}
