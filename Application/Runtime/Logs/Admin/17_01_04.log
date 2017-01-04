@@ -1,0 +1,981 @@
+[ 2017-01-04T09:22:55+08:00 ] 192.168.1.115 /tp/qidian/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `qd_users` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `qd_users` WHERE `account` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `qd_users` SET `last_login`='2017-01-04 09:23:02',`ip`='192.168.1.115' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Login/loginIn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Base/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Base/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:02+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Info/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:05+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_users` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_users` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 34 行.
+SQL: SELECT * FROM `qd_users` LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:06+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Users/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 41 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\249bcbe5e74899d6fe13be1c7dcad2ff.php 第 51 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\249bcbe5e74899d6fe13be1c7dcad2ff.php 第 51 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\249bcbe5e74899d6fe13be1c7dcad2ff.php 第 56 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\249bcbe5e74899d6fe13be1c7dcad2ff.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:23:07+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Items
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\ItemsController.class.php 第 13 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\ItemsController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_items` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:23:08+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Items/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\ItemsController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 51 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 53 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 59 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\2de17912e750364dae0019bb790050be.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:23:09+08:00 ] 192.168.1.115 /tp/qidian/admin.php/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_news` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 34 行.
+SQL: SELECT * FROM `qd_news` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:23:11+08:00 ] 192.168.1.115 /tp/qidian/admin.php/News/edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 64 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 72 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 78 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 82 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 86 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 94 行.
+NOTIC: [8] Undefined variable: list C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\c6b563eb3db7e185c095986d75e59a9c.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:23:12+08:00 ] 192.168.1.115 /tp/qidian/admin.php/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_news` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_news` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 34 行.
+SQL: SELECT * FROM `qd_news` LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T09:39:33+08:00 ] 192.168.1.115 /tp/qidian/admin.php/News/edit/id/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `qd_news` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `qd_news` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T09:39:39+08:00 ] 192.168.1.115 /tp/qidian/admin.php/News
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_news` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_news` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\NewsController.class.php 第 34 行.
+SQL: SELECT * FROM `qd_news` LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `qd_items` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=7 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( id=9 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=0 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=3 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=4 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=7 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=8 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `qd_items` WHERE ( pid=11 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:15:38+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Users
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_users` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_users` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\UsersController.class.php 第 34 行.
+SQL: SELECT * FROM `qd_users` LIMIT 0,20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:15:41+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Info/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:15:41+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Base/left
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:15:41+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Base/head
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:15:41+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Info/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:15:59+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:00+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: search C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 18 行.
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:05+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:07+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 20,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:08+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 30,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:09+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 40,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:11+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 30,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:29+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:37+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 10,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:39+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:40+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 30,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-04T16:16:41+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 40,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:44+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 30,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-04T16:16:46+08:00 ] 192.168.1.115 /tp/qidian/admin.php/Emails/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `qd_emails` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 25 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qd_emails` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where C:\phpstudy\WWW\tp\qidian\Application\Admin\Controller\EmailsController.class.php 第 33 行.
+SQL: SELECT * FROM `qd_emails` LIMIT 20,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: items C:\phpstudy\WWW\tp\qidian\Application\Runtime\Cache\Admin\e7f029dd3471b9d14ab23392e5b7ab4f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

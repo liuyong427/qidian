@@ -102,7 +102,7 @@ $(document).ready(function () {
 	}
 
 
-    var items = jQuery('.content-slider.items a');
+    var items = jQuery('.content-slider.items a1');
     var deeplink = getUrlVars("#");
 
 

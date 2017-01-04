@@ -1,9 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 <title></title>
-<script src="/Public/js/jquery.min.js"></script> 
-<script src="/Public/js/bootstrap.min.js"></script>
-<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" />
+<script src="/tp/qidian/Public/js/jquery.min.js"></script> 
+<script src="/tp/qidian/Public/js/bootstrap.min.js"></script>
+<link href="/tp/qidian/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" />
 
 <style>
 body{background:#f5f5f5;margin:0px;padding:0px;}
@@ -30,7 +30,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
     <div class="head">
 	    <div class="htit">成都启点科技系统操作知识库</div>
 		<div class="search">
-		     <form id="sform" method="post" action="/Operation">
+		     <form id="sform" method="post" action="/tp/qidian/Operation">
 				<input type="text" class="keyword" name="keyword"  placeholder="请输入搜索内容"/>
 				<button type="button" class="btn btn-info searchbtn" onclick="search()">搜索</button>
 			</form>
@@ -112,7 +112,7 @@ function search(keyword){
 
 function contentAjax(id){
 $.ajax({
-	  url: "/Operation/getContent",
+	  url: "/tp/qidian/Operation/getContent",
 	  method: "POST",
 	  data: {id : id},
 	  success: function(data){

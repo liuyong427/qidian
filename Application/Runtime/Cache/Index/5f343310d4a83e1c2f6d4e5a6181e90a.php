@@ -154,14 +154,14 @@
   
   <div class="parallax parallax1">
     <div class="container inner text-center">
-      <h1 class="share-button">Click <span class="colored">&</span> Share the Love</h1>
-      <div class="share-links">
+      <h1 class="share-button">WE DO OUR BEST <span class="colored">&</span> SERVICE YOU </h1>
+    <!--  <div class="share-links">
         <ul>
           <li><a class="btn share-facebook" href="#">Like</a></li>
           <li><a class="btn share-twitter" href="#">Tweet</a></li>
           <li><a class="btn share-pinterest" href="#">Pin it</a></li>
         </ul>
-      </div>
+      </div>-->
     </div>
     <!-- /.container --> 
   </div>
@@ -181,7 +181,7 @@
           <!-- /filter -->
           <ul class="content-slider items">
 		  <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="item thumb cp<?php echo ($vo["item_id"]); ?>">
-              <figure><a href="#" data-contenturl="portfolio-post.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <figure><a href="#" id="<?php echo ($vo["id"]); ?>">
                 <div class="text-overlay">
                   <div class="info" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></div>
                 </div>
@@ -198,7 +198,7 @@
   
   <div class="parallax parallax2 work-together">
     <div class="container inner text-center">
-      <h1>We Create Unique <span class="colored">&</span> Gorgeous Things</h1>
+      <h1>We Create Unique <span class="colored">&</span> CONVENIENT FUNCTIONS</h1>
       <div class="divide10"></div>
       <div class="smooth"><a href="#contact" class="btn btn-border-lite">Let's Work Together</a></div>
     </div>
@@ -533,19 +533,18 @@
     </div>
      
   </div>
-  <input type="button" id="aa" value="点击">
 <div id="map">
-<div class="mbtn">
-	<div class="mbtn-1">
-	<button type="button" class="btn btn-default btn-back" style="border-radius:4px;">返回</button>
-	<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">上一篇</button>
-	<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">下一篇</button>
+	<div class="mbtn">
+		<div class="mbtn-1">
+		<button type="button" class="btn btn-default btn-back" style="border-radius:4px;">返回</button>
+		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">上一篇</button>
+		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">下一篇</button>
+		</div>
 	</div>
-</div>
-<div class="mcon">
-    <div class="mc-1"></div>
-	<div class="mc-2"></div>
-</div>
+	<div class="mcon">
+		<div class="mc-1"></div>
+		<div class="mc-2"></div>
+	</div>
 </div>
 
   <!-- /#contact -->
@@ -554,7 +553,7 @@
   
     <div class="sub-footer">
       <div class="container">
-        <p class="pull-left">© 2014 Frost. All rights reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>.</p>
+        <p class="pull-left"><span>公司地址：四川省成都市高新区美年广场2期1703-1704 </span><span style="margin-left:50px;">联系电话：028-69686996</span><span style="margin-left:50px;">备案号：蜀ICP备12022978号</span></p>
         <!-- <ul class="social pull-right"> -->
           <!-- <li><a href="#"><i class="icon-s-rss"></i></a></li> -->
           <!-- <li><a href="#"><i class="icon-s-twitter"></i></a></li> -->
@@ -590,8 +589,11 @@
 </body>
 </html>
 <script>
-$("#aa").click(function(){
+$(".content-slider.items a").click(function(){
 	var height= document.body.clientHeight;
+	var mtop =  $(window).scrollTop();
+	var id =$(this).attr('id');
+	var pid = 0;
 	$("#map").css({
 				  "top":0,
 				  "position":"fixed",
@@ -603,20 +605,27 @@ $("#aa").click(function(){
 	$('mbtn').css({
 		"height":height+"px"
 	});
-	$("#map").show("10000").animate({ 
-	"left":"0px" ,
-	"bottom":"0px"
+	$.ajax({
+	    type:"POST",
+		url:"/News/cpnew",
+		data:{'id':id,'pid':pid},
+		success:function(msg){
+		    $('.mc-1').html(msg['title']);
+			$('.mc-2').html(msg['content']);
+		}
 	});
+	$("#map").show("slow");
 });
 $(".btn-back").click(function(){
-	$('body').css('overflow-y','show');
-    $("#map").hide("50000");
+	$('body').css('overflow-y','visible');
+    $("#map").hide("slow");
 });
 </script>
 
 <script>
 
 $('.submit').click(function(){ 
+   $(this).attr('disabled','disabled');
     var name = $('.name').val();
 	var phone = $('.phone').val();
 	var email = $('.email').val();
@@ -630,6 +639,7 @@ $('.submit').click(function(){
 		}
 	});
 	if(flag == true){
+	   $(this).removeAttr('disabled');
 	   return  false;
 	}
 	$.ajax({
@@ -646,6 +656,7 @@ $('.submit').click(function(){
 			}else{
 			    show(data['msg'],false);
 			}
+			$('.submit').removeAttr('disabled');
 		}
 	});
 });

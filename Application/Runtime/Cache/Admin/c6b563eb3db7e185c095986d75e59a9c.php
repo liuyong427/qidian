@@ -7,25 +7,25 @@
 <meta name="description" content="" />
 <meta name="generator" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css"/>
-<script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
-<script src="/Public/admin/js/side.js" type="text/javascript"></script> 
-<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
-<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
-<script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
-<script charset="utf-8" src="/Public/kindeditor/lang/zh_CN.js"></script>
-<link rel="stylesheet" href="/Public/css/base.css" />
+<link href="/tp/qidian/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css"/>
+<script src="/tp/qidian/Public/admin/js/jquery-1.10.1.min.js"></script>
+<script src="/tp/qidian/Public/admin/js/side.js" type="text/javascript"></script> 
+<link href="/tp/qidian/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
+<script src="/tp/qidian/Public/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/tp/qidian/Public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/tp/qidian/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/tp/qidian/Public/kindeditor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="/tp/qidian/Public/css/base.css" />
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http:/css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-    <link rel="stylesheet" href="/Public/ueditor/themes/default/css/ueditor.css" type="text/css">
-	<script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/ueditor.all.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/Public/ueditor/lang/en/en.js"></script>
+    <link rel="stylesheet" href="/tp/qidian/Public/ueditor/themes/default/css/ueditor.css" type="text/css">
+	<script type="text/javascript" charset="utf-8" src="/tp/qidian/Public/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/tp/qidian/Public/ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/tp/qidian/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/tp/qidian/Public/ueditor/lang/en/en.js"></script>
 
 <script>
 			var editor;
@@ -144,14 +144,14 @@ var small_img= $("input[name='small_img']").val();
 var content= ue.getContent();
 $.ajax({
   type: "POST",
-  url: "/admin.php/News/add",
+  url: "/tp/qidian/admin.php/News/add",
   data:{id:id,item_id:item_id,title:title,keyword:keyword,description:description,small_img:small_img,content:content},
   success:function(msg){
      if(msg['status']==-1){
 	    alert(msg['info']);
 	 }else{
 	    alert(msg['info']);
-		window.location.href="/admin.php/News/index";
+		window.location.href="/tp/qidian/admin.php/News/index";
 	 }
   }
 });

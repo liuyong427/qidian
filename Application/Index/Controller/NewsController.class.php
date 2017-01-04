@@ -24,7 +24,15 @@ class NewsController extends Controller {
 	//产品新闻ajax获取
     public function cpnew(){
 		$id = I('post.id');
+		$item_id =I('post.pid');
+		if(!empty($item_id)){
+			$where1['item_id'] = $where2['item_id']= $item_id;
+		}
+		$where1['id'] = array('lt',$id);
+		$where2['id'] = array('gt',$id);
 		$list = M('news')->where('id = '.$id)->find();
+		$list1 =M('news') ->where($where1)->find();
+		$list2 =M('news') ->where($where2)->find();
 		if(!$list){
 			$data['status'] = 0;
 			$data['content'] = '对不起，你查询的内容不存在';
@@ -33,6 +41,9 @@ class NewsController extends Controller {
 			$data['status']=1;
 			
 		}
+		$data['pid'] = $item_id;
+		$data['pre_id'] = $list1['id'];
+		$data['next_id'] = $list2['id'];
 		$this->ajaxReturn($data);
 	}
 		
