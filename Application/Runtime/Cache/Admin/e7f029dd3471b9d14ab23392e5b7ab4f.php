@@ -86,7 +86,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><?php echo ($vo["content"]); ?></td>
 <td><?php echo ($vo["add_time"]); ?></td>
 <td><?php if($vo["status"] == 0): ?><span class="f_cB">未审核</span><?php else: ?><span class="f_cA">已审核</span><?php endif; ?></td>
-<td><a href="/tp/qidian/admin.php/Emails/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/tp/qidian/admin.php/Emails/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+<td><a href="/tp/qidian/admin.php/Emails/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/tp/qidian/admin.php/Emails/del/id/<?php echo ($vo["id"]); ?>" onclick="return confirm('你确定删除')">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 <div class="page"><?php echo ($page); ?></div>
@@ -96,7 +96,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </div>
 
 <!-- /footer -->
-<div style="border:1px solid #eee">
+<div style="border:1px solid #eee;">
 <footer>
 <address>成都启点科技</address>
 </footer>

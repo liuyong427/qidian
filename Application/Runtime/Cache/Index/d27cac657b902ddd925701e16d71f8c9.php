@@ -17,9 +17,9 @@
 <link href="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
 <link href="/Public/css/style.css" rel="stylesheet">
 <link href="/Public/css/color/blue.css" rel="stylesheet">
-<link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
+<!-- <link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'> -->
+<!-- <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'> -->
 <link href="/Public/type/fontello.css" rel="stylesheet">
 <link href="/Public/type/budicons.css" rel="stylesheet">
 <link href="/Public/css/base.css" rel="stylesheet">
@@ -111,7 +111,7 @@
   
     <div class="sub-footer">
       <div class="container">
-        <p class="pull-left">© 2014 Frost. All rights reserved. More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>.</p>
+        <p class="pull-left"><span>公司地址：四川省成都市高新区美年广场2期1703-1704 </span><span style="margin-left:50px;">联系电话：028-69686996</span><span style="margin-left:50px;">备案号：蜀ICP备12022978号</span></p>
         <!-- <ul class="social pull-right"> -->
           <!-- <li><a href="#"><i class="icon-s-rss"></i></a></li> -->
           <!-- <li><a href="#"><i class="icon-s-twitter"></i></a></li> -->

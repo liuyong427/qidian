@@ -95,7 +95,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </div>
 
 <!-- /footer -->
-<div style="border:1px solid #eee">
+<div style="border:1px solid #eee;">
 <footer>
 <address>成都启点科技</address>
 </footer>

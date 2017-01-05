@@ -76,7 +76,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td>{$vo.content}</td>
 <td>{$vo.add_time}</td>
 <td><if condition="$vo.status eq 0"><span class="f_cB">未审核</span><else/><span class="f_cA">已审核</span></if></td>
-<td><a href="__MODULE__/Emails/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/Emails/del/id/{$vo.id}">删除</a></td>
+<td><a href="__MODULE__/Emails/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/Emails/del/id/{$vo.id}" onclick="return confirm('你确定删除')">删除</a></td>
 </tr>
 </volist>
 </table>

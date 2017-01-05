@@ -63,7 +63,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td>{$i}</td>
 <td>{$vo.name}</td>
 <td>{$vo.pname}</td>
-<td><a href="__MODULE__/Items/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/Items/del/id/{$vo.id}">删除</a></td>
+<td><a href="__MODULE__/Items/edit/id/{$vo.id}">编辑</a> | <a href="__MODULE__/Items/del/id/{$vo.id}" onclick="return confirm('你确定删除')">删除</a></td>
 </tr>
 </volist>
 </table>

@@ -75,7 +75,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <td><?php echo ($i); ?></td>
 <td><?php echo ($vo["name"]); ?></td>
 <td><?php echo ($vo["pname"]); ?></td>
-<td><a href="/tp/qidian/admin.php/Items/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/tp/qidian/admin.php/Items/del/id/<?php echo ($vo["id"]); ?>">删除</a></td>
+<td><a href="/tp/qidian/admin.php/Items/edit/id/<?php echo ($vo["id"]); ?>">编辑</a> | <a href="/tp/qidian/admin.php/Items/del/id/<?php echo ($vo["id"]); ?>" onclick="return confirm('你确定删除')">删除</a></td>
 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 </table>
 
@@ -89,7 +89,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </div>
 
 <!-- /footer -->
-<div style="border:1px solid #eee">
+<div style="border:1px solid #eee;">
 <footer>
 <address>成都启点科技</address>
 </footer>

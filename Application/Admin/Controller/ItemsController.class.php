@@ -27,8 +27,8 @@ class ItemsController extends BaseController {
 		$Page->setConfig('last','最后一页');
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-		//$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
-		$list = $this->tree();
+		  $list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		//$list = $this->tree();
         foreach($list as $k=>$v){
 			if($v['pid'] == 0){
 				$list[$k]['pname'] = '';

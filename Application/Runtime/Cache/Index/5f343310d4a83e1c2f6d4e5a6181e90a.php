@@ -16,9 +16,9 @@
 <link href="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
 <link href="/Public/css/style.css" rel="stylesheet">
 <link href="/Public/css/color/blue.css" rel="stylesheet">
-<link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
+<!-- <link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'> -->
+<!-- <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'> -->
 <link href="/Public/type/fontello.css" rel="stylesheet">
 <link href="/Public/type/budicons.css" rel="stylesheet">
 <link href="/Public/css/base.css" rel="stylesheet">
