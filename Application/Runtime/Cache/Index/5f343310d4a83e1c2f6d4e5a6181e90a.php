@@ -173,15 +173,16 @@
         <h2 class="section-title text-center">产品介绍</h2>
         <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p>
         <div class="grid-portfolio fix-portfolio">
+		  <input type="hidden" id="cppid" value="0">
           <ul class="filter">
-            <li><a class="active" href="#" data-filter="*">全部</a></li>
-			<?php if(is_array($cplist)): $i = 0; $__LIST__ = $cplist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#" data-filter=".cp<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <li><a class="active" href="#" data-filter="*" pid="0">全部</a></li>
+			<?php if(is_array($cplist)): $i = 0; $__LIST__ = $cplist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#" data-filter=".cp<?php echo ($vo["id"]); ?>" pid="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
           </ul>
           
           <!-- /filter -->
           <ul class="content-slider items">
 		  <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="item thumb cp<?php echo ($vo["item_id"]); ?>">
-              <figure><a href="#" id="<?php echo ($vo["id"]); ?>">
+              <figure><a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>">
                 <div class="text-overlay">
                   <div class="info" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></div>
                 </div>
@@ -537,8 +538,8 @@
 	<div class="mbtn">
 		<div class="mbtn-1">
 		<button type="button" class="btn btn-default btn-back" style="border-radius:4px;">返回</button>
-		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">上一篇</button>
-		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">下一篇</button>
+		<button type="button" class="btn btn-default btn-get btn-get-next" style="border-radius:4px;" value="">下一篇</button>
+		<button type="button" class="btn btn-default btn-get btn-get-pre" style="border-radius:4px;" value="">上一篇</button>
 		</div>
 	</div>
 	<div class="mcon">
@@ -593,7 +594,6 @@ $(".content-slider.items a").click(function(){
 	var height= document.body.clientHeight;
 	var mtop =  $(window).scrollTop();
 	var id =$(this).attr('id');
-	var pid = 0;
 	$("#map").css({
 				  "top":0,
 				  "position":"fixed",
@@ -605,21 +605,31 @@ $(".content-slider.items a").click(function(){
 	$('mbtn').css({
 		"height":height+"px"
 	});
-	$.ajax({
-	    type:"POST",
-		url:"/News/cpnew",
-		data:{'id':id,'pid':pid},
-		success:function(msg){
-		    $('.mc-1').html(msg['title']);
-			$('.mc-2').html(msg['content']);
-		}
-	});
+	getCpnew(id);
 	$("#map").show("slow");
 });
 $(".btn-back").click(function(){
 	$('body').css('overflow-y','visible');
     $("#map").hide("slow");
 });
+
+$('.btn-get').click(function(){
+   getCpnew($(this).val());
+});
+function getCpnew(id){
+   var pid = $('#cppid').val();//alert(id);
+   $.ajax({
+	    type:"POST",
+		url:"/News/cpnew",
+		data:{'id':id,'pid':pid},
+		success:function(msg){
+		    $('.mc-1').html(msg['title']);
+			$('.mc-2').html(msg['content']);
+			$('.btn-get-pre').val(msg['pre_id']);
+			$('.btn-get-next').val(msg['next_id']);
+		}
+	});
+}
 </script>
 
 <script>

@@ -120,10 +120,11 @@
         <h2 class="section-title text-center">产品介绍</h2>
         <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p>
         <div class="grid-portfolio fix-portfolio">
+		  <input type="hidden" id="cppid" value="0">
           <ul class="filter">
-            <li><a class="active" href="#" data-filter="*">全部</a></li>
+            <li><a class="active" href="#" data-filter="*" pid="0">全部</a></li>
 			<volist name="cplist" id="vo">
-            <li><a href="#" data-filter=".cp{$vo.id}">{$vo.name}</a></li>
+            <li><a href="#" data-filter=".cp{$vo.id}" pid="{$vo.id}">{$vo.name}</a></li>
 			</volist>
           </ul>
           
@@ -131,7 +132,7 @@
           <ul class="content-slider items">
 		  <volist name="cpnews" id="vo">
             <li class="item thumb cp{$vo.item_id}">
-              <figure><a href="#" id="{$vo.id}">
+              <figure><a href="javascript:void(0)" id="{$vo.id}">
                 <div class="text-overlay">
                   <div class="info" value="{$vo.id}">{$vo.title}</div>
                 </div>
@@ -488,8 +489,8 @@
 	<div class="mbtn">
 		<div class="mbtn-1">
 		<button type="button" class="btn btn-default btn-back" style="border-radius:4px;">返回</button>
-		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">上一篇</button>
-		<button type="button" class="btn btn-default btn-get" style="border-radius:4px;">下一篇</button>
+		<button type="button" class="btn btn-default btn-get btn-get-next" style="border-radius:4px;" value="">下一篇</button>
+		<button type="button" class="btn btn-default btn-get btn-get-pre" style="border-radius:4px;" value="">上一篇</button>
 		</div>
 	</div>
 	<div class="mcon">
@@ -507,7 +508,6 @@ $(".content-slider.items a").click(function(){
 	var height= document.body.clientHeight;
 	var mtop =  $(window).scrollTop();
 	var id =$(this).attr('id');
-	var pid = 0;
 	$("#map").css({
 				  "top":0,
 				  "position":"fixed",
@@ -519,21 +519,31 @@ $(".content-slider.items a").click(function(){
 	$('mbtn').css({
 		"height":height+"px"
 	});
-	$.ajax({
-	    type:"POST",
-		url:"__ROOT__/News/cpnew",
-		data:{'id':id,'pid':pid},
-		success:function(msg){
-		    $('.mc-1').html(msg['title']);
-			$('.mc-2').html(msg['content']);
-		}
-	});
+	getCpnew(id);
 	$("#map").show("slow");
 });
 $(".btn-back").click(function(){
 	$('body').css('overflow-y','visible');
     $("#map").hide("slow");
 });
+
+$('.btn-get').click(function(){
+   getCpnew($(this).val());
+});
+function getCpnew(id){
+   var pid = $('#cppid').val();//alert(id);
+   $.ajax({
+	    type:"POST",
+		url:"__ROOT__/News/cpnew",
+		data:{'id':id,'pid':pid},
+		success:function(msg){
+		    $('.mc-1').html(msg['title']);
+			$('.mc-2').html(msg['content']);
+			$('.btn-get-pre').val(msg['pre_id']);
+			$('.btn-get-next').val(msg['next_id']);
+		}
+	});
+}
 </script>
 
 <script>

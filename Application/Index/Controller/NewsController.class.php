@@ -25,6 +25,12 @@ class NewsController extends Controller {
     public function cpnew(){
 		$id = I('post.id');
 		$item_id =I('post.pid');
+		$cpnews_items = M('items')->field('id')->where('pid=4')->select();
+		$ids_array=array();
+		foreach($cpnews_items as $k=>$v){
+			$ids_array[] = $v['id'];
+		}
+		$where1['item_id'] = $where2['item_id'] = array('in',$ids_array);
 		if(!empty($item_id)){
 			$where1['item_id'] = $where2['item_id']= $item_id;
 		}
