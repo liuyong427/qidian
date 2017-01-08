@@ -2395,6 +2395,7 @@ textarea {
     padding-bottom: 10px;
     display: block;
 }
+
 .pricing ul {
     padding: 0
 }
@@ -2411,6 +2412,7 @@ textarea {
     margin: 0;
     padding: 10px 0 0 0;
     color: #2e2e2e;
+	border-bottom: 1px solid rgba(0,0,0,0.11);
 }
 .pricing .plan h4 {
     padding: 0 0 20px 0;
@@ -2435,12 +2437,12 @@ textarea {
 }
 .pricing .plan ul {
     margin: 0;
-    padding: 0 25px;
+    padding: 0 15px;
     list-style: none;
 }
 .pricing .plan ul li {
     padding: 15px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.11);
+    
 }
 .pricing .plan h3 {
     text-transform: uppercase
@@ -2448,6 +2450,17 @@ textarea {
 .pricing .select {
     padding: 22px 0
 }
+.pricing .p5{padding:0px 5px;}
+.cooperation {
+	 border: 1px solid rgba(0,0,0,0.11);
+    background: #fff;
+	padding:15px 0px 5px 0px;
+	margin-bottom:15px;
+}
+.cooperate{ border: 1px solid rgba(0,0,0,0.11);background: #fff;padding:15px 0px 5px 0px;margin-bottom:15px;}
+.cooperate h3{width:100%;text-align:center;border-right:1px solid rgba(0,0,0,0.11);}
+.cooperate .sq{margin-left:20px;}
+.cooperate .sq:hover{color:red;}
 /*-----------------------------------------------------------------------------------*/
 /*	25. SIDEBAR
 /*-----------------------------------------------------------------------------------*/
@@ -3034,7 +3047,7 @@ figure.main,
 	    margin-left: -9px;
 	    margin-bottom: -9px;
 	}
-	.fix-portfolio .items li {border:1px solid red;
+	.fix-portfolio .items li {border:1px solid #abcdef;
 	    width: 185px;
 	    margin-left: 9px;
 	    margin-bottom: 9px;
@@ -3478,3 +3491,6 @@ figure.main,
 	    display: none
 	}
 }
+
+
+.place {border:1px solid #abcede;}

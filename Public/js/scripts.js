@@ -671,7 +671,7 @@ $(document).ready(function () {
     });
     
     $('.fix-portfolio .filter li a').click(function () { 
-        $('#cppid').val($(this).attr('pid')); alert($(this).attr('pid'))
+        $('#cppid').val($(this).attr('pid')); //alert($(this).attr('pid'))
         $('.fix-portfolio .filter li a').removeClass('active');
         $(this).addClass('active');
 

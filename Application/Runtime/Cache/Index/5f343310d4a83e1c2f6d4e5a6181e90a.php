@@ -38,12 +38,12 @@
         <nav class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
             <li><a href="/#home">首页</a></li>
+			<li><a href="/#introduce">产品介绍</a></li>
             <li><a href="/#advantage">核心优势</a></li>
-            <li><a href="/#introduce">产品介绍</a></li>
-            <li><a href="/#about">关于我们</a></li>
             <li><a href="/#cooperation">合作加盟</a></li>
+            <li><a href="/#about">关于我们</a></li>
             <li><a href="/#contact">联系我们</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文献</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文库</a>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu"><a href="/News/index/id/9">电销经验</a>
                   <!-- <ul class="dropdown-menu"> -->
@@ -109,66 +109,10 @@
       <!-- /.fullscreenbanner-container --> 
     </div>
   </div>
-  <div id="advantage" class="section anchor">
-    <div class="light-wrapper">
-      <div class="container inner">
-        <h2 class="section-title text-center">核心技术优势</h2>
-        <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p>
-        <div class="row text-center services-1">
-          <div class="col-sm-3">
-            <div class="col-wrapper">
-              <div class="icon-wrapper"> <i class="budicon-image"></i> </div>
-              <h3>安全可靠</h3>
-              <p>针对不同成员设置不同的操作权限，细分到每个模块，每个操作，每个字段，保证数据资料的安全</p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="col-wrapper">
-              <div class="icon-wrapper"> <i class="budicon-browser-3"></i> </div>
-              <h3>名单管理</h3>
-              <p>高效的名单批量导入导出，快速的分发名单到每个坐席，批量的修改名单的属性，详细的名单跟踪记录 </p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="col-wrapper">
-              <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
-              <h3>通话录音</h3>
-              <p>系统提供每个坐席每次通话的录音，并且支持下载，便于后续了解客户需求和话术的准备，提高沟通效率</p>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="col-wrapper">
-              <div class="icon-wrapper"> <i class="budicon-radio"></i> </div>
-              <h3>数据统计</h3>
-              <p>系统具有通话统计，短信统计，每日统计，呼入呼出统计等，并且管理员可以通过搜索条件自定义搜索范围</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.services --> 
-        
-      </div>
-      <!-- /.container --> 
-    </div>
-  </div>
+  
   <!-- /#home -->
-  
-  <div class="parallax parallax1">
-    <div class="container inner text-center">
-      <h1 class="share-button">WE DO OUR BEST <span class="colored">&</span> SERVICE YOU </h1>
-    <!--  <div class="share-links">
-        <ul>
-          <li><a class="btn share-facebook" href="#">Like</a></li>
-          <li><a class="btn share-twitter" href="#">Tweet</a></li>
-          <li><a class="btn share-pinterest" href="#">Pin it</a></li>
-        </ul>
-      </div>-->
-    </div>
-    <!-- /.container --> 
-  </div>
-  <!-- /.parallax -->
-  
   <div id="introduce" class="section anchor">
-    <div class="dark-wrapper">
+    <div class="light-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">产品介绍</h2>
         <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p>
@@ -196,19 +140,173 @@
     </div>
   </div>
   <!-- /#portfolio -->
-  
-  <div class="parallax parallax2 work-together">
-    <div class="container inner text-center">
-      <h1>We Create Unique <span class="colored">&</span> CONVENIENT FUNCTIONS</h1>
-      <div class="divide10"></div>
-      <div class="smooth"><a href="#contact" class="btn btn-border-lite">Let's Work Together</a></div>
+  <!-- <div class="parallax parallax1"> -->
+    <!-- <div class="container inner text-center"> -->
+      <!-- <h1 class="share-button">WE DO OUR BEST <span class="colored">&</span> SERVICE YOU </h1> -->
+  <!-- <div class="share-links"> -->
+        <!-- <ul> -->
+          <!-- <li><a class="btn share-facebook" href="#">Like</a></li> -->
+          <!-- <li><a class="btn share-twitter" href="#">Tweet</a></li> -->
+          <!-- <li><a class="btn share-pinterest" href="#">Pin it</a></li> -->
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- <!-- /.container -->
+  <!-- </div> -->
+  <!-- /.parallax -->
+  <div id="advantage" class="section anchor" >
+    <div class="dark-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">核心技术优势</h2>
+        <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p>
+        <div class="row text-center services-1 services-1">
+          <div class="col-sm-2 col-md-offset-1">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-image"></i> </div>
+              <h3>简单易用</h3>
+              <p>简单易用是系统的首要原则</p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-browser-3"></i> </div>
+              <h3>数据安全性</h3>
+              <p>防火墙、权限，备份等多重安全设计 </p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
+              <h3>大数据支持</h3>
+              <p>只需车牌号即可算价</p>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-radio"></i> </div>
+              <h3>平台对接</h3>
+              <p>每次费改后及时保司接口</p>
+            </div>
+          </div>
+		   <div class="col-sm-2">
+            <div class="col-wrapper">
+              <div class="icon-wrapper"> <i class="budicon-asc"></i> </div>
+              <h3>专业</h3>
+              <p>专注车险全流程，深入需求调研</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.services --> 
+        
+      </div>
+      <!-- /.container --> 
     </div>
-    <!-- /.container --> 
   </div>
+  
+  <div id="cooperation" class="section anchor">
+    <div class="light-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">合作加盟</h2>
+        <p class="lead main text-center">我们提供了多种合作方式，让不同类型、不同发展阶段的客户选择最合适的成本支出</p>
+
+        <div class="pricing row">
+		<div class="col-sm-2  col-md-offset-1 p5">
+            <div class="plan">
+              <h3>试用申请</h3>
+              <div class="features">
+                <ul>
+                  <li>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ</li>       
+                </ul>
+              </div>
+			   <div class="select">
+                  <div> <a href="#" class="btn inverse">Select Plan</a> </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-2 p5">
+            <div class="plan">
+              <h3>SAAS租用模式</h3>
+              <div class="features">
+                <ul>
+                  <li>团队初期发展阶段,试试通过系统是否能带来效益</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-sm-3  -->
+          <div class="col-sm-2 p5">
+            <div class="plan">
+              <h3>自建服务器</h3>
+              <div class="features">
+                <ul>
+                  <li>团队稳定阶段,立志在车险项目长期发展</li>       
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-sm-3  -->
+          <div class="col-sm-2 p5">
+            <div class="plan">
+              <h3>深度合作</h3>
+              <div class="features">
+                <ul>
+                  <li>有资质并有一定保费规模,希望发展为区域性的标杆企业,启点通过定制服务提供全方位支持</li>                
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-sm-3  -->
+          <div class="col-sm-2 p5">
+            <div class="plan">
+              <h3>API接口</h3>
+              <div class="features">
+                <ul>
+                  <li>有自己的客户端<br/>希望对接保险公司接口实现算价投保</li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+          <!-- /.col-sm-3  --> 
+		
+        <!-- /.pricing  --> 
+      </div>
+	  
+	    <div class="cooperate row">
+			  <div class="col-sm-3"><h3>试用申请</h3></div>
+			  <div class="col-sm-9"><span>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ。</span><span><a href="javascript:void(0)" class="sq" >点击申请</a></span></div>      
+		</div>
+		 <div class="cooperate row">
+			  <div class="col-sm-3"><h3>SAAS租用模式</h3></div>
+			  <div class="col-sm-9">团队初期发展阶段，试试通过系统是否能带来效益</div>      
+		</div>
+		 <div class="cooperate row">
+			  <div class="col-sm-3"><h3>自建服务器</h3></div>
+			  <div class="col-sm-9">团队稳定阶段，立志在车险项目长期发展</div>      
+		</div>
+		<div class="cooperate row">
+			  <div class="col-sm-3"><h3>深度合作</h3></div>
+			  <div class="col-sm-9">有资质并有一定保费规模，希望发展为区域性的标杆企业。启点通过定制服务提供全方位支持</div>      
+		</div>
+		 <div class="cooperate row">
+			  <div class="col-sm-3"><h3>API接口</h3></div>
+			  <div class="col-sm-9">有自己的客户端，希望对接保险公司接口实现算价投保。</div>      
+		</div>
+    </div>
+  </div>
+  </div>
+  <!-- <div class="parallax parallax2 work-together"> -->
+    <!-- <div class="container inner text-center"> -->
+      <!-- <h1>We Create Unique <span class="colored">&</span> CONVENIENT FUNCTIONS</h1> -->
+      <!-- <div class="divide10"></div> -->
+      <!-- <div class="smooth"><a href="#contact" class="btn btn-border-lite">Let's Work Together</a></div> -->
+    <!-- </div> -->
+    <!-- <!-- /.container --> 
+  <!-- </div> -->
   <!-- /.parallax -->
   
   <div id="about" class="section anchor">
-    <div class="light-wrapper">
+    <div class="dark-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">关于我们</h2>
         <p class="lead main text-center">我们秉着不断的技术创新，完善的系统升级，良好的售后服务，随时的疑问指导同客户共发展</p>
@@ -220,7 +318,7 @@
 		    <p>目前已成功研发具有自主知识产权的“启点-zswitch”系列通信产品：数字程控交换机IPPBX、呼叫中心系统、电话营销CRM、电话会议系统、网络电子传真群发系统、语音催费查询系统等，特别是针对保险行业开发的呼叫中心系统、电力催费系统在实际应用中取得了良好的社会效益。</p>
 			</div>
           <div class="col-sm-4">
-            <figure><img src="/Public/images/art/about.jpg" alt="" /></figure>
+            <figure><img src="/Public/images/art/place.png" alt="" class="place"/></figure>
           </div>
         </div>
         <div class="divide60"></div>
@@ -229,25 +327,19 @@
             <div class="section-title">
               <h3>我们的客户</h3>
             </div>
-            <p>我们的客户都是……</p>
+            <p>行业分布 ：保险公司、保险代理机构、4S车商、维修厂</p>
             <div class="divide10"></div>
             <ul class="progress-list">
               <li>
-                <p>客户续约率<em>100%</em></p>
+                <p>坐席人均产能提升<em>30%</em>以上</p>
                 <div class="progress plain">
-                  <div class="bar" style="width: 100%;"></div>
+                  <div class="bar" style="width: 30%;"></div>
                 </div>
               </li>
               <li>
-                <p>客户满意度<em>95%</em></p>
+                <p>三年以上合作客户占比达<em>60%</em>以上</p>
                 <div class="progress plain">
-                  <div class="bar" style="width: 95%;"></div>
-                </div>
-              </li>
-              <li>
-                <p>客户增长率 <em>80%</em></p>
-                <div class="progress plain">
-                  <div class="bar" style="width: 80%;"></div>
+                  <div class="bar" style="width: 60%;"></div>
                 </div>
               </li>
          
@@ -262,10 +354,10 @@
             <div class="panel-group" id="accordion">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne"> 百分之百的反馈 </a> </h4>
+                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle active" data-parent="#accordion" href="#collapseOne"> 专业、守信</a> </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in">
-                  <div class="panel-body">公司建有客户群，任何问题都可以通过电话，QQ和我们联系，我们会在第一时间及时反馈给客户，只有强大的实力，才敢让客户把问题反应到群中，所有客户都能监督我们的服务。</div>
+                  <div class="panel-body">启点定位于保险科技公司，提供车险展业工具平台，以帮助客户成长为宗旨。启点系统全部为自主研发，售后服务及系统升级有保障。</div>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -273,22 +365,14 @@
                   <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseTwo"> 上百家客户证明</a> </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
-                  <div class="panel-body">和我们合作的电销公司已过百家，我们客户来源于三方面，销售人员上门介绍，客户主动联系，口碑转介绍。并且所有的使用我们系统的客户都一直和我们保持合作关系。</div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"> <a data-toggle="collapse" class="panel-toggle" data-parent="#accordion" href="#collapseThree"> 领先的技术优势</a> </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body"> 我们的优势有：一键拨打电话，一键查询车价，一键计算保费，一键提交核保。并且随时提供系统升级，所有的设计都是以客户体验为前提，提高效率为宗旨。</div>
+                  <div class="panel-body">如果您希望参观就近的案例用户，我们会介绍你们彼此认识。车险行业圈子不大，同行有竞争，也有更多的合作机会。</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="section-title">
-              <h3>合作流程</h3>
+              <h3>标准的服务流程</h3>
             </div>
             <div class="services-2">
               <div class="row">
@@ -297,18 +381,8 @@
                     <div class="icon"> <i class="budicon-camera-1 icn"></i> </div>
                     <!-- /.icon -->
                     <div class="text">
-                      <h4>商业洽谈</h4>
-                      <p>前期客户先对系统进行整体了解，以及双方之间的合作方式，和启点科技提供的服务支持。</p>
-                    </div>
-                    <!-- /.text --> 
-                  </div>
-                  <!-- /.div -->
-                  <div class="bm20">
-                    <div class="icon"> <i class="budicon-video-1 icn"></i> </div>
-                    <!-- /.icon -->
-                    <div class="text">
-                      <h4>安装培训</h4>
-                      <p>签订合同后，技术人员进行系统安装，以及客户的系统操作的详细培训，保证员工能够正常操作。</p>
+                      <h4>安装、培训 、验收</h4>
+                      <p>启点会根据合同内容派发安装工单，组织现场培训，保证员工能够正常操作。非定制产品的安装培训周期在7个工作日。</p>
                     </div>
                     <!-- /.text --> 
                   </div>
@@ -318,7 +392,7 @@
                     <!-- /.icon -->
                     <div class="text">
                       <h4>售后服务</h4>
-                      <p>公司具有优秀的技术人员，通信售后工程师，web售后工程师，随时解决客户问题，保证客户系统正常使用。</p>
+                      <p>我们售后QQ群中有通信，web，算价专项工程师负责售后。在售后群里，不仅可以反馈系统问题，还可以和认识更多同行。您也可以通过售后电话4000xxxx申报故障</p>
                     </div>
                     <!-- /.text --> 
                   </div>
@@ -337,160 +411,73 @@
   </div>
   <!-- /#about -->
   
-  <div class="parallax parallax4 facts">
-    <div class="container inner">
-      <div class="row text-center services-3">
-        <div class="col-sm-3">
-          <div class="col-wrapper">
-            <div class="icon-border bm10"> <i class="budicon-video-2"></i> </div>
-            <h4>7518</h4>
-            <p>Shots Taken</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="col-wrapper">
-            <div class="icon-border bm10"> <i class="budicon-coffee"></i> </div>
-            <h4>3472</h4>
-            <p>Cups of Coffee</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="col-wrapper">
-            <div class="icon-border bm10"> <i class="budicon-video"></i> </div>
-            <h4>2184</h4>
-            <p>Movies Watched</p>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="col-wrapper">
-            <div class="icon-border bm10"> <i class="budicon-award-1"></i> </div>
-            <h4>4523</h4>
-            <p>Awards Won</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.container --> 
-  </div>
+  <!-- <div class="parallax parallax4 facts"> -->
+    <!-- <div class="container inner"> -->
+      <!-- <div class="row text-center services-3"> -->
+        <!-- <div class="col-sm-3"> -->
+          <!-- <div class="col-wrapper"> -->
+            <!-- <div class="icon-border bm10"> <i class="budicon-video-2"></i> </div> -->
+            <!-- <h4>7518</h4> -->
+            <!-- <p>Shots Taken</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3"> -->
+          <!-- <div class="col-wrapper"> -->
+            <!-- <div class="icon-border bm10"> <i class="budicon-coffee"></i> </div> -->
+            <!-- <h4>3472</h4> -->
+            <!-- <p>Cups of Coffee</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3"> -->
+          <!-- <div class="col-wrapper"> -->
+            <!-- <div class="icon-border bm10"> <i class="budicon-video"></i> </div> -->
+            <!-- <h4>2184</h4> -->
+            <!-- <p>Movies Watched</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="col-sm-3"> -->
+          <!-- <div class="col-wrapper"> -->
+            <!-- <div class="icon-border bm10"> <i class="budicon-award-1"></i> </div> -->
+            <!-- <h4>4523</h4> -->
+            <!-- <p>Awards Won</p> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
   <!-- /.parallax -->
   
-  <div id="cooperation" class="section anchor">
-    <div class="light-wrapper">
-      <div class="container inner">
-        <h2 class="section-title text-center">合作加盟</h2>
-        <p class="lead main text-center">我们提供不同的合作方式，让客户选择最划算的使用形式</p>
-        <div class="pricing row">
-          <div class="col-sm-3">
-            <div class="plan">
-              <h3>试用申请</h3>
-              <h4><span class="amount"><span>$</span>3</span></h4>
-              <div class="features">
-                <ul>
-                  <li>3 Days</li>
-                  <li>2GB Storage</li>
-                  <li>25 Users</li>
-                  <li>Unlimited Pages</li>
-                  <li>Enhanced Security</li>
-                </ul>
-              </div>
-              <div class="select">
-                <div> <a href="#" class="btn inverse">Select Plan</a> </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-sm-3  -->
-          <div class="col-sm-3">
-            <div class="plan">
-              <h3>租用系统</h3>
-              <h4><span class="amount"><span>$</span>10</span></h4>
-              <div class="features">
-                <ul>
-                  <li>7 Days</li>
-                  <li>2GB Storage</li>
-                  <li>25 Users</li>
-                  <li>Unlimited Pages</li>
-                  <li>Enhanced Security</li>
-                </ul>
-                <div class="select">
-                  <div> <a href="#" class="btn inverse">Select Plan</a> </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-sm-3  -->
-          <div class="col-sm-3">
-            <div class="plan">
-              <h3>购买系统</h3>
-              <h4><span class="amount"><span>$</span>20</span></h4>
-              <div class="features">
-                <ul>
-                  <li>30 Days</li>
-                  <li>2GB Storage</li>
-                  <li>25 Users</li>
-                  <li>Unlimited Pages</li>
-                  <li>Enhanced Security</li>
-                </ul>
-                <div class="select">
-                  <div> <a href="#" class="btn inverse">Select Plan</a> </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-sm-3  -->
-          <div class="col-sm-3">
-            <div class="plan">
-              <h3>诚招代理</h3>
-              <h4><span class="amount"><span>$</span>30</span></h4>
-              <div class="features">
-                <ul>
-                  <li>120 Days</li>
-                  <li>2GB Storage</li>
-                  <li>25 Users</li>
-                  <li>Unlimited Pages</li>
-                  <li>Enhanced Security</li>
-                </ul>
-                <div class="select">
-                  <div> <a href="#" class="btn inverse">Select Plan</a> </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-sm-3  --> 
-        </div>
-        <!-- /.pricing  --> 
-      </div>
-    </div>
-  </div>
-  <div class="parallax parallax3 customers">
-    <div class="container inner text-center">
-      <div class="testimonials owl-carousel thin">
-        <div class="item">
-          <blockquote>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam dolor nibh ultricies vehicula ut id elit vulputate Tristique Egestas.<small>Nikolas Brooten</small></p>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.<small>Coriss Ambady</small></p>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis id vestibulum. Donec sed odio dui. Sed posuere consectetur est at lobortis.<small>Barclay Widerski</small></p>
-          </blockquote>
-        </div>
-        <div class="item">
-          <blockquote>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet.<small>Elsie Spear</small></p>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-    <!-- /.container --> 
-  </div>
+  
+  <!-- <div class="parallax parallax3 customers"> -->
+    <!-- <div class="container inner text-center"> -->
+      <!-- <div class="testimonials owl-carousel thin"> -->
+        <!-- <div class="item"> -->
+          <!-- <blockquote> -->
+            <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam dolor nibh ultricies vehicula ut id elit vulputate Tristique Egestas.<small>Nikolas Brooten</small></p> -->
+          <!-- </blockquote> -->
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+          <!-- <blockquote> -->
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.<small>Coriss Ambady</small></p> -->
+          <!-- </blockquote> -->
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+          <!-- <blockquote> -->
+            <!-- <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis id vestibulum. Donec sed odio dui. Sed posuere consectetur est at lobortis.<small>Barclay Widerski</small></p> -->
+          <!-- </blockquote> -->
+        <!-- </div> -->
+        <!-- <div class="item"> -->
+          <!-- <blockquote> -->
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet.<small>Elsie Spear</small></p> -->
+          <!-- </blockquote> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+
+  <!-- </div> -->
   <!-- /.parallax -->
   <div id="contact" class="section anchor">
-    <div class="dark-wrapper">
+    <div class="light-wrapper">
       <div class="container inner">
         <div class="thin text-center">
           <h2 class="section-title text-center">联系我们</h2>

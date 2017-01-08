@@ -3,10 +3,10 @@
 <head>
 </head>
 <frameset cols="260,*" cols="*" frameborder="no" border="0" framespacing="0">
-  <frame src="/tp/qidian/admin.php/Base/left" name="topFrame" scrolling="no">
+  <frame src="/admin.php/Base/left" name="topFrame" scrolling="no">
   <frameset rows="100,*" name="btFrame" frameborder="no" border="0" framespacing="0">
-    <frame src="/tp/qidian/admin.php/Base/head" noresize name="menu" scrolling="yes">
-    <frame src="/tp/qidian/admin.php/Info/index1" noresize name="main" scrolling="yes">
+    <frame src="/admin.php/Base/head" noresize name="menu" scrolling="yes">
+    <frame src="/admin.php/Info/index1" noresize name="main" scrolling="yes">
   </frameset>
 </frameset>
 <noframes>

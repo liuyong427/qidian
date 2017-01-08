@@ -7,15 +7,15 @@
 <meta name="description" content="" />
 <meta name="generator" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<link href="/tp/qidian/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css"/>
-<script src="/tp/qidian/Public/admin/js/jquery-1.10.1.min.js"></script>
-<script src="/tp/qidian/Public/admin/js/side.js" type="text/javascript"></script> 
-<link href="/tp/qidian/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
-<script src="/tp/qidian/Public/bootstrap/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="/tp/qidian/Public/kindeditor/themes/default/default.css" />
-<script charset="utf-8" src="/tp/qidian/Public/kindeditor/kindeditor-min.js"></script>
-<script charset="utf-8" src="/tp/qidian/Public/kindeditor/lang/zh_CN.js"></script>
-<link rel="stylesheet" href="/tp/qidian/Public/css/base.css" />
+<link href="/Public/admin/css/haiersoft.css" rel="stylesheet" type="text/css"/>
+<script src="/Public/admin/js/jquery-1.10.1.min.js"></script>
+<script src="/Public/admin/js/side.js" type="text/javascript"></script> 
+<link href="/Public/bootstrap/css/bootstrap.min.css"  rel="stylesheet" type="text/css" /> 
+<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/Public/kindeditor/themes/default/default.css" />
+<script charset="utf-8" src="/Public/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/Public/kindeditor/lang/zh_CN.js"></script>
+<link rel="stylesheet" href="/Public/css/base.css" />
 
 <!--[if lt IE 9]>
 <script src="http:/html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,150 +54,40 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <!-- /TopMain -->
 
 <!-- MainForm -->
-<div id="MainForm">
-<div class="form_boxA">
-<h2>年度预算列表</h2>
-<table cellpadding="0" cellspacing="0">
+<div id="MainForm" style="margin-bottom:20px;">
+<div class="form_boxA"style="width:500px;margin:100px auto;padding:50px 0px;">
+
+<table cellpadding="0" cellspacing="0" style="border:1px solid #eee ;">
+<tr><td colspan="2">后台数据统计</td></tr>
 <tr>
-<th>序号</th>
-<th>部门</th>
-<th>年度</th>
-<th>提交人</th>
-<th>预算收入（元）</th>
-<th>预算成本（元）</th>
-<th>预算费用（元）</th>
-<th>状态</th>
-<th>操作</th>
+<td>文章：</td>
+<td>20篇</td>
 </tr>
 <tr>
-<td>1</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
+<td>管理员</td>
+<td>2个</td>
 </tr>
 <tr>
-<td>2</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cB">审核未通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>3</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>4</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>5</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>6</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>7</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>8</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>9</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
-</tr>
-<tr>
-<td>10</td>
-<td>财务部</td>
-<td>2015</td>
-<td>王友强</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td>120890000.00</td>
-<td class="f_cA">审核通过</td>
-<td><a href="#">查看</a> | <a href="#">操作</a></td>
+<td>邮件</td>
+<td>10封</td>
 </tr>
 </table>
-<p class="msg">共找到47条年度预算记录，当前显示从第1条至第10条</p>
-</div>
-</div>
 <!-- /MainForm -->
-
-
-<!-- PageNum -->
-
-</ul>
-<!-- /PageNum -->
+</div>
 </div>
 <!-- /Contents -->
 
 <!-- /footer -->
-<footer>
-<address>电子邮箱：sales@haiersoft.com  技术支持：人单合一平台项目组<br>青岛海尔软件有限公司版权所有  Copyright &copy; 2015 Haiersoft Corporation, All Rights.</address>
-</footer>
+
+
 <!-- /footer -->
+<div style="border:1px solid #eee;">
+<footer>
+<address>成都启点科技</address>
+</footer>
+</div>
+<!-- /footer -->
+<!-- /footer --> 
 
 <!-- /wrap_right -->
 </body>
