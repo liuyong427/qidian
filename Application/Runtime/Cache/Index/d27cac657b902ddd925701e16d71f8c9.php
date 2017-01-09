@@ -9,6 +9,7 @@
 <title>Frost</title>
 <!-- Bootstrap core CSS -->
 <!-- Bootstrap core CSS -->
+<link rel="shortcut icon" href="/Public/images/favicon.ico">
 <link href="/Public/css/bootstrap.css" rel="stylesheet">
 <link href="/Public/css/settings.css" rel="stylesheet">
 <link href="/Public/css/owl.carousel.css" rel="stylesheet">
@@ -44,12 +45,12 @@
         <nav class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
             <li><a href="/#home">首页</a></li>
+			<li><a href="/#introduce">产品介绍</a></li>
             <li><a href="/#advantage">核心优势</a></li>
-            <li><a href="/#introduce">产品介绍</a></li>
-            <li><a href="/#about">关于我们</a></li>
             <li><a href="/#cooperation">合作加盟</a></li>
+            <li><a href="/#about">关于我们</a></li>
             <li><a href="/#contact">联系我们</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文献</a>
+            <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文库</a>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu"><a href="/News/index/id/9">电销经验</a>
                   <!-- <ul class="dropdown-menu"> -->

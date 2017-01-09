@@ -1142,7 +1142,7 @@ footer .post-list li em {
     position: relative
 }
 .navbar-brand {
-    background: #549dc5;
+    background: #fff;
     height: auto;
     padding: 20px 30px;
     position: absolute;
@@ -1153,7 +1153,7 @@ footer .post-list li em {
     box-shadow: 3px 3px 0 rgba(0,0,0,0.11);
 }
 .navbar-brand:hover {
-    background: #468eb5
+    background: #fff;
 }
 .navbar-brand img {
     -webkit-transition: all 0.3s;
@@ -1476,8 +1476,8 @@ footer .post-list li em {
     color: #FFF;
 }
 .parallax .inner {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .parallax a {
     color: #549dc5
@@ -3043,11 +3043,11 @@ figure.main,
 	.navbar-nav > li > a {
 	    padding: 33px 25px 31px
 	}
-	.fix-portfolio .items {
+	.fix-portfolio .items {	
 	    margin-left: -9px;
 	    margin-bottom: -9px;
 	}
-	.fix-portfolio .items li {border:1px solid #abcdef;
+	.fix-portfolio .items li { box-shadow: 0 0 5px  #000;border-top:1px solid #eee;
 	    width: 185px;
 	    margin-left: 9px;
 	    margin-bottom: 9px;

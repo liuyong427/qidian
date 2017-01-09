@@ -37,7 +37,7 @@ class NewsController extends Controller {
 		$where1['id'] = array('lt',$id);
 		$where2['id'] = array('gt',$id);
 		$list = M('news')->where('id = '.$id)->find();
-		$list1 =M('news') ->where($where1)->find();
+		$list1 =M('news') ->where($where1)->order('id desc')->find();
 		$list2 =M('news') ->where($where2)->find();
 		if(!$list){
 			$data['status'] = 0;

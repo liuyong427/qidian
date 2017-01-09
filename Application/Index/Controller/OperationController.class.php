@@ -5,7 +5,7 @@ class OperationController extends Controller {
     public function index(){
 		$pid = 1; //知识库总栏目对应的id
 		$where['pid'] = $pid;
-		$item = '权限管理';
+		$item = '';
 		/*
 		if($_GET['item'] && !empty($_GET['item'])){
 	        $item = trim(I('get.item'),' ');
@@ -15,13 +15,26 @@ class OperationController extends Controller {
 			}			
 		}*/
 		$title = '';
-		if($_POST && !empty($_POST['title'])){
-			$title = I('post.title');
+		if($_GET && !empty($_GET['title'])){
+			$title = I('get.title');
 		}
+		
 		$list=M('items')->where($where)->select();
-		foreach($list as $k=>$v){
-			$list[$k]['news'] = M('news')->field('id,item_id,title')->where('item_id='.$v['id'])->select();
+		if($_POST['keyword'] && !empty($_POST['keyword'])){//搜索
+			foreach($list as $k=>$v){
+				$item_ids[] =$v['id'];
+			}
+			$list =array();//清空模块数组
+			$where1['item_id']=array('in',$item_ids);
+			$where1['title'] = array('like',"%".trim($_POST['keyword'],' ' )."%");
+			$list[0]['name'] ="搜索结果";
+			$list[0]['news'] = M('news')->field('id,item_id,title')->where($where1)->select();print_R($list); echo M()->getLastSql();
+		}else{//未搜索
+			foreach($list as $k=>$v){
+				$list[$k]['news'] = M('news')->field('id,item_id,title')->where('item_id='.$v['id'])->select();
+			}
 		}
+		
 		$this->assign('item',$item);
 		$this->assign('title',$title);
 		$this->assign('list',$list);
