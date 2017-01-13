@@ -7,24 +7,24 @@
 <meta name="author" content="">
 <title>启点科技</title>
 <!-- Bootstrap core CSS -->
-<link rel="shortcut icon" href="/tp/qidian/Public/images/favicon.ico">
-<link href="/tp/qidian/Public/css/bootstrap.css" rel="stylesheet">
-<link href="/tp/qidian/Public/css/settings.css" rel="stylesheet">
-<link href="/tp/qidian/Public/css/owl.carousel.css" rel="stylesheet">
-<link href="/tp/qidian/Public/js/google-code-prettify/prettify.css" rel="stylesheet">
-<link href="/tp/qidian/Public/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
-<link href="/tp/qidian/Public/css/style.css" rel="stylesheet">
-<link href="/tp/qidian/Public/css/color/blue.css" rel="stylesheet">
+<link rel="shortcut icon" href="/Public/images/favicon.ico">
+<link href="/Public/css/bootstrap.css" rel="stylesheet">
+<link href="/Public/css/settings.css" rel="stylesheet">
+<link href="/Public/css/owl.carousel.css" rel="stylesheet">
+<link href="/Public/js/google-code-prettify/prettify.css" rel="stylesheet">
+<link href="/Public/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
+<link href="/Public/css/style.css" rel="stylesheet">
+<link href="/Public/css/color/blue.css" rel="stylesheet">
 <!-- <link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
 <!-- <link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'> -->
 <!-- <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'> -->
-<link href="/tp/qidian/Public/type/fontello.css" rel="stylesheet">
-<link href="/tp/qidian/Public/type/budicons.css" rel="stylesheet">
-<link href="/tp/qidian/Public/css/base.css" rel="stylesheet">
+<link href="/Public/type/fontello.css" rel="stylesheet">
+<link href="/Public/type/budicons.css" rel="stylesheet">
+<link href="/Public/css/base.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-      <script src="/tp/qidian/Public/js/html5shiv.js"></script>
+      <script src="/Public/js/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
 </head>
@@ -34,18 +34,18 @@
   <div class="navbar default">
     <div class="navbar-header">
       <div class="container">
-        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand" href="index.html"><img src="/tp/qidian/Public/images/logo.png" alt="" data-src="/tp/qidian/Public/images/logo.png" data-ret="/tp/qidian/Public/images/logo@2x.png" class="retina" /></a> </div>
+        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand1" href="index.html"><img src="/Public/images/logo.jpg" alt="" data-src="/Public/images/logo.jpg" data-ret="/Public/images/logo.  jpg" class="retina" /></a> </div>
         <nav class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
-            <li><a href="/tp/qidian/#home">首页</a></li>
-			<li><a href="/tp/qidian/#introduce">产品介绍</a></li>
-            <li><a href="/tp/qidian/#advantage">核心优势</a></li>
-            <li><a href="/tp/qidian/#cooperation">合作加盟</a></li>
-            <li><a href="/tp/qidian/#about">关于我们</a></li>
-            <li><a href="/tp/qidian/#contact">联系我们</a></li>
+            <li><a href="/#home">首页</a></li>
+			<li><a href="/#introduce">产品介绍</a></li>
+            <li><a href="/#advantage">核心优势</a></li>
+            <li><a href="/#cooperation">合作加盟</a></li>
+            <li><a href="/#about">关于我们</a></li>
+            <li><a href="/#contact">联系我们</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文库</a>
               <ul class="dropdown-menu">
-                <li class="dropdown-submenu"><a href="/tp/qidian/News/index/id/9">电销经验</a>
+                <li class="dropdown-submenu"><a href="/News/index/id/9">电销经验</a>
                   <!-- <ul class="dropdown-menu"> -->
                     <!-- <li><a href="blog.html">Medium Image Layout</a></li> -->
                     <!-- <li><a href="blog2.html">Grid Blog</a></li> -->
@@ -54,7 +54,7 @@
                     <!-- <li><a href="blog-post.html">Blog Post</a></li> -->
                   <!-- </ul> -->
                 </li>
-                <li class="dropdown-submenu"><a href="/tp/qidian/News/index/id/11">加盟伙伴</a>
+                <li class="dropdown-submenu"><a href="/News/index/id/11">加盟伙伴</a>
                 </li>
               </ul>
             </li>
@@ -71,14 +71,14 @@
       <div class="fullscreenbanner-container revolution">
         <div class="fullscreenbanner">
           <ul>
-            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/slider-bg1.jpg" alt="" />
+            <li data-transition="fade"> <img src="/Public/images/art/bg1.jpg" alt="" />
               <div class="caption large sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">专注 电销车险 呼叫系统</div>
               <div class="caption small sfb" data-x="center" data-y="319" data-speed="900" data-start="1500" data-easing="Sine.easeOut">使用客户已遍布全国多个城市</div>
-              <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
-                <div class="smooth"><a href="#introduce" class="btn btn-border">查看系统</a></div>
-              </div>
+              <!-- <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut"> -->
+                <!-- <div class="smooth"><a href="#introduce" class="btn btn-border">查看系统</a></div> -->
+              <!-- </div> -->
             </li>
-            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/slider-bg2.jpg" alt="" />
+            <li data-transition="fade"> <img src="/Public/images/art/bg2.jpg" alt="" />
               <div class="caption large customin customout" data-x="center" data-y="255" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-speed="600"
@@ -94,9 +94,9 @@
 						data-endspeed="300"
 						data-endeasing="Power1.easeIn">高集成 易扩散 低投入</div>
             </li>
-            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/slider-bg3.jpg" alt="" />
-              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">低成本快速部署电销系统</div>
-              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">方便 稳定 易用 智能</div>
+            <li data-transition="fade"> <img src="/Public/images/art/bg3.jpg" alt="" />
+              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">互联网车险支撑平台</div>
+              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">精准报价 电销管理 移动展业端 大数据支持 呼叫中心</div>
               <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
                <!--<div class="smooth"><a href="#contact" class="btn btn-border-lite">Get in Touch</a></div>-->
               </div>
@@ -115,27 +115,41 @@
     <div class="light-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">产品介绍</h2>
-        <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p>
+        <!-- <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p> -->
         <div class="grid-portfolio fix-portfolio">
 		  <input type="hidden" id="cppid" value="0">
+		  <!--
           <ul class="filter">
             <li><a class="active" href="#" data-filter="*" pid="0">全部</a></li>
 			<?php if(is_array($cplist)): $i = 0; $__LIST__ = $cplist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a href="#" data-filter=".cp<?php echo ($vo["id"]); ?>" pid="<?php echo ($vo["id"]); ?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
           </ul>
-          
+          -->
           <!-- /filter -->
+		  
+		  <!--
           <ul class="content-slider items">
 		  <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="item thumb cp<?php echo ($vo["item_id"]); ?>">
               <figure><a href="javascript:void(0)" id="<?php echo ($vo["id"]); ?>">
                 <div class="text-overlay">
                   <div class="info" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></div>
                 </div>
-                <img src="/tp/qidian<?php echo ($vo["small_img"]); ?>" style="max-width:100%;height:auto;overflow:hidden;" alt="" /> </a></figure>
+                <img src="<?php echo ($vo["small_img"]); ?>" style="max-width:100%;height:auto;overflow:hidden;" alt="" /> </a></figure>
             </li><?php endforeach; endif; else: echo "" ;endif; ?> 
           </ul>
+		  -->
           <!-- /.items --> 
         </div>
         <!-- /.portfolio --> 
+
+		
+		 <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-sm-2 <?php if($i == 1): ?>col-md-offset-1<?php endif; ?>">
+		 <div class="cp-block" id="<?php echo ($vo["id"]); ?>">
+			  <div><img src="<?php echo ($vo["small_img"]); ?>" style="width:100%"/></div>
+			  <div style="text-align:center;font-weight:bold"><?php echo ($vo["title"]); ?></div>
+		  </div>
+		 </div><?php endforeach; endif; else: echo "" ;endif; ?>
+		</div>
+		
       </div>
     </div>
   </div>
@@ -158,34 +172,34 @@
     <div class="dark-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">核心技术优势</h2>
-        <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p>
+        <!-- <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p> -->
         <div class="row text-center services-1 services-1">
           <div class="col-sm-2 col-md-offset-1">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-image"></i> </div>
               <h3>简单易用</h3>
-              <p>简单易用是系统的首要原则</p>
+              <p>坐席上手快，使用体验好</p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-browser-3"></i> </div>
               <h3>数据安全性</h3>
-              <p>防火墙、权限，备份等多重安全设计 </p>
+              <p>防火墙、权限，备份多重保障 </p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
               <h3>大数据支持</h3>
-              <p>只需车牌号即可算价</p>
+              <p>只需车牌号即可精准算价</p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-radio"></i> </div>
               <h3>平台对接</h3>
-              <p>每次费改后及时保司接口</p>
+              <p>跟随每次费改同步升级</p>
             </div>
           </div>
 		   <div class="col-sm-2">
@@ -202,7 +216,13 @@
       <!-- /.container --> 
     </div>
   </div>
-  
+    
+  <div class="parallax parallax2 work-together">
+    <div class="container inner text-center">
+      <h1>WE DO OUR BEST <span class="colored">&</span> SERVICE YOU </h1>
+    </div>
+  </div>
+
   <div id="cooperation" class="section anchor">
     <div class="light-wrapper">
       <div class="container inner">
@@ -215,7 +235,7 @@
               <h3>试用申请</h3>
               <div class="features">
                 <ul>
-                  <li>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ</li>       
+                  <li>了解系统能做什么，比较看看能否满足需求</li>       
                 </ul>
               </div>
 			   <div class="select">
@@ -228,7 +248,7 @@
               <h3>SAAS租用模式</h3>
               <div class="features">
                 <ul>
-                  <li>团队初期发展阶段,试试通过系统是否能带来效益</li>
+                  <li>团队初建阶段，试试系统能否提升效率</li>
                 </ul>
               </div>
             </div>
@@ -239,7 +259,7 @@
               <h3>自建服务器</h3>
               <div class="features">
                 <ul>
-                  <li>团队稳定阶段,立志在车险项目长期发展</li>       
+                  <li>团队稳定阶段，确定发展车险项目</li>       
                 </ul>
               </div>
             </div>
@@ -250,7 +270,7 @@
               <h3>深度合作</h3>
               <div class="features">
                 <ul>
-                  <li>有资质并有一定保费规模,希望发展为区域性的标杆企业,启点通过定制服务提供全方位支持</li>                
+                  <li>已有规模，希望为区域性标杆企业，定制需求</li>                
                 </ul>
               </div>
             </div>
@@ -261,7 +281,7 @@
               <h3>API接口</h3>
               <div class="features">
                 <ul>
-                  <li>有自己的客户端<br/>希望对接保险公司接口实现算价投保</li>
+                  <li>用户自有客户端界面，需要保险公司平台接口</li>
                 </ul>
                
               </div>
@@ -272,36 +292,28 @@
         <!-- /.pricing  --> 
       </div>
 	  
-	    <div class="cooperate row">
-			  <div class="col-sm-3"><h3>试用申请</h3></div>
-			  <div class="col-sm-9"><span>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ。</span><span><a href="javascript:void(0)" class="sq" >点击申请</a></span></div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>SAAS租用模式</h3></div>
-			  <div class="col-sm-9">团队初期发展阶段，试试通过系统是否能带来效益</div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>自建服务器</h3></div>
-			  <div class="col-sm-9">团队稳定阶段，立志在车险项目长期发展</div>      
-		</div>
-		<div class="cooperate row">
-			  <div class="col-sm-3"><h3>深度合作</h3></div>
-			  <div class="col-sm-9">有资质并有一定保费规模，希望发展为区域性的标杆企业。启点通过定制服务提供全方位支持</div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>API接口</h3></div>
-			  <div class="col-sm-9">有自己的客户端，希望对接保险公司接口实现算价投保。</div>      
-		</div>
+	    <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>试用申请</h3></div> -->
+			  <!-- <div class="col-sm-9"><span>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ。</span><span><a href="javascript:void(0)" class="sq" >点击申请</a></span></div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>SAAS租用模式</h3></div> -->
+			  <!-- <div class="col-sm-9">团队初期发展阶段，试试通过系统是否能带来效益</div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>自建服务器</h3></div> -->
+			  <!-- <div class="col-sm-9">团队稳定阶段，立志在车险项目长期发展</div>       -->
+		<!-- </div> -->
+		<!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>深度合作</h3></div> -->
+			  <!-- <div class="col-sm-9">有资质并有一定保费规模，希望发展为区域性的标杆企业。启点通过定制服务提供全方位支持</div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>API接口</h3></div> -->
+			  <!-- <div class="col-sm-9">有自己的客户端，希望对接保险公司接口实现算价投保。</div>       -->
+		<!-- </div> -->
     </div>
   </div>
-  </div>
-  <div class="parallax parallax2 work-together">
-    <div class="container inner text-center">
-      <h1>We Create Unique <span class="colored">&</span> CONVENIENT FUNCTIONS</h1>
-      <div class="divide10"></div>
-      <div class="smooth"><a href="#contact" class="btn btn-border-lite">Let's Work Together</a></div>
-    </div>
-
   </div>
 
   
@@ -318,7 +330,7 @@
 		    <p>目前已成功研发具有自主知识产权的“启点-zswitch”系列通信产品：数字程控交换机IPPBX、呼叫中心系统、电话营销CRM、电话会议系统、网络电子传真群发系统、语音催费查询系统等，特别是针对保险行业开发的呼叫中心系统、电力催费系统在实际应用中取得了良好的社会效益。</p>
 			</div>
           <div class="col-sm-4">
-            <figure><img src="/tp/qidian/Public/images/art/place.png" alt="" class="place"/></figure>
+            <figure><img src="/Public/images/art/place.png" alt="" class="place"/></figure>
           </div>
         </div>
         <div class="divide60"></div>
@@ -476,51 +488,50 @@
 
   <!-- </div> -->
   <!-- /.parallax -->
-  <div id="contact" class="section anchor">
-    <div class="light-wrapper">
-      <div class="container inner">
-        <div class="thin text-center">
-          <h2 class="section-title text-center">联系我们</h2>
-          <p class="lead main text-center">如有任何疑问或需求，随时和我们取得联系</p>
-          <ul class="contact-info">
-            <li><i class="icon-location"></i>四川省成都市高新区美年广场2期1703 1704 </li>
-            <li><i class="icon-phone"></i>028-69686996</li>
-            <li><i class="icon-mail"></i>zswitch@163.com</li>
-          </ul>
-          <div class="divide50"></div>
-          <div class="form-container">
-		  <div class="h_res"><div class="response alert alert-success"></div></div>
-            <form class="forms" action="/tp/qidian/Index/Apply/add" method="post">
-              <fieldset>
-                <ol class="row">
-                  <li class="form-row text-input-row name-field col-sm-4">
-                    <input type="text" name="name" class="text-input defaultText required name" title="姓名(必须)"/>
-                  </li>
-				  <li class="form-row text-input-row email-field col-sm-4">
-                    <input type="text" name="phone" class="text-input defaultText required phone" title="电话(必须)"/>
-                  </li>
-                  <li class="form-row text-input-row email-field col-sm-4">
-                    <input type="text" name="email" class="text-input defaultText required email" title="邮箱(必须)"/>
-                  </li>
-                  <li class="form-row text-area-row col-sm-12">
-                    <textarea name="content" class="text-area required content" title="你的信息"></textarea>
-                  </li>
-                  <li class="button-row">
-                    <input type="button" value="提交信息" class="btn btn-submit submit" />
-                  </li>
-                </ol>
-               <!--<input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />-->
-              </fieldset>
-            </form>
-          </div>
-          <!-- /.form-container -->
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
+  <!-- <div id="contact" class="section anchor"> -->
+    <!-- <div class="light-wrapper"> -->
+      <!-- <div class="container inner"> -->
+        <!-- <div class="thin text-center"> -->
+          <!-- <h2 class="section-title text-center">联系我们</h2> -->
+        
+          <!-- <ul class="contact-info"> -->
+            <!-- <li><i class="icon-location"></i>四川省成都市高新区美年广场2期1703 1704 </li> -->
+            <!-- <li><i class="icon-phone"></i>028-69686996</li> -->
+            <!-- <li><i class="icon-mail"></i>zswitch@163.com</li> -->
+          <!-- </ul> -->
+          <!-- <div class="divide50"></div> -->
+          <!-- <div class="form-container"> -->
+		  <!-- <div class="h_res"><div class="response alert alert-success"></div></div> -->
+            <!-- <form class="forms" action="/Index/Apply/add" method="post"> -->
+              <!-- <fieldset> -->
+                <!-- <ol class="row"> -->
+                  <!-- <li class="form-row text-input-row name-field col-sm-4"> -->
+                    <!-- <input type="text" name="name" class="text-input defaultText required name" title="姓名(必须)"/> -->
+                  <!-- </li> -->
+				  <!-- <li class="form-row text-input-row email-field col-sm-4"> -->
+                    <!-- <input type="text" name="phone" class="text-input defaultText required phone" title="电话(必须)"/> -->
+                  <!-- </li> -->
+                  <!-- <li class="form-row text-input-row email-field col-sm-4"> -->
+                    <!-- <input type="text" name="email" class="text-input defaultText required email" title="邮箱(必须)"/> -->
+                  <!-- </li> -->
+                  <!-- <li class="form-row text-area-row col-sm-12"> -->
+                    <!-- <textarea name="content" class="text-area required content" title="你的信息"></textarea> -->
+                  <!-- </li> -->
+                  <!-- <li class="button-row"> -->
+                    <!-- <input type="button" value="提交信息" class="btn btn-submit submit" /> -->
+                  <!-- </li> -->
+                <!-- </ol> -->
+             
+              <!-- </fieldset> -->
+            <!-- </form> -->
+          <!-- </div> -->
+
+          <!-- <div class="clearfix"></div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
      
-  </div>
+  <!-- </div> -->
 <div id="map">
 	<div class="mbtn">
 		<div class="mbtn-1">
@@ -557,27 +568,27 @@
   <!-- /footer --> 
 </div>
 <!-- .body-wrapper --> 
-<script src="/tp/qidian/Public/js/jquery.min.js"></script> 
-<script src="/tp/qidian/Public/js/bootstrap.min.js"></script> 
-<script src="/tp/qidian/Public/js/twitter-bootstrap-hover-dropdown.min.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.themepunch.plugins.min.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.themepunch.revolution.min.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.easytabs.min.js"></script> 
-<script src="/tp/qidian/Public/js/owl.carousel.min.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.isotope.min.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.fitvids.js"></script> 
-<script src="/tp/qidian/Public/js/jquery.fancybox.pack.js"></script> 
-<script src="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"></script> 
-<script src="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"></script> 
-<script src="/tp/qidian/Public/js/jquery.slickforms.js"></script> 
-<script src="/tp/qidian/Public/js/instafeed.min.js"></script> 
-<script src="/tp/qidian/Public/js/retina.js"></script> 
-<script src="/tp/qidian/Public/js/google-code-prettify/prettify.js"></script> 
-<script src="/tp/qidian/Public/js/scripts.js"></script>
+<script src="/Public/js/jquery.min.js"></script> 
+<script src="/Public/js/bootstrap.min.js"></script> 
+<script src="/Public/js/twitter-bootstrap-hover-dropdown.min.js"></script> 
+<script src="/Public/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="/Public/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="/Public/js/jquery.easytabs.min.js"></script> 
+<script src="/Public/js/owl.carousel.min.js"></script> 
+<script src="/Public/js/jquery.isotope.min.js"></script> 
+<script src="/Public/js/jquery.fitvids.js"></script> 
+<script src="/Public/js/jquery.fancybox.pack.js"></script> 
+<script src="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"></script> 
+<script src="/Public/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"></script> 
+<script src="/Public/js/jquery.slickforms.js"></script> 
+<script src="/Public/js/instafeed.min.js"></script> 
+<script src="/Public/js/retina.js"></script> 
+<script src="/Public/js/google-code-prettify/prettify.js"></script> 
+<script src="/Public/js/scripts.js"></script>
 </body>
 </html>
 <script>
-$(".content-slider.items a").click(function(){
+$(".cp-block").click(function(){
 	var height= document.body.clientHeight;
 	var mtop =  $(window).scrollTop();
 	var id =$(this).attr('id');
@@ -607,7 +618,7 @@ function getCpnew(id){
    var pid = $('#cppid').val();//alert(id);
    $.ajax({
 	    type:"POST",
-		url:"/tp/qidian/News/cpnew",
+		url:"/News/cpnew",
 		data:{'id':id,'pid':pid},
 		success:function(msg){
 		    $('.mc-1').html(msg['title']);
@@ -641,7 +652,7 @@ $('.submit').click(function(){
 	}
 	$.ajax({
 		type:"POST",
-		url:"/tp/qidian/Apply/add",
+		url:"/Apply/add",
 		data:{name:name,phone:phone,email,email,content:content},
 		success:function(data){
 		    if(data['status'] == 1){

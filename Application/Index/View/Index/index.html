@@ -17,14 +17,14 @@
       <div class="fullscreenbanner-container revolution">
         <div class="fullscreenbanner">
           <ul>
-            <li data-transition="fade"> <img src="__PUBLIC__/images/art/slider-bg1.jpg" alt="" />
+            <li data-transition="fade"> <img src="__PUBLIC__/images/art/bg1.jpg" alt="" />
               <div class="caption large sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">专注 电销车险 呼叫系统</div>
               <div class="caption small sfb" data-x="center" data-y="319" data-speed="900" data-start="1500" data-easing="Sine.easeOut">使用客户已遍布全国多个城市</div>
-              <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
-                <div class="smooth"><a href="#introduce" class="btn btn-border">查看系统</a></div>
-              </div>
+              <!-- <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut"> -->
+                <!-- <div class="smooth"><a href="#introduce" class="btn btn-border">查看系统</a></div> -->
+              <!-- </div> -->
             </li>
-            <li data-transition="fade"> <img src="__PUBLIC__/images/art/slider-bg2.jpg" alt="" />
+            <li data-transition="fade"> <img src="__PUBLIC__/images/art/bg2.jpg" alt="" />
               <div class="caption large customin customout" data-x="center" data-y="255" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-speed="600"
@@ -40,9 +40,9 @@
 						data-endspeed="300"
 						data-endeasing="Power1.easeIn">高集成 易扩散 低投入</div>
             </li>
-            <li data-transition="fade"> <img src="__PUBLIC__/images/art/slider-bg3.jpg" alt="" />
-              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">低成本快速部署电销系统</div>
-              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">方便 稳定 易用 智能</div>
+            <li data-transition="fade"> <img src="__PUBLIC__/images/art/bg3.jpg" alt="" />
+              <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">互联网车险支撑平台</div>
+              <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">精准报价 电销管理 移动展业端 大数据支持 呼叫中心</div>
               <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
                <!--<div class="smooth"><a href="#contact" class="btn btn-border-lite">Get in Touch</a></div>-->
               </div>
@@ -61,17 +61,20 @@
     <div class="light-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">产品介绍</h2>
-        <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p>
+        <!-- <p class="lead main text-center">我们致力打造方便、快捷的电销系统，给客户带来最省事省心的服务。</p> -->
         <div class="grid-portfolio fix-portfolio">
 		  <input type="hidden" id="cppid" value="0">
+		  <!--
           <ul class="filter">
             <li><a class="active" href="#" data-filter="*" pid="0">全部</a></li>
 			<volist name="cplist" id="vo">
             <li><a href="#" data-filter=".cp{$vo.id}" pid="{$vo.id}">{$vo.name}</a></li>
 			</volist>
           </ul>
-          
+          -->
           <!-- /filter -->
+		  
+		  <!--
           <ul class="content-slider items">
 		  <volist name="cpnews" id="vo">
             <li class="item thumb cp{$vo.item_id}">
@@ -83,9 +86,22 @@
             </li>
 			</volist> 
           </ul>
+		  -->
           <!-- /.items --> 
         </div>
         <!-- /.portfolio --> 
+
+		
+		 <volist name="cpnews" id="vo">
+		 <div class="col-sm-2 <if condition="$i eq 1">col-md-offset-1</if>">
+		 <div class="cp-block" id="{$vo.id}">
+			  <div><img src="__ROOT__{$vo.small_img}" style="width:100%"/></div>
+			  <div style="text-align:center;font-weight:bold">{$vo.title}</div>
+		  </div>
+		 </div>
+		 </volist>
+		</div>
+		
       </div>
     </div>
   </div>
@@ -108,34 +124,34 @@
     <div class="dark-wrapper">
       <div class="container inner">
         <h2 class="section-title text-center">核心技术优势</h2>
-        <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p>
+        <!-- <p class="lead main text-center">系统安全便利，电话和录音一体，大数据统计管理</p> -->
         <div class="row text-center services-1 services-1">
           <div class="col-sm-2 col-md-offset-1">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-image"></i> </div>
               <h3>简单易用</h3>
-              <p>简单易用是系统的首要原则</p>
+              <p>坐席上手快，使用体验好</p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-browser-3"></i> </div>
               <h3>数据安全性</h3>
-              <p>防火墙、权限，备份等多重安全设计 </p>
+              <p>防火墙、权限，备份多重保障 </p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
               <h3>大数据支持</h3>
-              <p>只需车牌号即可算价</p>
+              <p>只需车牌号即可精准算价</p>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
               <div class="icon-wrapper"> <i class="budicon-radio"></i> </div>
               <h3>平台对接</h3>
-              <p>每次费改后及时保司接口</p>
+              <p>跟随每次费改同步升级</p>
             </div>
           </div>
 		   <div class="col-sm-2">
@@ -152,7 +168,13 @@
       <!-- /.container --> 
     </div>
   </div>
-  
+    
+  <div class="parallax parallax2 work-together">
+    <div class="container inner text-center">
+      <h1>WE DO OUR BEST <span class="colored">&</span> SERVICE YOU </h1>
+    </div>
+  </div>
+
   <div id="cooperation" class="section anchor">
     <div class="light-wrapper">
       <div class="container inner">
@@ -165,7 +187,7 @@
               <h3>试用申请</h3>
               <div class="features">
                 <ul>
-                  <li>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ</li>       
+                  <li>了解系统能做什么，比较看看能否满足需求</li>       
                 </ul>
               </div>
 			   <div class="select">
@@ -178,7 +200,7 @@
               <h3>SAAS租用模式</h3>
               <div class="features">
                 <ul>
-                  <li>团队初期发展阶段,试试通过系统是否能带来效益</li>
+                  <li>团队初建阶段，试试系统能否提升效率</li>
                 </ul>
               </div>
             </div>
@@ -189,7 +211,7 @@
               <h3>自建服务器</h3>
               <div class="features">
                 <ul>
-                  <li>团队稳定阶段,立志在车险项目长期发展</li>       
+                  <li>团队稳定阶段，确定发展车险项目</li>       
                 </ul>
               </div>
             </div>
@@ -200,7 +222,7 @@
               <h3>深度合作</h3>
               <div class="features">
                 <ul>
-                  <li>有资质并有一定保费规模,希望发展为区域性的标杆企业,启点通过定制服务提供全方位支持</li>                
+                  <li>已有规模，希望为区域性标杆企业，定制需求</li>                
                 </ul>
               </div>
             </div>
@@ -211,7 +233,7 @@
               <h3>API接口</h3>
               <div class="features">
                 <ul>
-                  <li>有自己的客户端<br/>希望对接保险公司接口实现算价投保</li>
+                  <li>用户自有客户端界面，需要保险公司平台接口</li>
                 </ul>
                
               </div>
@@ -222,36 +244,28 @@
         <!-- /.pricing  --> 
       </div>
 	  
-	    <div class="cooperate row">
-			  <div class="col-sm-3"><h3>试用申请</h3></div>
-			  <div class="col-sm-9"><span>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ。</span><span><a href="javascript:void(0)" class="sq" >点击申请</a></span></div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>SAAS租用模式</h3></div>
-			  <div class="col-sm-9">团队初期发展阶段，试试通过系统是否能带来效益</div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>自建服务器</h3></div>
-			  <div class="col-sm-9">团队稳定阶段，立志在车险项目长期发展</div>      
-		</div>
-		<div class="cooperate row">
-			  <div class="col-sm-3"><h3>深度合作</h3></div>
-			  <div class="col-sm-9">有资质并有一定保费规模，希望发展为区域性的标杆企业。启点通过定制服务提供全方位支持</div>      
-		</div>
-		 <div class="cooperate row">
-			  <div class="col-sm-3"><h3>API接口</h3></div>
-			  <div class="col-sm-9">有自己的客户端，希望对接保险公司接口实现算价投保。</div>      
-		</div>
+	    <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>试用申请</h3></div> -->
+			  <!-- <div class="col-sm-9"><span>看看系统能否满足自己需求，比较下。需要讲解请联系服务QQ。</span><span><a href="javascript:void(0)" class="sq" >点击申请</a></span></div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>SAAS租用模式</h3></div> -->
+			  <!-- <div class="col-sm-9">团队初期发展阶段，试试通过系统是否能带来效益</div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>自建服务器</h3></div> -->
+			  <!-- <div class="col-sm-9">团队稳定阶段，立志在车险项目长期发展</div>       -->
+		<!-- </div> -->
+		<!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>深度合作</h3></div> -->
+			  <!-- <div class="col-sm-9">有资质并有一定保费规模，希望发展为区域性的标杆企业。启点通过定制服务提供全方位支持</div>       -->
+		<!-- </div> -->
+		 <!-- <div class="cooperate row"> -->
+			  <!-- <div class="col-sm-3"><h3>API接口</h3></div> -->
+			  <!-- <div class="col-sm-9">有自己的客户端，希望对接保险公司接口实现算价投保。</div>       -->
+		<!-- </div> -->
     </div>
   </div>
-  </div>
-  <div class="parallax parallax2 work-together">
-    <div class="container inner text-center">
-      <h1>We Create Unique <span class="colored">&</span> CONVENIENT FUNCTIONS</h1>
-      <div class="divide10"></div>
-      <div class="smooth"><a href="#contact" class="btn btn-border-lite">Let's Work Together</a></div>
-    </div>
-
   </div>
 
   
@@ -426,51 +440,50 @@
 
   <!-- </div> -->
   <!-- /.parallax -->
-  <div id="contact" class="section anchor">
-    <div class="light-wrapper">
-      <div class="container inner">
-        <div class="thin text-center">
-          <h2 class="section-title text-center">联系我们</h2>
-          <p class="lead main text-center">如有任何疑问或需求，随时和我们取得联系</p>
-          <ul class="contact-info">
-            <li><i class="icon-location"></i>四川省成都市高新区美年广场2期1703 1704 </li>
-            <li><i class="icon-phone"></i>028-69686996</li>
-            <li><i class="icon-mail"></i>zswitch@163.com</li>
-          </ul>
-          <div class="divide50"></div>
-          <div class="form-container">
-		  <div class="h_res"><div class="response alert alert-success"></div></div>
-            <form class="forms" action="__MODULE__/Apply/add" method="post">
-              <fieldset>
-                <ol class="row">
-                  <li class="form-row text-input-row name-field col-sm-4">
-                    <input type="text" name="name" class="text-input defaultText required name" title="姓名(必须)"/>
-                  </li>
-				  <li class="form-row text-input-row email-field col-sm-4">
-                    <input type="text" name="phone" class="text-input defaultText required phone" title="电话(必须)"/>
-                  </li>
-                  <li class="form-row text-input-row email-field col-sm-4">
-                    <input type="text" name="email" class="text-input defaultText required email" title="邮箱(必须)"/>
-                  </li>
-                  <li class="form-row text-area-row col-sm-12">
-                    <textarea name="content" class="text-area required content" title="你的信息"></textarea>
-                  </li>
-                  <li class="button-row">
-                    <input type="button" value="提交信息" class="btn btn-submit submit" />
-                  </li>
-                </ol>
-               <!--<input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />-->
-              </fieldset>
-            </form>
-          </div>
-          <!-- /.form-container -->
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
+  <!-- <div id="contact" class="section anchor"> -->
+    <!-- <div class="light-wrapper"> -->
+      <!-- <div class="container inner"> -->
+        <!-- <div class="thin text-center"> -->
+          <!-- <h2 class="section-title text-center">联系我们</h2> -->
+        
+          <!-- <ul class="contact-info"> -->
+            <!-- <li><i class="icon-location"></i>四川省成都市高新区美年广场2期1703 1704 </li> -->
+            <!-- <li><i class="icon-phone"></i>028-69686996</li> -->
+            <!-- <li><i class="icon-mail"></i>zswitch@163.com</li> -->
+          <!-- </ul> -->
+          <!-- <div class="divide50"></div> -->
+          <!-- <div class="form-container"> -->
+		  <!-- <div class="h_res"><div class="response alert alert-success"></div></div> -->
+            <!-- <form class="forms" action="__MODULE__/Apply/add" method="post"> -->
+              <!-- <fieldset> -->
+                <!-- <ol class="row"> -->
+                  <!-- <li class="form-row text-input-row name-field col-sm-4"> -->
+                    <!-- <input type="text" name="name" class="text-input defaultText required name" title="姓名(必须)"/> -->
+                  <!-- </li> -->
+				  <!-- <li class="form-row text-input-row email-field col-sm-4"> -->
+                    <!-- <input type="text" name="phone" class="text-input defaultText required phone" title="电话(必须)"/> -->
+                  <!-- </li> -->
+                  <!-- <li class="form-row text-input-row email-field col-sm-4"> -->
+                    <!-- <input type="text" name="email" class="text-input defaultText required email" title="邮箱(必须)"/> -->
+                  <!-- </li> -->
+                  <!-- <li class="form-row text-area-row col-sm-12"> -->
+                    <!-- <textarea name="content" class="text-area required content" title="你的信息"></textarea> -->
+                  <!-- </li> -->
+                  <!-- <li class="button-row"> -->
+                    <!-- <input type="button" value="提交信息" class="btn btn-submit submit" /> -->
+                  <!-- </li> -->
+                <!-- </ol> -->
+             
+              <!-- </fieldset> -->
+            <!-- </form> -->
+          <!-- </div> -->
+
+          <!-- <div class="clearfix"></div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
      
-  </div>
+  <!-- </div> -->
 <div id="map">
 	<div class="mbtn">
 		<div class="mbtn-1">
@@ -490,7 +503,7 @@
 </body>
 </html>
 <script>
-$(".content-slider.items a").click(function(){
+$(".cp-block").click(function(){
 	var height= document.body.clientHeight;
 	var mtop =  $(window).scrollTop();
 	var id =$(this).attr('id');

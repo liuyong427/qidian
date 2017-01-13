@@ -317,6 +317,8 @@ blockquote small {
 .mc-1{
 	height:80px;line-height:80px;text-align:center;font-size:18px;
 	border-bottom:1px solid #eee;
+	font-weight:bold;
+	font-size:20px;
 }
 .mc-2{
 	margin-top:10px;
@@ -1141,10 +1143,10 @@ footer .post-list li em {
 .navbar .container {
     position: relative
 }
-.navbar-brand {
+.navbar-brand1{
     background: #fff;
     height: auto;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -1152,10 +1154,10 @@ footer .post-list li em {
     -moz-box-shadow: 3px 3px 0 rgba(0,0,0,0.11);
     box-shadow: 3px 3px 0 rgba(0,0,0,0.11);
 }
-.navbar-brand:hover {
+.navbar-brand1:hover {
     background: #fff;
 }
-.navbar-brand img {
+.navbar-brand1 img {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1164,7 +1166,7 @@ footer .post-list li em {
     -webkit-transform: translateZ();
     image-rendering: optimizeQuality;
     image-rendering: -webkit-optimize-contrast;
-    height: 49px;
+    height: 89px;
     width: inherit;
 }
 .navbar-header {
@@ -2442,6 +2444,7 @@ textarea {
 }
 .pricing .plan ul li {
     padding: 15px 0;
+	text-align:left;
     
 }
 .pricing .plan h3 {
@@ -3047,8 +3050,9 @@ figure.main,
 	    margin-left: -9px;
 	    margin-bottom: -9px;
 	}
-	.fix-portfolio .items li { box-shadow: 0 0 5px  #000;border-top:1px solid #eee;
-	    width: 185px;
+	.fix-portfolio .items li { 
+	   /* box-shadow: 0 0 5px  #000;border-top:1px solid #eee; */
+	    width: 222px;
 	    margin-left: 9px;
 	    margin-bottom: 9px;
 	}
@@ -3164,7 +3168,7 @@ figure.main,
 	.navbar-nav > li:first-child {
 	    border-left: 1px solid rgba(255,255,255, 0.06)
 	}
-	.navbar.fixed .navbar-brand {
+	.navbar.fixed .navbar-brand1 {
 	    display: none
 	}
 	.navbar.fixed .navbar-nav > li > a {
@@ -3186,17 +3190,20 @@ figure.main,
 	}
 }
 @media (max-width: 991px) { 
-	.navbar-brand {
+	.navbar-brand1 {
 	    position: relative;
 	    -webkit-box-shadow: none;
 	    -moz-box-shadow: none;
 	    box-shadow: none;
 	    margin: 0;
 	}
+	.navbar-brand1 img{
+		height:69px;
+	}
 	.navbar.fixed {
 	    height: 53px
 	}
-	.navbar.fixed .navbar-brand {
+	.navbar.fixed .navbar-brand1 {
 	    display: none
 	}
 	.navbar.fixed .btn.responsive-menu {
@@ -3494,3 +3501,5 @@ figure.main,
 
 
 .place {border:1px solid #abcede;}
+.cp-block{}
+.cp-block:hover{cursor:pointer;color:#ff0000;}
