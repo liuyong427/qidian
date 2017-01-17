@@ -7,24 +7,24 @@
 <meta name="author" content="">
 <title>启点科技</title>
 <!-- Bootstrap core CSS -->
-<link rel="shortcut icon" href="/Public/images/favicon.ico">
-<link href="/Public/css/bootstrap.css" rel="stylesheet">
-<link href="/Public/css/settings.css" rel="stylesheet">
-<link href="/Public/css/owl.carousel.css" rel="stylesheet">
-<link href="/Public/js/google-code-prettify/prettify.css" rel="stylesheet">
-<link href="/Public/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
-<link href="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
-<link href="/Public/css/style.css" rel="stylesheet">
-<link href="/Public/css/color/blue.css" rel="stylesheet">
+<link rel="shortcut icon" href="/tp/qidian/Public/images/favicon.ico">
+<link href="/tp/qidian/Public/css/bootstrap.css" rel="stylesheet">
+<link href="/tp/qidian/Public/css/settings.css" rel="stylesheet">
+<link href="/tp/qidian/Public/css/owl.carousel.css" rel="stylesheet">
+<link href="/tp/qidian/Public/js/google-code-prettify/prettify.css" rel="stylesheet">
+<link href="/tp/qidian/Public/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.2" rel="stylesheet" type="text/css" />
+<link href="/tp/qidian/Public/css/style.css" rel="stylesheet">
+<link href="/tp/qidian/Public/css/color/blue.css" rel="stylesheet">
 <!-- <link href='http://fonts.useso.com/css?family=Josefin+Sans:400,600,700,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
 <!-- <link href='http://fonts.useso.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'> -->
 <!-- <link href='http://fonts.useso.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'> -->
-<link href="/Public/type/fontello.css" rel="stylesheet">
-<link href="/Public/type/budicons.css" rel="stylesheet">
-<link href="/Public/css/base.css" rel="stylesheet">
+<link href="/tp/qidian/Public/type/fontello.css" rel="stylesheet">
+<link href="/tp/qidian/Public/type/budicons.css" rel="stylesheet">
+<link href="/tp/qidian/Public/css/base.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-      <script src="/Public/js/html5shiv.js"></script>
+      <script src="/tp/qidian/Public/js/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
       <![endif]-->
 </head>
@@ -34,18 +34,17 @@
   <div class="navbar default">
     <div class="navbar-header">
       <div class="container">
-        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand1" href="index.html"><img src="/Public/images/logo.jpg" alt="" data-src="/Public/images/logo.jpg" data-ret="/Public/images/logo.  jpg" class="retina" /></a> </div>
+        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand1" href="index.html"><img src="/tp/qidian/Public/images/logo.jpg" alt="" data-src="/tp/qidian/Public/images/logo.jpg" data-ret="/tp/qidian/Public/images/logo.  jpg" class="retina" /></a> </div>
         <nav class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
-            <li><a href="/#home">首页</a></li>
-			<li><a href="/#introduce">产品介绍</a></li>
-            <li><a href="/#advantage">核心优势</a></li>
-            <li><a href="/#cooperation">合作加盟</a></li>
-            <li><a href="/#about">关于我们</a></li>
-            <li><a href="/#contact">联系我们</a></li>
+            <li><a href="/tp/qidian/#home">首页</a></li>
+			<li><a href="/tp/qidian/#introduce">产品介绍</a></li>
+            <li><a href="/tp/qidian/#advantage">核心优势</a></li>
+            <li><a href="/tp/qidian/#cooperation">合作加盟</a></li>
+            <li><a href="/tp/qidian/#about">关于我们</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文库</a>
               <ul class="dropdown-menu">
-                <li class="dropdown-submenu"><a href="/News/index/id/9">电销经验</a>
+                <li class="dropdown-submenu"><a href="/tp/qidian/News/index/id/9">电销经验</a>
                   <!-- <ul class="dropdown-menu"> -->
                     <!-- <li><a href="blog.html">Medium Image Layout</a></li> -->
                     <!-- <li><a href="blog2.html">Grid Blog</a></li> -->
@@ -54,7 +53,7 @@
                     <!-- <li><a href="blog-post.html">Blog Post</a></li> -->
                   <!-- </ul> -->
                 </li>
-                <li class="dropdown-submenu"><a href="/News/index/id/11">加盟伙伴</a>
+                <li class="dropdown-submenu"><a href="/tp/qidian/News/index/id/11">加盟伙伴</a>
                 </li>
               </ul>
             </li>
@@ -71,30 +70,30 @@
       <div class="fullscreenbanner-container revolution">
         <div class="fullscreenbanner">
           <ul>
-            <li data-transition="fade"> <img src="/Public/images/art/bg1.jpg" alt="" />
-              <div class="caption large sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">专注 电销车险 呼叫系统</div>
-              <div class="caption small sfb" data-x="center" data-y="319" data-speed="900" data-start="1500" data-easing="Sine.easeOut">使用客户已遍布全国多个城市</div>
+            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/bg1.jpg" alt="" />
+              <div class="caption large sfb zs" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">专注 电销车险 呼叫系统</div>
+              <div class="caption small sfb zs" data-x="center" data-y="319" data-speed="900" data-start="1500" data-easing="Sine.easeOut">使用客户已遍布全国多个城市</div>
               <!-- <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut"> -->
                 <!-- <div class="smooth"><a href="#introduce" class="btn btn-border">查看系统</a></div> -->
               <!-- </div> -->
             </li>
-            <li data-transition="fade"> <img src="/Public/images/art/bg2.jpg" alt="" />
+            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/bg2.jpg" alt="" />
               <div class="caption large customin customout" data-x="center" data-y="255" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-speed="600"
 						data-start="700"
 						data-easing="Back.easeOut"
 						data-endspeed="300"
-						data-endeasing="Power1.easeIn">呼叫中心一体机</div>
+						data-endeasing="Power1.easeIn">提升用户保费规模为目标</div>
               <div class="caption small customin customout" data-x="center" data-y="329" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
 						data-speed="600"
 						data-start="1100"
 						data-easing="Back.easeOut"
 						data-endspeed="300"
-						data-endeasing="Power1.easeIn">高集成 易扩散 低投入</div>
+						data-endeasing="Power1.easeIn">入手快 效率高 低投入 高回报</div>
             </li>
-            <li data-transition="fade"> <img src="/Public/images/art/bg3.jpg" alt="" />
+            <li data-transition="fade"> <img src="/tp/qidian/Public/images/art/bg3.jpg" alt="" />
               <div class="caption large lite sfb" data-x="center" data-y="245" data-speed="900" data-start="800" data-easing="Sine.easeOut">互联网车险支撑平台</div>
               <div class="caption small lite sfb" data-x="center" data-y="319"  data-speed="900" data-start="1500" data-easing="Sine.easeOut">精准报价 电销管理 移动展业端 大数据支持 呼叫中心</div>
               <div class="caption small sfb" data-x="center" data-y="362" data-speed="900" data-start="2200" data-easing="Sine.easeOut">
@@ -133,7 +132,7 @@
                 <div class="text-overlay">
                   <div class="info" value="<?php echo ($vo["id"]); ?>"><?php echo ($vo["title"]); ?></div>
                 </div>
-                <img src="<?php echo ($vo["small_img"]); ?>" style="max-width:100%;height:auto;overflow:hidden;" alt="" /> </a></figure>
+                <img src="/tp/qidian<?php echo ($vo["small_img"]); ?>" style="max-width:100%;height:auto;overflow:hidden;" alt="" /> </a></figure>
             </li><?php endforeach; endif; else: echo "" ;endif; ?> 
           </ul>
 		  -->
@@ -142,9 +141,9 @@
         <!-- /.portfolio --> 
 
 		
-		 <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-sm-2 <?php if($i == 1): ?>col-md-offset-1<?php endif; ?>">
+		 <?php if(is_array($cpnews)): $i = 0; $__LIST__ = $cpnews;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-sm-2 <?php if($i == 1): ?>col-md-offset-1<?php endif; ?>" >
 		 <div class="cp-block" id="<?php echo ($vo["id"]); ?>">
-			  <div><img src="<?php echo ($vo["small_img"]); ?>" style="width:100%"/></div>
+			  <div><img src="/tp/qidian<?php echo ($vo["small_img"]); ?>" style="width:100%"/></div>
 			  <div style="text-align:center;font-weight:bold"><?php echo ($vo["title"]); ?></div>
 		  </div>
 		 </div><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -190,7 +189,7 @@
           </div>
           <div class="col-sm-2">
             <div class="col-wrapper">
-              <div class="icon-wrapper"> <i class="budicon-shopping-cart"></i> </div>
+              <div class="icon-wrapper"> <i class="budicon-share"></i> </div>
               <h3>大数据支持</h3>
               <p>只需车牌号即可精准算价</p>
             </div>
@@ -228,6 +227,7 @@
       <div class="container inner">
         <h2 class="section-title text-center">合作加盟</h2>
         <p class="lead main text-center">我们提供了多种合作方式，让不同类型、不同发展阶段的客户选择最合适的成本支出</p>
+		<p style="border:1px solid #fff;text-align:center;color:#158df2;font-size:16px;"><span style="">试用申请</span>及任何疑问请联系qq客服</p>
 
         <div class="pricing row">
 		<div class="col-sm-2  col-md-offset-1 p5">
@@ -238,9 +238,6 @@
                   <li>了解系统能做什么，比较看看能否满足需求</li>       
                 </ul>
               </div>
-			   <div class="select">
-                  <div> <a href="#" class="btn inverse">Select Plan</a> </div>
-                </div>
             </div>
           </div>
           <div class="col-sm-2 p5">
@@ -325,12 +322,12 @@
         <div class="row">
           <div class="col-sm-8">
             <h2>公司简介</h2>
-            <p>成都启点科技有限公司，由从事通信研发近十年的资深技术人员组成，专业从事新一代IP通信产品和企业融合通信系统研发、生产和销售，致力于为政府和企业提供先进、智能的融合通信一体化解决方案。</p>
-            <p>我们兼收并蓄通讯技术及企业管理实践经验，立足于自主知识产权产品，是为了满足企事业用户对通讯业务日益多样化、高集成化的需求。目前已开发的产品有：数字程控交换机IPPBX、呼叫中心系统、电话营销CRM、电话会议系统、网络电子传真群发系统、语音催费查询系统等。</p>      
-		    <p>目前已成功研发具有自主知识产权的“启点-zswitch”系列通信产品：数字程控交换机IPPBX、呼叫中心系统、电话营销CRM、电话会议系统、网络电子传真群发系统、语音催费查询系统等，特别是针对保险行业开发的呼叫中心系统、电力催费系统在实际应用中取得了良好的社会效益。</p>
+            <p>成都启点科技有限公司成立于2012年，由从事通信研发近十年的资深技术人员组成，专业从事新一代IP通信产品和企业管理系统研发。</p>
+            <p>2103年初呼叫中心产品推向市场商用，在保险、车商、电商、医药、房地产、金融行业应用。通过近三年的市场发展，逐步形成了以车险为核心的产品体系，其中有车险电销系统、车险大数据库、算价器接口、核单流程、移动展业端等。</p>      
+		    <p>兼收并蓄众多用户群体的车险经验，我们才能在车险行业稳步发展。感谢大家支持，我们将开发更强的功能和更好的售后回馈大家。</p>
 			</div>
           <div class="col-sm-4">
-            <figure><img src="/Public/images/art/place.png" alt="" class="place"/></figure>
+            <figure><img src="/tp/qidian/Public/images/art/place.png" alt="" class="place"/></figure>
           </div>
         </div>
         <div class="divide60"></div>
@@ -390,21 +387,21 @@
               <div class="row">
                 <div class="col-sm-12">
                   <div class="bm20">
-                    <div class="icon"> <i class="budicon-camera-1 icn"></i> </div>
+                    <div class="icon"> <i class="budicon-check-1 icn"></i> </div>
                     <!-- /.icon -->
                     <div class="text">
                       <h4>安装、培训 、验收</h4>
-                      <p>启点会根据合同内容派发安装工单，组织现场培训，保证员工能够正常操作。非定制产品的安装培训周期在7个工作日。</p>
+                      <p>根据合同内容派发安装工单，组织现场培训，保证员工能够正常操作。标准产品安装培训周期为7个工作日。</p>
                     </div>
                     <!-- /.text --> 
                   </div>
                   <!-- /.div -->
                   <div class="bm20">
-                    <div class="icon"> <i class="budicon-radio icn"></i> </div>
+                    <div class="icon"> <i class="budicon-authors icn"></i> </div>
                     <!-- /.icon -->
                     <div class="text">
                       <h4>售后服务</h4>
-                      <p>我们售后QQ群中有通信，web，算价专项工程师负责售后。在售后群里，不仅可以反馈系统问题，还可以和认识更多同行。您也可以通过售后电话4000xxxx申报故障</p>
+                      <p>售后QQ群中有通信，web，算价专项工程师负责对应故障，在群中可以反馈系统问题，还可以认识更多同行。您也可以通过4000xxxx申报故障。</p>
                     </div>
                     <!-- /.text --> 
                   </div>
@@ -502,7 +499,7 @@
           <!-- <div class="divide50"></div> -->
           <!-- <div class="form-container"> -->
 		  <!-- <div class="h_res"><div class="response alert alert-success"></div></div> -->
-            <!-- <form class="forms" action="/Index/Apply/add" method="post"> -->
+            <!-- <form class="forms" action="/tp/qidian/Index/Apply/add" method="post"> -->
               <!-- <fieldset> -->
                 <!-- <ol class="row"> -->
                   <!-- <li class="form-row text-input-row name-field col-sm-4"> -->
@@ -568,23 +565,23 @@
   <!-- /footer --> 
 </div>
 <!-- .body-wrapper --> 
-<script src="/Public/js/jquery.min.js"></script> 
-<script src="/Public/js/bootstrap.min.js"></script> 
-<script src="/Public/js/twitter-bootstrap-hover-dropdown.min.js"></script> 
-<script src="/Public/js/jquery.themepunch.plugins.min.js"></script> 
-<script src="/Public/js/jquery.themepunch.revolution.min.js"></script> 
-<script src="/Public/js/jquery.easytabs.min.js"></script> 
-<script src="/Public/js/owl.carousel.min.js"></script> 
-<script src="/Public/js/jquery.isotope.min.js"></script> 
-<script src="/Public/js/jquery.fitvids.js"></script> 
-<script src="/Public/js/jquery.fancybox.pack.js"></script> 
-<script src="/Public/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"></script> 
-<script src="/Public/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"></script> 
-<script src="/Public/js/jquery.slickforms.js"></script> 
-<script src="/Public/js/instafeed.min.js"></script> 
-<script src="/Public/js/retina.js"></script> 
-<script src="/Public/js/google-code-prettify/prettify.js"></script> 
-<script src="/Public/js/scripts.js"></script>
+<script src="/tp/qidian/Public/js/jquery.min.js"></script> 
+<script src="/tp/qidian/Public/js/bootstrap.min.js"></script> 
+<script src="/tp/qidian/Public/js/twitter-bootstrap-hover-dropdown.min.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.themepunch.plugins.min.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.easytabs.min.js"></script> 
+<script src="/tp/qidian/Public/js/owl.carousel.min.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.isotope.min.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.fitvids.js"></script> 
+<script src="/tp/qidian/Public/js/jquery.fancybox.pack.js"></script> 
+<script src="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.2"></script> 
+<script src="/tp/qidian/Public/js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.0"></script> 
+<script src="/tp/qidian/Public/js/jquery.slickforms.js"></script> 
+<script src="/tp/qidian/Public/js/instafeed.min.js"></script> 
+<script src="/tp/qidian/Public/js/retina.js"></script> 
+<script src="/tp/qidian/Public/js/google-code-prettify/prettify.js"></script> 
+<script src="/tp/qidian/Public/js/scripts.js"></script>
 </body>
 </html>
 <script>
@@ -618,7 +615,7 @@ function getCpnew(id){
    var pid = $('#cppid').val();//alert(id);
    $.ajax({
 	    type:"POST",
-		url:"/News/cpnew",
+		url:"/tp/qidian/News/cpnew",
 		data:{'id':id,'pid':pid},
 		success:function(msg){
 		    $('.mc-1').html(msg['title']);
@@ -652,7 +649,7 @@ $('.submit').click(function(){
 	}
 	$.ajax({
 		type:"POST",
-		url:"/Apply/add",
+		url:"/tp/qidian/Apply/add",
 		data:{name:name,phone:phone,email,email,content:content},
 		success:function(data){
 		    if(data['status'] == 1){

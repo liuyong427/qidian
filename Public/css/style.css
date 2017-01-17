@@ -1329,6 +1329,7 @@ footer .post-list li em {
     text-transform: uppercase;
     font-weight: 400;
 }
+.tp-caption.zs{color:#356699  ;}
 .tp-caption.lite {
     color: #FFF !important
 }
@@ -1424,6 +1425,7 @@ footer .post-list li em {
 /*-----------------------------------------------------------------------------------*/
 /*	10. SERVICES
 /*-----------------------------------------------------------------------------------*/
+.services-1{margin-top:40px;}
 .services-1 .col-wrapper {
     padding: 0 10px
 }
@@ -1445,6 +1447,7 @@ footer .post-list li em {
     border-bottom: 1px solid rgba(0,0,0,0.16);
     width: 30px;
 }
+
 .services-2 .row {
     text-align: left
 }
@@ -3501,5 +3504,5 @@ figure.main,
 
 
 .place {border:1px solid #abcede;}
-.cp-block{}
+.cp-block{font-size:18px;}
 .cp-block:hover{cursor:pointer;color:#ff0000;}
