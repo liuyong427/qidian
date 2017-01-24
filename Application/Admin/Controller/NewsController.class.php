@@ -22,7 +22,7 @@ class NewsController extends BaseController {
 		} 
 		$User = M('news');
 		//$User = M('User'); // 实例化User对象
-		$count = $User->count();// 查询满足要求的总记录数
+		$count = $User->where($where)->count();// 查询满足要求的总记录数
 		$Page = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 		//$Page->setConfig('header','条记录');
 		$Page->setConfig('prev','上一页');
@@ -31,7 +31,7 @@ class NewsController extends BaseController {
 		$Page->setConfig('last','最后一页');
 		$show       = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
-		$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->order('id desc')->select();
 		foreach($list as $k=>$v){
 			$item = M('items')->where('id='.$v['item_id'])->find();
 			$list[$k]['item_name'] = $item['name'];

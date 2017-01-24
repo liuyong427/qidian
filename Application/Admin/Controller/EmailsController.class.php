@@ -8,11 +8,11 @@ class EmailsController extends BaseController {
 		}
 		if($_POST){
 			unset($_SESSION['search']);
-			if($_POST['account']){
-				$where['account'] = array('like',"%".$_POST['account']."%");
-			}
 			if($_POST['name']){
 				$where['name'] = array('like',"%".$_POST['name']."%");
+			}
+			if($_POST['stutus']){
+				$where['status'] = $_POST['status'];
 			}
 		}
 		if($_SESSION['search']){

@@ -5,7 +5,14 @@ class NewsController extends Controller {
 	public function index(){
 		$id = trim(I('get.id'),'');//item_id
 		$id = $id ? $id : 9;
+		$item = M('items')->field('name')->where('id ='.$id)->find();
+		if(empty($item)){
+			R('Empty/_empty');
+			exit;
+		}
 		$where['item_id'] =$id;
+	
+		
 		$User = M('news');
 		//$User = M('User'); // 实例化User对象
 		$count = $User->where($where)->count();// 查询满足要求的总记录数
@@ -17,6 +24,8 @@ class NewsController extends Controller {
 		$show  = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 		$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('item',$item);
+		$this->assign('dxlist',R('Index/items'));
 		$this->assign('list',$list);// 赋值数据集
 		$this->assign('page',$show);// 赋值分页输出
 		$this->display();
@@ -24,13 +33,13 @@ class NewsController extends Controller {
 	//产品新闻ajax获取
     public function cpnew(){
 		$id = I('post.id');
-		$item_id =I('post.pid');
-		$cpnews_items = M('items')->field('id')->where('pid=4')->select();
-		$ids_array=array();
-		foreach($cpnews_items as $k=>$v){
-			$ids_array[] = $v['id'];
-		}
-		$where1['item_id'] = $where2['item_id'] = array('in',$ids_array);
+		$item_id =4;//I('post.pid');
+		// $cpnews_items = M('items')->field('id')->where('pid=4')->select();
+		// $ids_array=array();
+		// foreach($cpnews_items as $k=>$v){
+			// $ids_array[] = $v['id'];
+		// }
+		// $where1['item_id'] = $where2['item_id'] = array('in',$ids_array);
 		if(!empty($item_id)){
 			$where1['item_id'] = $where2['item_id']= $item_id;
 		}
@@ -38,7 +47,7 @@ class NewsController extends Controller {
 		$where2['id'] = array('gt',$id);
 		$list = M('news')->where('id = '.$id)->find();
 		$list1 =M('news') ->where($where1)->order('id desc')->find();
-		$list2 =M('news') ->where($where2)->find();
+		$list2 =M('news') ->where($where2)->order('id asc')->find();
 		if(!$list){
 			$data['status'] = 0;
 			$data['content'] = '对不起，你查询的内容不存在';

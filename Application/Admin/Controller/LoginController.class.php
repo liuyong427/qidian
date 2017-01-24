@@ -25,6 +25,7 @@ class LoginController extends Controller {
 		}
 		$_SESSION['account'] = $list['account'];
 		$_SESSION['userid'] = $list['id'];
+		$_SESSION['last_login'] = $list['last_login'];
 		
 		$info['last_login'] = date('Y-m-d H:i:s',time());
 		$info['ip'] = $_SERVER["REMOTE_ADDR"];;

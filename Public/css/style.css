@@ -345,8 +345,15 @@ blockquote small {
     padding: 0;
     margin: 0;
 }
+
 .footer p.pull-left {
-    margin-top: 3px
+    margin-top: 3px;
+	text-align:center;
+}
+ .pull-left span {
+	display:inline-block;
+    float:left;
+	padding:5px 50px;
 }
 .footer.widget-footer {
     background: #232323
@@ -1186,12 +1193,12 @@ footer .post-list li em {
     margin: 0
 }
 .navbar-nav > li > a {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 1;
     text-transform: uppercase;
     color: #f3f3f3;
-    padding: 31px 22px 31px;
+    padding: 24px 22px 24px;
 }
 .nav > li > a:focus {
     background: none;
@@ -1434,6 +1441,7 @@ footer .post-list li em {
     height: 80px;
     margin-bottom: 30px;
 }
+.services-1 .icon-wrapper img{ height:100%;}
 .services-1 .icon-wrapper i {
     font-size: 50px
 }
@@ -3047,7 +3055,7 @@ figure.main,
 /*-----------------------------------------------------------------------------------*/
 @media (min-width: 1200px) { 
 	.navbar-nav > li > a {
-	    padding: 33px 25px 31px
+	    padding: 25px 25px 25px
 	}
 	.fix-portfolio .items {	
 	    margin-left: -9px;
@@ -3295,7 +3303,7 @@ figure.main,
 	    margin: 0;
 	    max-height: none;
 	}
-	.navbar .navbar-nav {
+	.navbar .navbar-nav { 
 	    width: 720px;
 	    margin: 20px auto 0;
 	    padding: 0;
@@ -3417,6 +3425,7 @@ figure.main,
 	.footer p {
 	    margin-bottom: 20px
 	}
+
 	.sub-footer p {
 	    margin-bottom: 20px !important
 	}

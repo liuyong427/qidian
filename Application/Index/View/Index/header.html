@@ -2,7 +2,7 @@
   <div class="navbar default">
     <div class="navbar-header">
       <div class="container">
-        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand1" href="index.html"><img src="__PUBLIC__/images/logo.jpg" alt="" data-src="__PUBLIC__/images/logo.jpg" data-ret="__PUBLIC__/images/logo.  jpg" class="retina" /></a> </div>
+        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse" href="javascript:void(0)"><i class='icon-menu-1'></i></a> <a class="navbar-brand1"  href="javascript:void(0)"><img src="__PUBLIC__/images/logo.jpg" alt="" data-src="__PUBLIC__/images/logo.jpg" data-ret="__PUBLIC__/images/logo.  jpg" class="retina"/></a> </div>
         <nav class="collapse navbar-collapse pull-right">
           <ul class="nav navbar-nav">
             <li><a href="__ROOT__/#home">首页</a></li>
@@ -12,17 +12,10 @@
             <li><a href="__ROOT__/#about">关于我们</a></li>
             <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">相关文库</a>
               <ul class="dropdown-menu">
-                <li class="dropdown-submenu"><a href="__ROOT__/News/index/id/9">电销经验</a>
-                  <!-- <ul class="dropdown-menu"> -->
-                    <!-- <li><a href="blog.html">Medium Image Layout</a></li> -->
-                    <!-- <li><a href="blog2.html">Grid Blog</a></li> -->
-                    <!-- <li><a href="blog3.html">Grid Blog with Sidebar</a></li> -->
-                    <!-- <li><a href="blog4.html">Classic Blog</a></li> -->
-                    <!-- <li><a href="blog-post.html">Blog Post</a></li> -->
-                  <!-- </ul> -->
-                </li>
-                <li class="dropdown-submenu"><a href="__ROOT__/News/index/id/11">加盟伙伴</a>
-                </li>
+			    <volist name = "dxlist" id="vo">
+				<li class="dropdown-submenu"><a href="__ROOT__/list/{$vo.id}.html">{$vo.name}</a>
+				</volist>
+          
               </ul>
             </li>
           </ul>

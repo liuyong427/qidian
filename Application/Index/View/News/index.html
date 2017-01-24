@@ -6,7 +6,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="style/images/favicon.png">
-<title>Frost</title>
+<title>{$item.name}</title>
 <!-- Bootstrap core CSS -->
 <include file="Index/files" />
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,18 +22,21 @@
   <div class="offset"></div>
   <div class="light-wrapper">
     <div class="container inner">
-      <div class="row">
+	<div class="row">
+	 <div class="col-sm-8" ><div style ="border-bottom:1px solid #8e8e8e;margin-bottom:40px;"><span style="background:#5d5c5c;height:40px;line-height:40px;display:inline-block;padding:0px 20px;color:#fff;border-radius:5px 5px 0px 0px;">{$item.name}</span></div></div>
+    </div>       
+	 <div class="row">
         <div class="col-sm-8 content">
           <div class="blog-posts classic-blog">
 		  <volist name="list" id="vo">
             <div class="post row">
               <figure class="col-sm-4">
-                 <a href="__URL__/content/id/{$vo.id}" ><img src="{$vo.small_img}" alt="" /></a></figure>
+                 <a href="__ROOT__/content/{$vo.id}.html" ><img src="{$vo.small_img}" alt="" /></a></figure>
               <div class="col-sm-8">
-                <h2 class="post-title"><a href="__URL__/content/id/{$vo.id}" >{$vo.title}</a></h2>
+                <h2 class="post-title"><a href="__ROOT__/content/{$vo.id}.html" >{$vo.title}</a></h2>
                 <div class="meta"><span class="date">{$vo.add_time}</span></div>
                 <p>{$vo.description}</p>
-                <a href="__URL__/content/id/{$vo.id}" class="more">点击阅读</a> </div>
+                <a href="__ROOT__/content/{$vo.id}.html" class="more">点击阅读</a> </div>
             </div>
             <hr />
             </volist>

@@ -48,15 +48,15 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <tr><td colspan="2">后台数据统计</td></tr>
 <tr>
 <td>文章：</td>
-<td>20篇</td>
+<td>{$data['total_news']}篇</td>
 </tr>
 <tr>
 <td>管理员</td>
-<td>2个</td>
+<td>{$data['total_users']}个</td>
 </tr>
 <tr>
 <td>邮件</td>
-<td>10封</td>
+<td>{$data['total_emails']}封,未处理{$data['total_emails_undo']}封</td>
 </tr>
 </table>
 <!-- /MainForm -->

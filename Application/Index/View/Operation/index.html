@@ -23,6 +23,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 .ctit:hover{background:#fff;border-bottom: 1px solid #EAEAEA;cursor:pointer}
 .dtit{padding:10px 0px 10px 20px;background:#b9b8b8;color:#fff;border-radius:10px 10px 0 0;font-size:18px;border-bottom:1px solid #E7E7E7;}
 .content{padding:20px;}
+.intruduce{ border-bottom:1px solid #eee;width:300px;margin:0 auto;text-align:center;padding:20px 0 5px 0;}
 </style>
 </head>
 <body>
@@ -33,7 +34,7 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 		     <form id="sform" method="post" action="__ROOT__/Operation">
 				<input type="text" class="keyword" name="keyword"  placeholder="请输入搜索内容"/>
 				
-				<input type="submit" value="搜索" class="btn btn-info searchbtn" />
+				<input type="submit" name="searchBtn" value="搜索" class="btn btn-info searchbtn" />
 			</form>
 		</div>
 	</div>
@@ -55,6 +56,9 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 		<div class="right">
 		    <div class="dtit">&nbsp;</div>
 			<div class="content">
+			    <div class="intruduce">欢迎使用启点系统知识库</div>
+				<div class="intruduce">由于版本不同，部分地方略有差异</div>
+				<div class="intruduce">不明白的地方，欢迎咨询启点技术人员</div>
 			</div>
 		</div>
 	</div>
@@ -76,7 +80,7 @@ function showItem(item){
 }
 
 $('.ptit').click(function(){
-   $(this).siblings('.otit').slideToggle('100');
+   $(this).siblings('.otit').stop().slideToggle('100');
    $(this).parent().siblings('.one').children('.otit').slideUp('100');
    var html = $(this).children('.icon').html()=='+'? '-':'+';
    $(this).children('.icon').html(html);

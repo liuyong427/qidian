@@ -31,15 +31,15 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 </script>
 <!-- TopMain -->
 <div id="TopMain">
-<form method="post" action="__MODULE__/News/index">
+<form method="post" action="__CONTROLLER__/index">
 
 
-<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="title" placeholder="标题"></div>
+<div class=" floatL"><input type="text" class="form-control" style="width:200px;" name="name" placeholder="姓名"></div>
 <div class=" floatL">
-	<select class="form-control" name="item_id">
-	  <option value="">请选择</option>
-	  <volist name="items" id="vo">
-	  <option value="{$vo.id}">{$vo.name}</option>
+	<select class="form-control" name="status">
+	  <option value="">全部</option>
+	  <option value="0">未审核</option>
+	   <option value="0">已审核</option>
 	  </volist>
 	</select>
 </div>
@@ -48,7 +48,7 @@ $("body").click(function(i){ !$(i.target).parents(".select").first().is(s) ? _hi
 <div class="btn_box floatL"><input type="submit" value="查询" onmousemove="this.className='input_move'" onmouseout="this.className='input_out'"></div>
 <!-- /btn_box -->
 </form>
-<span><a class="btn btn-info mleft50" href="__MODULE__/News/edit" role="button">添加</a></span>
+<span><a class="btn btn-info mleft50" href="__CONTROLLER__/edit" role="button">添加</a></span>
 </div>
 <!-- /TopMain -->
 
