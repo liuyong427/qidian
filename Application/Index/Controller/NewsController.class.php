@@ -79,6 +79,7 @@ class NewsController extends Controller {
 		$data['click_num'] =$list['click_num']+1;
 		M('news')->where('id='.$id)->save($data);
 		$this->assign('list',$list);
+		$this->assign('dxlist',R('Index/items'));
 		$this->display();
 	}
 	

@@ -1,20 +1,21 @@
 $(".cp-block").click(function(){
 
-	
 	$('body').css('overflow-y','hidden');
-	var height= document.body.clientHeight;
-	var mtop =  $(window).scrollTop();
-	var id =$(this).attr('id');
+	var height= document.body.offsetHeight;alert(height)
+	var height_bar = $('.mbtn').height();
+var id =$(this).attr('id');
+getCpnew(id);
 	$("#map").css({
 				  "top":0,
 				  "position":"fixed",
 				  "height":height+"px",
-				  "width":"100%",
-				  "overflow":"auto"
+				  "width":"100%"
+				 // "overflow":"auto"
 				  });
 
-	getCpnew(id);
-	$("#map").show("slow");
+	var height2=height+height_bar;
+	$("#map").show("slow");//alert($('.mc-2').height());
+	$('.mc-2').css({'height':600+'px','overflow-y':'auto'});
 });
 
 $('.btn-back').click(function(){
@@ -62,7 +63,7 @@ $('.submit').click(function(){
 	var flag = false;
 	$('.required').each(function(){
 	    if($(this).val() == $(this).attr('title')){
-		    show($(this).attr('title'));
+		    show($(this).attr('title'),false);
   			flag = true;
 			return false;
 		}
@@ -90,7 +91,7 @@ $('.submit').click(function(){
 	});
 });
 
-function show(info,flag=false){
+function show(info,flag){
 
    var color = flag == false? 'red':'green';
    var place = $('.alert-success');

@@ -25,9 +25,6 @@ body{background:#f5f5f5;margin:0px;padding:0px;}
 .content{padding:20px;}
 .intruduce{ border-bottom:1px solid #eee;width:300px;margin:0 auto;text-align:center;padding:20px 0 5px 0;}
 </style>
-<script>
-var  = ;alert();
-</script>
 </head>
 <body>
 <div id="main">

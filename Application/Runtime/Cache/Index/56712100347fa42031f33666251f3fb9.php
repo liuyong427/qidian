@@ -76,16 +76,11 @@
   
     <div class="sub-footer">
       <div class="container">
-        <p class="pull-left"><span>公司地址：四川省成都市高新区美年广场2期1703-1704 </span><span style="margin-left:50px;">联系电话：028-69686996</span><span style="margin-left:50px;">备案号：蜀ICP备12022978号</span></p>
-        <!-- <ul class="social pull-right"> -->
-          <!-- <li><a href="#"><i class="icon-s-rss"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-twitter"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-facebook"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-dribbble"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-pinterest"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-instagram"></i></a></li> -->
-          <!-- <li><a href="#"><i class="icon-s-vimeo"></i></a></li> -->
-        <!-- </ul> -->
+        <p class="pull-left">
+			<span>公司地址：四川省成都市高新区美年广场2期1703-1704 </span>
+			<span>联系电话：028-69686996</span>
+			<span>备案号：蜀ICP备12022978号</span>
+		</p>
       </div>
     </div>
   </footer>
