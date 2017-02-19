@@ -301,19 +301,33 @@
   </div>
   
 <div id="map">
-	<div class="mbtn" style="border:1px solid red;position:fixed;top:0px;width:100%;">
+	<div class="mbtn" style="position:fixed;top:0px;width:100%;">
 		<div class="mbtn-1">
 		<button type="button" class="btn btn-primary btn-back" style="border-radius:4px;">返回</button>
 		<button type="button" class="btn btn-primary btn-get btn-get-next" style="border-radius:4px;" value="">下一篇</button>
 		<button type="button" class="btn btn-primary btn-get btn-get-pre" style="border-radius:4px;" value="">上一篇</button>
 		</div>
 	</div>
-	<div class="mcon" style="overflow-y:auto;border:1px solid red;" >
+	<div class="mcon" >
 		<div class="mc-1"></div>
 		<div class="mc-2"></div>
+
 	</div>
 </div>
 
   <include file="footer" />
 </body>
 </html>
+<script>
+function divMap(){
+	var height= window.innerHeight;
+	var height_bar = $('.mbtn').outerHeight();
+	var height2=height-height_bar;
+	$("#map").height(height);
+	$('.mcon').css({'height':height2+'px','overflow-y':'auto'});
+}
+window.onresize = function(){
+divMap();
+}
+
+</script>

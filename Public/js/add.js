@@ -1,10 +1,10 @@
-$(".cp-block").click(function(){
 
-	$('body').css('overflow-y','hidden');
-	var height= document.body.offsetHeight;alert(height)
-	var height_bar = $('.mbtn').height();
+$(".cp-block").click(function(){
 var id =$(this).attr('id');
 getCpnew(id);
+	$('body').css('overflow-y','hidden');
+	var height= window.innerHeight;
+	var height_bar = $('.mbtn').outerHeight();
 	$("#map").css({
 				  "top":0,
 				  "position":"fixed",
@@ -12,10 +12,11 @@ getCpnew(id);
 				  "width":"100%"
 				 // "overflow":"auto"
 				  });
-
-	var height2=height+height_bar;
-	$("#map").show("slow");//alert($('.mc-2').height());
-	$('.mc-2').css({'height':600+'px','overflow-y':'auto'});
+	$("#map .mcon").css({'margin-top':height_bar+'px'});
+	divMap();
+	
+	$("#map").show("slow");
+	
 });
 
 $('.btn-back').click(function(){

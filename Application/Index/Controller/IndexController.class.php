@@ -3,7 +3,7 @@ namespace Index\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-		$cp_item_id = 4;//产品介绍模块id
+		$cp_item_id = 1;//产品介绍模块id
 		$cpnews = M('news')->field('id,title,small_img,item_id')->where('item_id ='.$cp_item_id)->select();
 		$this->assign('dxlist',$this->items());
 		$this->assign('cpnews',$cpnews);
