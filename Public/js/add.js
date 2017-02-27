@@ -76,7 +76,7 @@ $('.submit').click(function(){
 	$.ajax({
 		type:"POST",
 		url:"/Apply/add",
-		data:{name:name,phone:phone,email,email,content:content},
+		data:{name:name,phone:phone,email:email,content:content},
 		success:function(data){
 		    if(data['status'] == 1){
 			   show(data['msg'],true);

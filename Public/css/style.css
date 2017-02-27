@@ -282,7 +282,7 @@ hr {
     padding-bottom: 13px
 }
 blockquote {
-    color: #FFF;
+    /* color: #FFF; */
     font-size: 22px;
     line-height: 32px;
     background: #549dc5;
@@ -3516,3 +3516,7 @@ figure.main,
 .place {border:1px solid #abcede;}
 .cp-block{font-size:18px;}
 .cp-block:hover{cursor:pointer;color:#ff0000;}
+
+/**合作伙伴** float:left;border:1px solid red;margin-left:5px;margin-bottom:10px;**/
+.hz_img{text-align:center;}
+.hz_img img{width:150px;height:100px;box-shadow: 0 0 3px #000;margin-top:5px;}
