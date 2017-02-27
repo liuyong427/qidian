@@ -345,30 +345,35 @@
         <h2 class="section-title text-center">合作伙伴</h2>
 
         <div class="row text-center">
-             <div>
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-			     <!-- <div class="hz_img"> <img src="https://www.baidu.com/img/bd_logo1.png" /></div> -->
-<div class="hz_img">				
-				<img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-				 <img src="https://www.baidu.com/img/bd_logo1.png" />
-			 </div>
-			</div>
+       <style>
+#marquee1{width:810px;height:120px;overflow:hidden;background:#eee;border:2px solid #eee; margin:20px auto 0;padding:0px;box-shadow:0px 5px 5px #333;}
+#marquee1 ul{list-style:none;}
+#marquee1 ul li{float:left; padding:0 1px;height:120px;}
+
+#marquee1 ul li img{display:block;height:100%;}
+
+</style>
+<div id="marquee1" >
+
+	<ul>
+
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="200" height="100"></li>
+	
+	</ul>
+
+</div>
+
         </div>
 
         
@@ -459,34 +464,6 @@
 	</div>
 </div>
 
-<style>
-#marquee1{width:310px;height:45px;overflow:hidden;background:#333;border:2px solid #333; margin:20px auto 0;padding:0px;}
-
-#marquee1 ul li{float:left; padding:0 1px;}
-
-#marquee1 ul li img{display:block;border:1px solid green;}
-
-</style>
-<div id="marquee1" style="border:1px solid red;height:100px;">
-
-	<ul style="border:1px solid green;padding:0px;">
-
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-		<li><img  src="https://www.baidu.com/img/bd_logo1.png" width="100" height="70"></li>
-	
-	</ul>
-
-</div>
 
 
 
