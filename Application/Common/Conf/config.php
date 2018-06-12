@@ -18,7 +18,7 @@ return array(
 	
 	
 	/*126邮件配置*/
-	'E_USER'                =>'zsitsms@126.com', //126账号
-	'E_PWD'                 =>'qidian69686996', //126密码
-	'E_RECEIVER'            =>'1026783720@qq.com',	//收信地址
+	'E_USER'                =>'', //126账号
+	'E_PWD'                 =>'', //126密码
+	'E_RECEIVER'            =>'',	//收信地址
 );
